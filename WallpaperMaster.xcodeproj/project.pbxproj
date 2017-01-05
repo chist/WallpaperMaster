@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FAE14241E1ECE6700110CE4 /* DesktopUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */; };
+		4FD5BF8F1E1DA6150024E9B4 /* NatGeoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */; };
 		4FECB0561E1D767C003FB579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0551E1D767C003FB579 /* AppDelegate.swift */; };
 		4FECB0581E1D767C003FB579 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0571E1D767C003FB579 /* ViewController.swift */; };
 		4FECB05A1E1D767C003FB579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECB0591E1D767C003FB579 /* Assets.xcassets */; };
 		4FECB05D1E1D767C003FB579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FECB05B1E1D767C003FB579 /* Main.storyboard */; };
 		4FECB0681E1D767D003FB579 /* WallpaperMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0671E1D767D003FB579 /* WallpaperMasterTests.swift */; };
 		4FECB0731E1D767D003FB579 /* WallpaperMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0721E1D767D003FB579 /* WallpaperMasterUITests.swift */; };
+		4FECB0811E1D76A0003FB579 /* kotomatrixCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0801E1D76A0003FB579 /* kotomatrixCollection.swift */; };
+		4FECB08C1E1D7760003FB579 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0831E1D7760003FB579 /* Document.swift */; };
+		4FECB08D1E1D7760003FB579 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0841E1D7760003FB579 /* Element.swift */; };
+		4FECB08E1E1D7760003FB579 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0851E1D7760003FB579 /* Error.swift */; };
+		4FECB08F1E1D7760003FB579 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0871E1D7760003FB579 /* Helpers.swift */; };
+		4FECB0901E1D7760003FB579 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FECB0881E1D7760003FB579 /* Info.plist */; };
+		4FECB0911E1D7760003FB579 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0891E1D7760003FB579 /* Node.swift */; };
+		4FECB0921E1D7760003FB579 /* NodeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB08A1E1D7760003FB579 /* NodeSet.swift */; };
+		4FECB0931E1D7760003FB579 /* Queryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB08B1E1D7760003FB579 /* Queryable.swift */; };
+		4FECB0951E1D7BA3003FB579 /* ImageGetterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0941E1D7BA3003FB579 /* ImageGetterDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesktopUpdater.swift; sourceTree = "<group>"; };
+		4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NatGeoCollection.swift; sourceTree = "<group>"; };
 		4FECB0521E1D767C003FB579 /* WallpaperMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECB0551E1D767C003FB579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FECB0571E1D767C003FB579 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +59,17 @@
 		4FECB06E1E1D767D003FB579 /* WallpaperMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpaperMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECB0721E1D767D003FB579 /* WallpaperMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperMasterUITests.swift; sourceTree = "<group>"; };
 		4FECB0741E1D767D003FB579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FECB0801E1D76A0003FB579 /* kotomatrixCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kotomatrixCollection.swift; sourceTree = "<group>"; };
+		4FECB0831E1D7760003FB579 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		4FECB0841E1D7760003FB579 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		4FECB0851E1D7760003FB579 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		4FECB0861E1D7760003FB579 /* Fuzi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fuzi.h; sourceTree = "<group>"; };
+		4FECB0871E1D7760003FB579 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		4FECB0881E1D7760003FB579 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FECB0891E1D7760003FB579 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		4FECB08A1E1D7760003FB579 /* NodeSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeSet.swift; sourceTree = "<group>"; };
+		4FECB08B1E1D7760003FB579 /* Queryable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queryable.swift; sourceTree = "<group>"; };
+		4FECB0941E1D7BA3003FB579 /* ImageGetterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGetterDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +97,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FAE14221E1ECCFA00110CE4 /* Image getters */ = {
+			isa = PBXGroup;
+			children = (
+				4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */,
+				4FECB0801E1D76A0003FB579 /* kotomatrixCollection.swift */,
+			);
+			name = "Image getters";
+			sourceTree = "<group>";
+		};
 		4FECB0491E1D767C003FB579 = {
 			isa = PBXGroup;
 			children = (
+				4FECB0821E1D7760003FB579 /* Fuzi */,
 				4FECB0541E1D767C003FB579 /* WallpaperMaster */,
 				4FECB0661E1D767D003FB579 /* WallpaperMasterTests */,
 				4FECB0711E1D767D003FB579 /* WallpaperMasterUITests */,
@@ -95,8 +130,11 @@
 		4FECB0541E1D767C003FB579 /* WallpaperMaster */ = {
 			isa = PBXGroup;
 			children = (
+				4FAE14221E1ECCFA00110CE4 /* Image getters */,
 				4FECB0551E1D767C003FB579 /* AppDelegate.swift */,
 				4FECB0571E1D767C003FB579 /* ViewController.swift */,
+				4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */,
+				4FECB0941E1D7BA3003FB579 /* ImageGetterDelegate.swift */,
 				4FECB0591E1D767C003FB579 /* Assets.xcassets */,
 				4FECB05B1E1D767C003FB579 /* Main.storyboard */,
 				4FECB05E1E1D767C003FB579 /* Info.plist */,
@@ -120,6 +158,23 @@
 				4FECB0741E1D767D003FB579 /* Info.plist */,
 			);
 			path = WallpaperMasterUITests;
+			sourceTree = "<group>";
+		};
+		4FECB0821E1D7760003FB579 /* Fuzi */ = {
+			isa = PBXGroup;
+			children = (
+				4FECB0831E1D7760003FB579 /* Document.swift */,
+				4FECB0841E1D7760003FB579 /* Element.swift */,
+				4FECB0851E1D7760003FB579 /* Error.swift */,
+				4FECB0861E1D7760003FB579 /* Fuzi.h */,
+				4FECB0871E1D7760003FB579 /* Helpers.swift */,
+				4FECB0881E1D7760003FB579 /* Info.plist */,
+				4FECB0891E1D7760003FB579 /* Node.swift */,
+				4FECB08A1E1D7760003FB579 /* NodeSet.swift */,
+				4FECB08B1E1D7760003FB579 /* Queryable.swift */,
+			);
+			name = Fuzi;
+			path = WallpaperMaster/Fuzi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +289,7 @@
 			files = (
 				4FECB05A1E1D767C003FB579 /* Assets.xcassets in Resources */,
 				4FECB05D1E1D767C003FB579 /* Main.storyboard in Resources */,
+				4FECB0901E1D7760003FB579 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +314,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FECB0931E1D7760003FB579 /* Queryable.swift in Sources */,
+				4FAE14241E1ECE6700110CE4 /* DesktopUpdater.swift in Sources */,
+				4FECB08C1E1D7760003FB579 /* Document.swift in Sources */,
+				4FD5BF8F1E1DA6150024E9B4 /* NatGeoCollection.swift in Sources */,
+				4FECB08F1E1D7760003FB579 /* Helpers.swift in Sources */,
+				4FECB0921E1D7760003FB579 /* NodeSet.swift in Sources */,
 				4FECB0581E1D767C003FB579 /* ViewController.swift in Sources */,
+				4FECB0911E1D7760003FB579 /* Node.swift in Sources */,
+				4FECB0811E1D76A0003FB579 /* kotomatrixCollection.swift in Sources */,
+				4FECB0951E1D7BA3003FB579 /* ImageGetterDelegate.swift in Sources */,
 				4FECB0561E1D767C003FB579 /* AppDelegate.swift in Sources */,
+				4FECB08E1E1D7760003FB579 /* Error.swift in Sources */,
+				4FECB08D1E1D7760003FB579 /* Element.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -389,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -402,10 +469,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B5K2GNSUC9;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = WallpaperMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Chistyakov.WallpaperMaster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = WallpaperMaster/libxml2;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -416,10 +486,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B5K2GNSUC9;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = WallpaperMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Chistyakov.WallpaperMaster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = WallpaperMaster/libxml2;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -505,6 +578,7 @@
 				4FECB0791E1D767D003FB579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FECB07A1E1D767D003FB579 /* Build configuration list for PBXNativeTarget "WallpaperMasterTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +587,7 @@
 				4FECB07C1E1D767D003FB579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FECB07D1E1D767D003FB579 /* Build configuration list for PBXNativeTarget "WallpaperMasterUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +596,7 @@
 				4FECB07F1E1D767D003FB579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

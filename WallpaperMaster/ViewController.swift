@@ -9,19 +9,12 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    let desktopUpdater = DesktopUpdater()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        desktopUpdater.imageGetter = NatGeoCollection()
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
 }
 
