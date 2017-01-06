@@ -23,7 +23,8 @@ class DesktopUpdater {
         let FMDefault    = FileManager.default
         try? FMDefault.createDirectory(at: appFolder, withIntermediateDirectories: false, attributes: [:])
 
-        self.imageGetter = NatGeoCollection()
+        //self.imageGetter = NatGeoCollection()
+        self.imageGetter = YandexCollection()
         
         // update wallpaper immediately after launch
         self.updateWallpaper()

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4FAE14241E1ECE6700110CE4 /* DesktopUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */; };
+		4FAE14261E1EDFB100110CE4 /* YandexCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */; };
+		4FC398E91E1FB3410045B05C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC398E81E1FB3400045B05C /* Extensions.swift */; };
 		4FD5BF8F1E1DA6150024E9B4 /* NatGeoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */; };
 		4FECB0561E1D767C003FB579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0551E1D767C003FB579 /* AppDelegate.swift */; };
 		4FECB0581E1D767C003FB579 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0571E1D767C003FB579 /* ViewController.swift */; };
@@ -15,7 +17,7 @@
 		4FECB05D1E1D767C003FB579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FECB05B1E1D767C003FB579 /* Main.storyboard */; };
 		4FECB0681E1D767D003FB579 /* WallpaperMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0671E1D767D003FB579 /* WallpaperMasterTests.swift */; };
 		4FECB0731E1D767D003FB579 /* WallpaperMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0721E1D767D003FB579 /* WallpaperMasterUITests.swift */; };
-		4FECB0811E1D76A0003FB579 /* kotomatrixCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0801E1D76A0003FB579 /* kotomatrixCollection.swift */; };
+		4FECB0811E1D76A0003FB579 /* KotomatrixCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0801E1D76A0003FB579 /* KotomatrixCollection.swift */; };
 		4FECB08C1E1D7760003FB579 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0831E1D7760003FB579 /* Document.swift */; };
 		4FECB08D1E1D7760003FB579 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0841E1D7760003FB579 /* Element.swift */; };
 		4FECB08E1E1D7760003FB579 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0851E1D7760003FB579 /* Error.swift */; };
@@ -46,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesktopUpdater.swift; sourceTree = "<group>"; };
+		4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YandexCollection.swift; sourceTree = "<group>"; };
+		4FC398E81E1FB3400045B05C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NatGeoCollection.swift; sourceTree = "<group>"; };
 		4FECB0521E1D767C003FB579 /* WallpaperMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECB0551E1D767C003FB579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +63,7 @@
 		4FECB06E1E1D767D003FB579 /* WallpaperMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpaperMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECB0721E1D767D003FB579 /* WallpaperMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperMasterUITests.swift; sourceTree = "<group>"; };
 		4FECB0741E1D767D003FB579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FECB0801E1D76A0003FB579 /* kotomatrixCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kotomatrixCollection.swift; sourceTree = "<group>"; };
+		4FECB0801E1D76A0003FB579 /* KotomatrixCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KotomatrixCollection.swift; sourceTree = "<group>"; };
 		4FECB0831E1D7760003FB579 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		4FECB0841E1D7760003FB579 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		4FECB0851E1D7760003FB579 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
@@ -101,7 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */,
-				4FECB0801E1D76A0003FB579 /* kotomatrixCollection.swift */,
+				4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */,
+				4FECB0801E1D76A0003FB579 /* KotomatrixCollection.swift */,
+				4FC398E81E1FB3400045B05C /* Extensions.swift */,
 			);
 			name = "Image getters";
 			sourceTree = "<group>";
@@ -322,8 +328,10 @@
 				4FECB0921E1D7760003FB579 /* NodeSet.swift in Sources */,
 				4FECB0581E1D767C003FB579 /* ViewController.swift in Sources */,
 				4FECB0911E1D7760003FB579 /* Node.swift in Sources */,
-				4FECB0811E1D76A0003FB579 /* kotomatrixCollection.swift in Sources */,
+				4FECB0811E1D76A0003FB579 /* KotomatrixCollection.swift in Sources */,
 				4FECB0951E1D7BA3003FB579 /* ImageGetterDelegate.swift in Sources */,
+				4FC398E91E1FB3410045B05C /* Extensions.swift in Sources */,
+				4FAE14261E1EDFB100110CE4 /* YandexCollection.swift in Sources */,
 				4FECB0561E1D767C003FB579 /* AppDelegate.swift in Sources */,
 				4FECB08E1E1D7760003FB579 /* Error.swift in Sources */,
 				4FECB08D1E1D7760003FB579 /* Element.swift in Sources */,
