@@ -12,7 +12,7 @@ import Cocoa
 class DesktopUpdater {
     let appFolder: URL
     var imageGetter: ImageGetterDelegate? = nil
-    let period: Double = 30
+    let period: Double = 10
     
     init() {
         // create folder for the application where all the wallpapers will be saved
@@ -36,11 +36,12 @@ class DesktopUpdater {
     @objc func updateWallpaper() {
         // download new wallpaper
         let newImage = self.imageGetter?.getRandomImage()
-        //let newImage = self.imageGetter?.getImageOfTheDay()
         
-        // create random name for the image and save it
-        let num = arc4random()
-        let imageURL = appFolder.appendingPathComponent("\(num).jpg")
+        if newImage == nil {
+            return
+        }
+        
+        let imageURL = appFolder.appendingPathComponent("0")
         newImage?.savePNG(imageURL.path)
         
         let script = "function wallpaper() { \nsqlite3 ~/Library/Application\\ Support/Dock/desktoppicture.db \"update data set value = '$1'\" && killall Dock\n}\nwallpaper " + imageURL.relativePath

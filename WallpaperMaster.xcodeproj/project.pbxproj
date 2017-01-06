@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0190C51E20448D00CA2003 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0190C41E20448D00CA2003 /* Downloader.swift */; };
 		4FAE14241E1ECE6700110CE4 /* DesktopUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */; };
 		4FAE14261E1EDFB100110CE4 /* YandexCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */; };
 		4FC398E91E1FB3410045B05C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC398E81E1FB3400045B05C /* Extensions.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F0190C41E20448D00CA2003 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesktopUpdater.swift; sourceTree = "<group>"; };
 		4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YandexCollection.swift; sourceTree = "<group>"; };
 		4FC398E81E1FB3400045B05C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -108,6 +110,8 @@
 				4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */,
 				4FECB0801E1D76A0003FB579 /* KotomatrixCollection.swift */,
 				4FC398E81E1FB3400045B05C /* Extensions.swift */,
+				4F0190C41E20448D00CA2003 /* Downloader.swift */,
+				4FECB0941E1D7BA3003FB579 /* ImageGetterDelegate.swift */,
 			);
 			name = "Image getters";
 			sourceTree = "<group>";
@@ -140,7 +144,6 @@
 				4FECB0551E1D767C003FB579 /* AppDelegate.swift */,
 				4FECB0571E1D767C003FB579 /* ViewController.swift */,
 				4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */,
-				4FECB0941E1D7BA3003FB579 /* ImageGetterDelegate.swift */,
 				4FECB0591E1D767C003FB579 /* Assets.xcassets */,
 				4FECB05B1E1D767C003FB579 /* Main.storyboard */,
 				4FECB05E1E1D767C003FB579 /* Info.plist */,
@@ -330,6 +333,7 @@
 				4FECB0911E1D7760003FB579 /* Node.swift in Sources */,
 				4FECB0811E1D76A0003FB579 /* KotomatrixCollection.swift in Sources */,
 				4FECB0951E1D7BA3003FB579 /* ImageGetterDelegate.swift in Sources */,
+				4F0190C51E20448D00CA2003 /* Downloader.swift in Sources */,
 				4FC398E91E1FB3410045B05C /* Extensions.swift in Sources */,
 				4FAE14261E1EDFB100110CE4 /* YandexCollection.swift in Sources */,
 				4FECB0561E1D767C003FB579 /* AppDelegate.swift in Sources */,

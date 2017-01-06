@@ -9,8 +9,9 @@
 import Foundation
 import Cocoa
 
-class KotomatrixCollection: ImageGetterDelegate {
+class KotomatrixCollection {
     var urlArray = [String]()
+    let downloader = Downloader()
     
     init() {
         // получаем html-страницу с лучшими постами за случайный месяц

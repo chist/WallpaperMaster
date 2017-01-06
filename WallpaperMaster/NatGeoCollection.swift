@@ -14,6 +14,7 @@ import Cocoa
 class NatGeoCollection: ImageGetterDelegate {
     let contentURL         = "http://www.nationalgeographic.com/photography/photo-of-the-day/_jcr_content/"
     let photoCollectionURL = "http://yourshot.nationalgeographic.com"
+    let downloader = Downloader()
     
     func getSource(link: String) -> String? {
         let url = URL(string: link.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!)
@@ -87,21 +88,11 @@ class NatGeoCollection: ImageGetterDelegate {
         return String(year) + "-" + String(format: "%02d", month)
     }
     
-    func downloadImage(from link: String) -> NSImage? {
-        do {
-            let data = try Data(contentsOf: URL(string: link)!)
-            return NSImage(data: data)
-        } catch let error {
-            print(error.localizedDescription)
-            return nil
-        }
-    }
-    
     func getImageOfTheDay() -> NSImage? {
         let link = contentURL + ".gallery." + getCurrentMonth() + ".json"
         if let JSONString = getSource(link: link) {
             let link = getLinkToImageOfTheDay(source: JSONString)!
-            return downloadImage(from: link)
+            return downloader.getImage(from: link)
         } else {
             print("Error: failed to get JSON object.")
             return nil
@@ -112,7 +103,7 @@ class NatGeoCollection: ImageGetterDelegate {
         let link = contentURL + ".gallery." + getRandomMonth() + ".json"
         if let JSONString = getSource(link: link) {
             let link = getLinkToRandomImage(source: JSONString)!
-            return downloadImage(from: link)
+            return downloader.getImage(from: link)
         } else {
             print("Error: failed to get JSON object.")
             return nil

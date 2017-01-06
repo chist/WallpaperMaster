@@ -12,6 +12,7 @@ import Cocoa
 class YandexCollection: ImageGetterDelegate {
     let contentURL = "https://fotki.yandex.ru/calendar/"
     let albumContentURL = "https://fotki.yandex.ru/next"
+    let downloader = Downloader()
     let maxFailureCount: Int = 120
     // minimum value of image.width / image.height
     let proportionBound: CGFloat = 1.2
@@ -50,7 +51,6 @@ class YandexCollection: ImageGetterDelegate {
             if imageLink == nil {
                 return nil
             }
-            print(imageLink!)
             linkToUserAlbum = albumContentURL + imageLink!
         } catch let error {
             print(error.localizedDescription)
@@ -83,20 +83,10 @@ class YandexCollection: ImageGetterDelegate {
         }
     }
     
-    func downloadImage(from link: String) -> NSImage? {
-        do {
-            let data = try Data(contentsOf: URL(string: link)!)
-            return NSImage(data: data)
-        } catch let error {
-            print(error.localizedDescription)
-            return nil
-        }
-    }
-    
     func getImageOfTheDay() -> NSImage? {
         let link = getLinkToImage(random: false)
         if link != nil {
-            return downloadImage(from: link!)
+            return downloader.getImage(from: link!)
         }
         return nil
     }
@@ -114,7 +104,7 @@ class YandexCollection: ImageGetterDelegate {
             }
             
             print(link!)
-            let image = downloadImage(from: link!)
+            let image = downloader.getImage(from: link!)
             
             if image == nil || image!.proportion < self.proportionBound {
                 failureCount = failureCount + 1

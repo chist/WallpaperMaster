@@ -10,6 +10,7 @@ import Foundation
 import Cocoa
 
 protocol ImageGetterDelegate {
+    var downloader: Downloader { get }
     func getRandomImage() -> NSImage?
     func getImageOfTheDay() -> NSImage?
 }
