@@ -12,6 +12,7 @@ import Cocoa
 class DesktopUpdater {
     let appFolder: URL
     var imageGetter: ImageGetterDelegate? = nil
+    let period: Double = 15
     
     init() {
         // create folder for the application where all the wallpapers will be saved
@@ -23,14 +24,13 @@ class DesktopUpdater {
         let FMDefault    = FileManager.default
         try? FMDefault.createDirectory(at: appFolder, withIntermediateDirectories: false, attributes: [:])
 
-        //self.imageGetter = NatGeoCollection()
         self.imageGetter = YandexCollection()
         
         // update wallpaper immediately after launch
         self.updateWallpaper()
         
         // launch timer to update wallpapers automatically
-        Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(updateWallpaper), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: self.period, target: self, selector: #selector(updateWallpaper), userInfo: nil, repeats: true)
     }
     
     @objc func updateWallpaper() {
@@ -42,14 +42,13 @@ class DesktopUpdater {
         let imageURL = appFolder.appendingPathComponent("\(num).jpg")
         newImage?.savePNG(imageURL.path)
         
-        // set image as desktop wallpaper
-        do {
-            let workspace = NSWorkspace.shared()
-            let screen = NSScreen.main()!
-            try workspace.setDesktopImageURL(imageURL, for: screen, options: [:])
-        } catch let error {
-            print(error)
-        }
+        let script = "function wallpaper() { \nsqlite3 ~/Library/Application\\ Support/Dock/desktoppicture.db \"update data set value = '$1'\" && killall Dock\n}\nwallpaper " + imageURL.relativePath
+        
+        let task = Process()
+        task.launchPath = "/bin/bash"
+        task.arguments = ["-c", script]
+        task.launch()
+        task.waitUntilExit()
     }
 }
 
@@ -66,7 +65,7 @@ extension NSImage {
                 print("Error: path is underfined.");
             }
         } catch {
-            print("Error saving collage.");
+            print("Error: image saving failed.");
         }
     }
 }
