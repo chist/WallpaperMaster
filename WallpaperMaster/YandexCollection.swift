@@ -11,15 +11,24 @@ import Cocoa
 
 class YandexCollection: ImageGetterDelegate {
     let contentURL = "https://fotki.yandex.ru/calendar/"
-    let albumContentURL = "https://fotki.yandex.ru/next/calendar"
-    let maxFailureCount: Int = 30
+    let albumContentURL = "https://fotki.yandex.ru/next"
+    let maxFailureCount: Int = 120
     // minimum value of image.width / image.height
     let proportionBound: CGFloat = 1.2
     
-    func getLinkToRandomImage() -> String? {
-        let year      = 2008 + arc4random() % 8
-        let month     = 1 + arc4random() % 12
-        let day       = 1 + Int(arc4random()) % 28
+    func getLinkToImage(random: Bool) -> String? {
+        let year: Int, month: Int, day: Int
+        if random {
+            year         = 2008 + Int(arc4random()) % 8
+            month        = 1 + Int(arc4random()) % 12
+            day          = 1 + Int(arc4random()) % 28
+        } else {
+            let date     = NSDate()
+            let calendar = NSCalendar.current
+            year         = calendar.component(.year,  from: date as Date)
+            month        = calendar.component(.month, from: date as Date)
+            day          = calendar.component(.day,   from: date as Date)
+        }
         let monthLink = contentURL + "?date=" + String(year) + "-" + String(format: "%02d", month)
         
         // get HTML content of page with month best photos
@@ -41,6 +50,7 @@ class YandexCollection: ImageGetterDelegate {
             if imageLink == nil {
                 return nil
             }
+            print(imageLink!)
             linkToUserAlbum = albumContentURL + imageLink!
         } catch let error {
             print(error.localizedDescription)
@@ -84,6 +94,10 @@ class YandexCollection: ImageGetterDelegate {
     }
     
     func getImageOfTheDay() -> NSImage? {
+        let link = getLinkToImage(random: false)
+        if link != nil {
+            return downloadImage(from: link!)
+        }
         return nil
     }
     
@@ -93,7 +107,7 @@ class YandexCollection: ImageGetterDelegate {
         // try to avoid removed images and vertically-oriented images
         var failureCount: Int = 0
         while failureCount < self.maxFailureCount {
-            link = getLinkToRandomImage()
+            link = getLinkToImage(random: true)
             if link == nil {
                 failureCount = failureCount + 1
                 continue
