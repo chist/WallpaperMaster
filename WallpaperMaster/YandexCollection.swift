@@ -12,7 +12,9 @@ import Cocoa
 class YandexCollection: ImageGetterDelegate {
     let contentURL = "https://fotki.yandex.ru/calendar/"
     let albumContentURL = "https://fotki.yandex.ru/next/calendar"
-    static let maxFailureCount: Int = 1
+    let maxFailureCount: Int = 30
+    // minimum value of image.width / image.height
+    let proportionBound: CGFloat = 1.2
     
     func getLinkToRandomImage() -> String? {
         let year      = 2008 + arc4random() % 8
@@ -88,20 +90,24 @@ class YandexCollection: ImageGetterDelegate {
     func getRandomImage() -> NSImage? {
         var link: String? = nil
         
-        // try to avoid removed images
+        // try to avoid removed images and vertically-oriented images
         var failureCount: Int = 0
-        while failureCount < YandexCollection.maxFailureCount {
+        while failureCount < self.maxFailureCount {
             link = getLinkToRandomImage()
-            if link != nil {
-                print(link)
-                break
+            if link == nil {
+                failureCount = failureCount + 1
+                continue
             }
-            failureCount = failureCount + 1
+            
+            print(link!)
+            let image = downloadImage(from: link!)
+            
+            if image == nil || image!.proportion < self.proportionBound {
+                failureCount = failureCount + 1
+                continue
+            }
+            return image
         }
-        if link == nil {
-            return nil
-        }
-        
-        return downloadImage(from: link!)
+        return nil
     }
 }

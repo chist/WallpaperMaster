@@ -36,3 +36,9 @@ extension NSRange {
         return fromIndex ..< toIndex
     }
 }
+
+extension NSImage {
+    var proportion: CGFloat {
+        return self.size.width / self.size.height
+    }
+}
