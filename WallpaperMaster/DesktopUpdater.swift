@@ -44,31 +44,34 @@ class DesktopUpdater {
         if imageGetter == nil {
             return
         }
+        
+        DispatchQueue.global().async {
+            // download new wallpaper
+            let wallpaper: DescribedImage
+            if self.isRandom {
+                wallpaper = self.imageGetter!.getRandomImage()
+            } else {
+                wallpaper = self.imageGetter!.getImageOfTheDay()
+            }
+        
+            if wallpaper.image == nil {
+                return
+            } else {
+                self.currentWallpaper = wallpaper
+            }
+            
+            let imageURL = self.appFolder.appendingPathComponent("current.jpg")
+            wallpaper.image?.savePNG(imageURL.path)
+            
+            let script = "function wallpaper() { \nsqlite3 ~/Library/Application\\ Support/Dock/desktoppicture.db \"update data set value = '$1'\" && killall Dock\n}\nwallpaper " + imageURL.relativePath
+            
+            let task = Process()
+            task.launchPath = "/bin/bash"
+            task.arguments = ["-c", script]
+            task.launch()
+        }
+        
         resetTimer()
-        
-        // download new wallpaper
-        let wallpaper: DescribedImage
-        if self.isRandom {
-            wallpaper = self.imageGetter!.getRandomImage()
-        } else {
-            wallpaper = self.imageGetter!.getImageOfTheDay()
-        }
-    
-        if wallpaper.image == nil {
-            return
-        } else {
-            self.currentWallpaper = wallpaper
-        }
-        
-        let imageURL = appFolder.appendingPathComponent("current.jpg")
-        wallpaper.image?.savePNG(imageURL.path)
-        
-        let script = "function wallpaper() { \nsqlite3 ~/Library/Application\\ Support/Dock/desktoppicture.db \"update data set value = '$1'\" && killall Dock\n}\nwallpaper " + imageURL.relativePath
-        
-        let task = Process()
-        task.launchPath = "/bin/bash"
-        task.arguments = ["-c", script]
-        task.launch()
     }
     
     func resetTimer(){

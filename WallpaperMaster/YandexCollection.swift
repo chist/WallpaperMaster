@@ -41,10 +41,13 @@ class YandexCollection: ImageGetterDelegate {
             let monthHTML = try HTMLDocument(string: monthHTMLString!, encoding: String.Encoding.utf8)
             let xpath = "/html/body/div[3]/table/tr[3]/td[2]/table[2]//td[not(@class)]"
             let anchorArray = monthHTML.xpath(xpath)
-            if anchorArray.count < day {
-                print("Error: unknown error.")
+            
+            var dayIndex: Int = day - 1
+            // decrease day if current day photo hasn't appeared yet
+            while anchorArray.count <= dayIndex {
+                dayIndex = dayIndex - 1
             }
-            let piece = String(describing: anchorArray[day - 1])
+            let piece = String(describing: anchorArray[dayIndex])
             
             // extract link to the album from description of a tiny photo
             let imageLink = piece.searchLink(after: "href=")
