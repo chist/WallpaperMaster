@@ -658,19 +658,19 @@
                 <customObject id="TEu-cg-QQk"/>
                 <menu id="VoX-4h-GBF">
                     <items>
-                        <menuItem title="Next random image" id="cjF-f1-3J5">
+                        <menuItem title="Next random image" tag="1" id="cjF-f1-3J5">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="nextImage:" target="Im6-qV-bXq" id="VkS-ll-drC"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Get photo of the day" id="EXY-2F-O2o">
+                        <menuItem title="Get photo of the day" tag="2" id="EXY-2F-O2o">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="getPhotoOfTheDay:" target="Im6-qV-bXq" id="cnQ-qS-zZk"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Save image" id="0En-O9-mMd">
+                        <menuItem title="Save image" tag="3" id="0En-O9-mMd">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="saveImage:" target="Im6-qV-bXq" id="cZb-zV-dtP"/>
@@ -695,35 +695,10 @@
                                 </items>
                             </menu>
                         </menuItem>
-                        <menuItem title="Set update time" id="AKX-GB-4qM">
+                        <menuItem title="Set update time" tag="5" id="Q2L-S9-Ykv">
                             <modifierMask key="keyEquivalentModifierMask"/>
-                            <menu key="submenu" title="Set update time" id="Yad-k4-mtK">
-                                <items>
-                                    <menuItem title="5 minutes" id="wG0-4T-9o7">
-                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                    </menuItem>
-                                    <menuItem title="15 minutes" id="45f-uo-1ZP">
-                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                    </menuItem>
-                                    <menuItem title="30 minutes" id="hnk-56-usQ">
-                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                    </menuItem>
-                                    <menuItem title="1 hour" id="QNB-eR-FKa">
-                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                    </menuItem>
-                                    <menuItem title="3 hours" id="hDs-65-xqe">
-                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                    </menuItem>
-                                    <menuItem title="6 hours" id="51m-jV-dDh">
-                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                    </menuItem>
-                                    <menuItem title="1 day" id="iTB-hj-dZ8">
-                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                    </menuItem>
-                                </items>
-                            </menu>
                         </menuItem>
-                        <menuItem title="Quit" id="C2B-Cf-ezm">
+                        <menuItem title="Quit" tag="6" id="C2B-Cf-ezm">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="quitClicked:" target="Im6-qV-bXq" id="A1R-E8-WZO"/>
@@ -734,7 +709,7 @@
                 <customObject id="Im6-qV-bXq" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="WallpaperMaster" customModuleProvider="target">
                     <connections>
                         <outlet property="NatGeoOption" destination="jcZ-vI-ng4" id="Pzr-w7-7Ox"/>
-                        <outlet property="statusBarMenu" destination="VoX-4h-GBF" id="BJ3-ih-pkO"/>
+                        <outlet property="statusBarMenu" destination="VoX-4h-GBF" id="tlG-Oy-RrS"/>
                         <outlet property="yandexOption" destination="dcs-Vc-Ro4" id="DU1-hT-de3"/>
                     </connections>
                 </customObject>

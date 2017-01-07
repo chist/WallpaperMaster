@@ -15,7 +15,7 @@ class DesktopUpdater {
     var timer: Timer? = nil
     var imageGetter: ImageGetterDelegate? = nil
     var currentWallpaper: DescribedImage? = nil
-    var period: Double = 30
+    var period: Double = 300
     var isRandom: Bool = true
     
     init() {
