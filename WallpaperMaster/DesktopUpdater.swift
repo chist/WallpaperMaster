@@ -12,6 +12,7 @@ import Cocoa
 class DesktopUpdater {
     let appFolder: URL
     let favFolder: URL
+    var timer: Timer? = nil
     var imageGetter: ImageGetterDelegate? = nil
     var currentWallpaper: DescribedImage? = nil
     var period: Double = 30
@@ -32,17 +33,18 @@ class DesktopUpdater {
 
         self.imageGetter = NatGeoCollection()
         
+        // launch timer to update wallpapers automatically
+        resetTimer()
+        
         // update wallpaper immediately after launch
         self.updateWallpaper()
-        
-        // launch timer to update wallpapers automatically
-        Timer.scheduledTimer(timeInterval: self.period, target: self, selector: #selector(updateWallpaper), userInfo: nil, repeats: true)
     }
     
     @objc func updateWallpaper() {
         if imageGetter == nil {
             return
         }
+        resetTimer()
         
         // download new wallpaper
         let wallpaper: DescribedImage
@@ -67,6 +69,11 @@ class DesktopUpdater {
         task.launchPath = "/bin/bash"
         task.arguments = ["-c", script]
         task.launch()
+    }
+    
+    func resetTimer(){
+        self.timer?.invalidate()
+        timer = Timer.scheduledTimer(timeInterval: self.period, target: self, selector: #selector(updateWallpaper), userInfo: nil, repeats: true)
     }
     
     func addToFavourites() {
