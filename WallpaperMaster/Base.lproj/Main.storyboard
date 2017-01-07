@@ -661,15 +661,27 @@
                         <menuItem title="Next" id="cjF-f1-3J5">
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
-                        <menuItem title="Save" id="0En-O9-mMd">
+                        <menuItem title="Get photo of the day" id="EXY-2F-O2o">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem title="Save image" id="0En-O9-mMd">
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
                         <menuItem title="Choose source" id="qfT-LM-h6m">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <menu key="submenu" title="Choose source" id="DkY-aw-nn3">
                                 <items>
-                                    <menuItem title="Item" id="dcs-Vc-Ro4">
+                                    <menuItem title="National Geographic" id="jcZ-vI-ng4">
                                         <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="NatGeoIsChosen:" target="Im6-qV-bXq" id="1L6-pp-Czl"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Yandex" id="dcs-Vc-Ro4">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="YandexIsChosen:" target="Im6-qV-bXq" id="QDX-cz-FNj"/>
+                                        </connections>
                                     </menuItem>
                                 </items>
                             </menu>
@@ -678,7 +690,25 @@
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <menu key="submenu" title="Set update time" id="Yad-k4-mtK">
                                 <items>
-                                    <menuItem title="Item" id="lM7-y1-j86">
+                                    <menuItem title="5 minutes" id="wG0-4T-9o7">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="15 minutes" id="45f-uo-1ZP">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="30 minutes" id="hnk-56-usQ">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="1 hour" id="QNB-eR-FKa">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="3 hours" id="hDs-65-xqe">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="6 hours" id="51m-jV-dDh">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="1 day" id="iTB-hj-dZ8">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
                                 </items>
@@ -698,7 +728,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="68" y="-52"/>
         </scene>
     </scenes>
 </document>

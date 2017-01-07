@@ -12,7 +12,6 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let _ = DesktopUpdater()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
