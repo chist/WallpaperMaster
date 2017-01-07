@@ -653,8 +653,49 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WallpaperMaster" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WallpaperMaster" customModuleProvider="target">
+                    <connections>
+                        <outlet property="statusBarMenu" destination="VoX-4h-GBF" id="diI-3c-p4i"/>
+                    </connections>
+                </customObject>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="TEu-cg-QQk"/>
+                <menu id="VoX-4h-GBF">
+                    <items>
+                        <menuItem title="Next" id="cjF-f1-3J5">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem title="Save" id="0En-O9-mMd">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem title="Choose source" id="qfT-LM-h6m">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <menu key="submenu" title="Choose source" id="DkY-aw-nn3">
+                                <items>
+                                    <menuItem title="Item" id="dcs-Vc-Ro4">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </menuItem>
+                        <menuItem title="Set update time" id="AKX-GB-4qM">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <menu key="submenu" title="Set update time" id="Yad-k4-mtK">
+                                <items>
+                                    <menuItem title="Item" id="lM7-y1-j86">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </menuItem>
+                        <menuItem title="Quit" id="C2B-Cf-ezm">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="quitClicked:" target="Voe-Tx-rLC" id="Hdx-FY-t6S"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
