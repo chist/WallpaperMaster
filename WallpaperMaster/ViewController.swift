@@ -9,7 +9,7 @@
 import Cocoa
 
 class ViewController: NSViewController {
-    let desktopUpdater = DesktopUpdater()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
