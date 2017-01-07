@@ -653,11 +653,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WallpaperMaster" customModuleProvider="target">
-                    <connections>
-                        <outlet property="statusBarMenu" destination="VoX-4h-GBF" id="diI-3c-p4i"/>
-                    </connections>
-                </customObject>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WallpaperMaster" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <customObject id="TEu-cg-QQk"/>
                 <menu id="VoX-4h-GBF">
@@ -691,11 +687,16 @@
                         <menuItem title="Quit" id="C2B-Cf-ezm">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
-                                <action selector="quitClicked:" target="Voe-Tx-rLC" id="Hdx-FY-t6S"/>
+                                <action selector="quitClicked:" target="Im6-qV-bXq" id="A1R-E8-WZO"/>
                             </connections>
                         </menuItem>
                     </items>
                 </menu>
+                <customObject id="Im6-qV-bXq" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="WallpaperMaster" customModuleProvider="target">
+                    <connections>
+                        <outlet property="statusBarMenu" destination="VoX-4h-GBF" id="BJ3-ih-pkO"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
