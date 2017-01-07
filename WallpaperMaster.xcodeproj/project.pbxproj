@@ -52,6 +52,7 @@
 		4F0190C41E20448D00CA2003 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		4F0C2F651E211CCD006B41FF /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		4FA498621E212D3200E30460 /* DescribedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescribedImage.swift; sourceTree = "<group>"; };
+		4FA498651E21317E00E30460 /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcommonCrypto.tbd; path = usr/lib/system/libcommonCrypto.tbd; sourceTree = SDKROOT; };
 		4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesktopUpdater.swift; sourceTree = "<group>"; };
 		4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YandexCollection.swift; sourceTree = "<group>"; };
 		4FC398E81E1FB3400045B05C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -105,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FA498641E21317E00E30460 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FA498651E21317E00E30460 /* libcommonCrypto.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4FAE14221E1ECCFA00110CE4 /* Image getters */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +136,7 @@
 				4FECB0661E1D767D003FB579 /* WallpaperMasterTests */,
 				4FECB0711E1D767D003FB579 /* WallpaperMasterUITests */,
 				4FECB0531E1D767C003FB579 /* Products */,
+				4FA498641E21317E00E30460 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -488,6 +498,10 @@
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = WallpaperMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Chistyakov.WallpaperMaster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +519,10 @@
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = WallpaperMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Chistyakov.WallpaperMaster";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -11,8 +11,9 @@ import Cocoa
 
 class DesktopUpdater {
     let appFolder: URL
+    let favFolder: URL
     var imageGetter: ImageGetterDelegate? = nil
-    let period: Double = 10
+    let period: Double = 30
     
     init() {
         // create folder for the application where all the wallpapers will be saved
@@ -23,6 +24,9 @@ class DesktopUpdater {
         self.appFolder   = URL(fileURLWithPath: documentsDir!).appendingPathComponent("WallpaperMaster")
         let FMDefault    = FileManager.default
         try? FMDefault.createDirectory(at: appFolder, withIntermediateDirectories: false, attributes: [:])
+        // create subdirectory for favourites
+        favFolder        = appFolder.appendingPathComponent("Saved")
+        try? FMDefault.createDirectory(at: favFolder, withIntermediateDirectories: false, attributes: [:])
 
         self.imageGetter = YandexCollection()
         
@@ -45,7 +49,8 @@ class DesktopUpdater {
             return
         }
         
-        let imageURL = appFolder.appendingPathComponent("0")
+        print(wallpaper.name)
+        let imageURL = appFolder.appendingPathComponent("current.jpg")
         wallpaper.image?.savePNG(imageURL.path)
         
         let script = "function wallpaper() { \nsqlite3 ~/Library/Application\\ Support/Dock/desktoppicture.db \"update data set value = '$1'\" && killall Dock\n}\nwallpaper " + imageURL.relativePath
@@ -54,7 +59,6 @@ class DesktopUpdater {
         task.launchPath = "/bin/bash"
         task.arguments = ["-c", script]
         task.launch()
-        task.waitUntilExit()
     }
 }
 
