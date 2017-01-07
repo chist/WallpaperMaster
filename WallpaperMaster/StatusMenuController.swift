@@ -19,6 +19,17 @@ class StatusMenuController: NSObject {
         statusItem.menu = statusBarMenu
     }
     
+    @IBAction func nextImage(_ sender: NSMenuItem) {
+        desktopUpdater.updateWallpaper()
+    }
+    
+    @IBAction func getPhotoOfTheDay(_ sender: NSMenuItem) {
+    }
+    
+    @IBAction func saveImage(_ sender: NSMenuItem) {
+        desktopUpdater.addToFavourites()
+    }
+    
     @IBAction func NatGeoIsChosen(_ sender: NSMenuItem) {
         desktopUpdater.imageGetter = NatGeoCollection()
     }

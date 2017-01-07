@@ -13,6 +13,7 @@ class DesktopUpdater {
     let appFolder: URL
     let favFolder: URL
     var imageGetter: ImageGetterDelegate? = nil
+    var currentWallpaper: DescribedImage? = nil
     let period: Double = 30
     
     init() {
@@ -28,7 +29,7 @@ class DesktopUpdater {
         favFolder        = appFolder.appendingPathComponent("Saved")
         try? FMDefault.createDirectory(at: favFolder, withIntermediateDirectories: false, attributes: [:])
 
-        self.imageGetter = YandexCollection()
+        self.imageGetter = NatGeoCollection()
         
         // update wallpaper immediately after launch
         self.updateWallpaper()
@@ -47,9 +48,10 @@ class DesktopUpdater {
     
         if wallpaper.image == nil {
             return
+        } else {
+            self.currentWallpaper = wallpaper
         }
         
-        print(wallpaper.name)
         let imageURL = appFolder.appendingPathComponent("current.jpg")
         wallpaper.image?.savePNG(imageURL.path)
         
@@ -59,6 +61,14 @@ class DesktopUpdater {
         task.launchPath = "/bin/bash"
         task.arguments = ["-c", script]
         task.launch()
+    }
+    
+    func addToFavourites() {
+        if let wallpaper = currentWallpaper {
+            let name = wallpaper.name
+            let imageURL = favFolder.appendingPathComponent(name)
+            wallpaper.image?.savePNG(imageURL.path)
+        }
     }
 }
 

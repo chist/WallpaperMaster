@@ -660,12 +660,21 @@
                     <items>
                         <menuItem title="Next" id="cjF-f1-3J5">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="nextImage:" target="Im6-qV-bXq" id="VkS-ll-drC"/>
+                            </connections>
                         </menuItem>
                         <menuItem title="Get photo of the day" id="EXY-2F-O2o">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="getPhotoOfTheDay:" target="Im6-qV-bXq" id="cnQ-qS-zZk"/>
+                            </connections>
                         </menuItem>
                         <menuItem title="Save image" id="0En-O9-mMd">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="saveImage:" target="Im6-qV-bXq" id="cZb-zV-dtP"/>
+                            </connections>
                         </menuItem>
                         <menuItem title="Choose source" id="qfT-LM-h6m">
                             <modifierMask key="keyEquivalentModifierMask"/>
