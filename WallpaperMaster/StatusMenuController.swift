@@ -12,6 +12,9 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var statusBarMenu: NSMenu!
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     
+    @IBOutlet weak var NatGeoOption: NSMenuItem!
+    @IBOutlet weak var yandexOption: NSMenuItem!
+    
     let desktopUpdater = DesktopUpdater()
     
     override func awakeFromNib() {
@@ -36,10 +39,14 @@ class StatusMenuController: NSObject {
     }
     
     @IBAction func NatGeoIsChosen(_ sender: NSMenuItem) {
+        NatGeoOption.state = 1
+        yandexOption.state = 0
         desktopUpdater.imageGetter = NatGeoCollection()
     }
     
     @IBAction func YandexIsChosen(_ sender: NSMenuItem) {
+        NatGeoOption.state = 0
+        yandexOption.state = 1
         desktopUpdater.imageGetter = YandexCollection()
     }
     

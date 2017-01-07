@@ -680,7 +680,7 @@
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <menu key="submenu" title="Choose source" id="DkY-aw-nn3">
                                 <items>
-                                    <menuItem title="National Geographic" id="jcZ-vI-ng4">
+                                    <menuItem title="National Geographic" state="on" id="jcZ-vI-ng4">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="NatGeoIsChosen:" target="Im6-qV-bXq" id="1L6-pp-Czl"/>
@@ -733,7 +733,9 @@
                 </menu>
                 <customObject id="Im6-qV-bXq" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="WallpaperMaster" customModuleProvider="target">
                     <connections>
+                        <outlet property="NatGeoOption" destination="jcZ-vI-ng4" id="Pzr-w7-7Ox"/>
                         <outlet property="statusBarMenu" destination="VoX-4h-GBF" id="BJ3-ih-pkO"/>
+                        <outlet property="yandexOption" destination="dcs-Vc-Ro4" id="DU1-hT-de3"/>
                     </connections>
                 </customObject>
             </objects>
