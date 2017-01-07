@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F0190C51E20448D00CA2003 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0190C41E20448D00CA2003 /* Downloader.swift */; };
 		4F0C2F661E211CCD006B41FF /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0C2F651E211CCD006B41FF /* StatusMenuController.swift */; };
+		4FA498631E212D3200E30460 /* DescribedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA498621E212D3200E30460 /* DescribedImage.swift */; };
 		4FAE14241E1ECE6700110CE4 /* DesktopUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */; };
 		4FAE14261E1EDFB100110CE4 /* YandexCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */; };
 		4FC398E91E1FB3410045B05C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC398E81E1FB3400045B05C /* Extensions.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		4F0190C41E20448D00CA2003 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		4F0C2F651E211CCD006B41FF /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		4FA498621E212D3200E30460 /* DescribedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescribedImage.swift; sourceTree = "<group>"; };
 		4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesktopUpdater.swift; sourceTree = "<group>"; };
 		4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YandexCollection.swift; sourceTree = "<group>"; };
 		4FC398E81E1FB3400045B05C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				4FECB0801E1D76A0003FB579 /* KotomatrixCollection.swift */,
 				4FC398E81E1FB3400045B05C /* Extensions.swift */,
 				4F0190C41E20448D00CA2003 /* Downloader.swift */,
+				4FA498621E212D3200E30460 /* DescribedImage.swift */,
 				4FECB0941E1D7BA3003FB579 /* ImageGetterDelegate.swift */,
 			);
 			name = "Image getters";
@@ -326,6 +329,7 @@
 				4FECB0931E1D7760003FB579 /* Queryable.swift in Sources */,
 				4FAE14241E1ECE6700110CE4 /* DesktopUpdater.swift in Sources */,
 				4FECB08C1E1D7760003FB579 /* Document.swift in Sources */,
+				4FA498631E212D3200E30460 /* DescribedImage.swift in Sources */,
 				4FD5BF8F1E1DA6150024E9B4 /* NatGeoCollection.swift in Sources */,
 				4FECB08F1E1D7760003FB579 /* Helpers.swift in Sources */,
 				4FECB0921E1D7760003FB579 /* NodeSet.swift in Sources */,

@@ -34,15 +34,19 @@ class DesktopUpdater {
     }
     
     @objc func updateWallpaper() {
-        // download new wallpaper
-        let newImage = self.imageGetter?.getRandomImage()
+        if imageGetter == nil {
+            return
+        }
         
-        if newImage == nil {
+        // download new wallpaper
+        let wallpaper = self.imageGetter!.getRandomImage()
+    
+        if wallpaper.image == nil {
             return
         }
         
         let imageURL = appFolder.appendingPathComponent("0")
-        newImage?.savePNG(imageURL.path)
+        wallpaper.image?.savePNG(imageURL.path)
         
         let script = "function wallpaper() { \nsqlite3 ~/Library/Application\\ Support/Dock/desktoppicture.db \"update data set value = '$1'\" && killall Dock\n}\nwallpaper " + imageURL.relativePath
         

@@ -10,14 +10,14 @@ import Foundation
 import Cocoa
 
 class Downloader {
-    func getImage(from link: String) -> NSImage? {
+    func getImage(from link: String) -> DescribedImage {
         do {
             let data = try Data(contentsOf: URL(string: link)!)
             let image = NSImage(data: data)
-            return image
+            return DescribedImage(image, from: link)
         } catch let error {
             print(error.localizedDescription)
-            return nil
+            return DescribedImage(nil, from: "")
         }
     }
 }

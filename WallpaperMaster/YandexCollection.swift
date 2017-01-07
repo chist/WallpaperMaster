@@ -83,15 +83,15 @@ class YandexCollection: ImageGetterDelegate {
         }
     }
     
-    func getImageOfTheDay() -> NSImage? {
+    func getImageOfTheDay() -> DescribedImage {
         let link = getLinkToImage(random: false)
         if link != nil {
             return downloader.getImage(from: link!)
         }
-        return nil
+        return DescribedImage()
     }
     
-    func getRandomImage() -> NSImage? {
+    func getRandomImage() -> DescribedImage {
         var link: String? = nil
         
         // try to avoid removed images and vertically-oriented images
@@ -103,15 +103,14 @@ class YandexCollection: ImageGetterDelegate {
                 continue
             }
             
-            print(link!)
-            let image = downloader.getImage(from: link!)
+            let result = downloader.getImage(from: link!)
             
-            if image == nil || image!.proportion < self.proportionBound {
+            if result.image == nil || result.image!.proportion < self.proportionBound {
                 failureCount = failureCount + 1
                 continue
             }
-            return image
+            return result
         }
-        return nil
+        return DescribedImage()
     }
 }

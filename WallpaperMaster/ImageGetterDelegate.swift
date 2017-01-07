@@ -11,6 +11,6 @@ import Cocoa
 
 protocol ImageGetterDelegate {
     var downloader: Downloader { get }
-    func getRandomImage() -> NSImage?
-    func getImageOfTheDay() -> NSImage?
+    func getRandomImage() -> DescribedImage
+    func getImageOfTheDay() -> DescribedImage
 }

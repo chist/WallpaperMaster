@@ -88,25 +88,25 @@ class NatGeoCollection: ImageGetterDelegate {
         return String(year) + "-" + String(format: "%02d", month)
     }
     
-    func getImageOfTheDay() -> NSImage? {
+    func getImageOfTheDay() -> DescribedImage {
         let link = contentURL + ".gallery." + getCurrentMonth() + ".json"
         if let JSONString = getSource(link: link) {
             let link = getLinkToImageOfTheDay(source: JSONString)!
             return downloader.getImage(from: link)
         } else {
             print("Error: failed to get JSON object.")
-            return nil
+            return DescribedImage()
         }
     }
     
-    func getRandomImage() -> NSImage? {
+    func getRandomImage() -> DescribedImage {
         let link = contentURL + ".gallery." + getRandomMonth() + ".json"
         if let JSONString = getSource(link: link) {
             let link = getLinkToRandomImage(source: JSONString)!
             return downloader.getImage(from: link)
         } else {
             print("Error: failed to get JSON object.")
-            return nil
+            return DescribedImage()
         }
     }
 }
