@@ -20,10 +20,13 @@ class StatusMenuController: NSObject {
     }
     
     @IBAction func nextImage(_ sender: NSMenuItem) {
+        desktopUpdater.isRandom = true
         desktopUpdater.updateWallpaper()
     }
     
     @IBAction func getPhotoOfTheDay(_ sender: NSMenuItem) {
+        desktopUpdater.isRandom = false
+        desktopUpdater.updateWallpaper()
     }
     
     @IBAction func saveImage(_ sender: NSMenuItem) {

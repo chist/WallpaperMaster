@@ -658,7 +658,7 @@
                 <customObject id="TEu-cg-QQk"/>
                 <menu id="VoX-4h-GBF">
                     <items>
-                        <menuItem title="Next" id="cjF-f1-3J5">
+                        <menuItem title="Next random image" id="cjF-f1-3J5">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="nextImage:" target="Im6-qV-bXq" id="VkS-ll-drC"/>

@@ -14,7 +14,8 @@ class DesktopUpdater {
     let favFolder: URL
     var imageGetter: ImageGetterDelegate? = nil
     var currentWallpaper: DescribedImage? = nil
-    let period: Double = 30
+    var period: Double = 30
+    var isRandom: Bool = true
     
     init() {
         // create folder for the application where all the wallpapers will be saved
@@ -44,7 +45,12 @@ class DesktopUpdater {
         }
         
         // download new wallpaper
-        let wallpaper = self.imageGetter!.getRandomImage()
+        let wallpaper: DescribedImage
+        if self.isRandom {
+            wallpaper = self.imageGetter!.getRandomImage()
+        } else {
+            wallpaper = self.imageGetter!.getImageOfTheDay()
+        }
     
         if wallpaper.image == nil {
             return
