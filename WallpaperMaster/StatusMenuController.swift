@@ -10,8 +10,8 @@ import Cocoa
 
 class StatusMenuController: NSObject {
     @IBOutlet var statusBarMenu: NSMenu!
-    
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    let timeSubmenu = NSMenu(title: "Set update time")
     
     @IBOutlet weak var NatGeoOption: NSMenuItem!
     @IBOutlet weak var yandexOption: NSMenuItem!
@@ -26,33 +26,22 @@ class StatusMenuController: NSObject {
         statusItem.title = "WM"
         statusItem.menu = statusBarMenu
         
-        let timeSubmenu = NSMenu(title: "Set update time")
         if let reserved = statusBarMenu.item(withTag: 5) {
             statusBarMenu.setSubmenu(timeSubmenu, for: reserved)
-            for element in times {
+            for (index, element) in times.enumerated() {
                 let fullTitle = "\(element.0) " + element.1
                 let submenuItem = NSMenuItem(title: fullTitle, action: #selector(updateTimeInterval), keyEquivalent: String())
                 submenuItem.target = self
+                submenuItem.state  = 0
                 
-                // write time interval in seconds to tag attribute
-                let multiplier: Int
-                switch element.1 {
-                case "second", "seconds":
-                    multiplier = 1
-                case "mimute", "minutes":
-                    multiplier = 60
-                case "hour", "hours":
-                    multiplier = 60 * 60
-                case "day", "days":
-                    multiplier = 24 * 60 * 60
-                default:
-                    multiplier = 60
-                }
-                submenuItem.tag = element.0 * multiplier
+                // enumerate items
+                submenuItem.tag = index
                 
                 timeSubmenu.addItem(submenuItem)
             }
         }
+        
+        updateTimeInterval(timeSubmenu.item(at: 0)!)
     }
     
     @IBAction func nextImage(_ sender: NSMenuItem) {
@@ -84,7 +73,29 @@ class StatusMenuController: NSObject {
     }
     
     @IBAction func updateTimeInterval(_ sender: NSMenuItem) {
-        desktopUpdater.period = Double(sender.tag)
+        let tag = sender.tag
+        let element = times[tag]
+        
+        // mark current time interval
+        for item in timeSubmenu.items {
+            item.state = (item.tag == tag) ? 1 : 0
+        }
+        
+        let multiplier: Int
+        switch element.1 {
+        case "second", "seconds":
+            multiplier = 1
+        case "mimute", "minutes":
+            multiplier = 60
+        case "hour", "hours":
+            multiplier = 60 * 60
+        case "day", "days":
+            multiplier = 24 * 60 * 60
+        default:
+            multiplier = 60
+        }
+        
+        desktopUpdater.period = Double(element.0 * multiplier)
         desktopUpdater.resetTimer()
     }
     
