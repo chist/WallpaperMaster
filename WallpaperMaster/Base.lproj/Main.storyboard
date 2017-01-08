@@ -656,7 +656,7 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WallpaperMaster" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <customObject id="TEu-cg-QQk"/>
-                <menu id="VoX-4h-GBF">
+                <menu autoenablesItems="NO" id="VoX-4h-GBF">
                     <items>
                         <menuItem title="Next random image" tag="1" id="cjF-f1-3J5">
                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -670,7 +670,7 @@
                                 <action selector="getPhotoOfTheDay:" target="Im6-qV-bXq" id="cnQ-qS-zZk"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Save image" tag="3" id="0En-O9-mMd">
+                        <menuItem title="Save image" id="0En-O9-mMd">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="saveImage:" target="Im6-qV-bXq" id="cZb-zV-dtP"/>

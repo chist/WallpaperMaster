@@ -45,12 +45,16 @@ class StatusMenuController: NSObject {
     }
     
     @IBAction func nextImage(_ sender: NSMenuItem) {
+        statusBarMenu.item(at: 0)?.title = "Next random image"
+        statusBarMenu.item(at: 4)?.isEnabled = true
         desktopUpdater.isRandom = true
         desktopUpdater.updateWallpaper()
         desktopUpdater.resetTimer()
     }
     
     @IBAction func getPhotoOfTheDay(_ sender: NSMenuItem) {
+        statusBarMenu.item(at: 0)?.title = "Continue with random photos"
+        statusBarMenu.item(at: 4)?.isEnabled = false
         desktopUpdater.isRandom = false
         desktopUpdater.updateWallpaper()
         desktopUpdater.timer?.invalidate()
