@@ -760,21 +760,19 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JlA-Sk-oQp">
-                                <rect key="frame" x="56" y="131" width="369" height="119"/>
+                                <rect key="frame" x="56" y="193" width="369" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="XQg-GA-xFS">
                                     <font key="font" metaFont="system"/>
-                                    <mutableString key="title">This app is designed to change wallpapers at all desktops.
+                                    <string key="title">This app is designed to change wallpapers at all desktops.
 
-Photos are downloaded from those sources:
-                     http://www.nationalgeographic.com
-                     https://fotki.yandex.ru  Saved photos are stored in ~/Documents/WallpaperMaster</mutableString>
+Photos are downloaded from those sources:</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IMg-qI-C3U">
-                                <rect key="frame" x="174" y="95" width="130" height="32"/>
+                                <rect key="frame" x="175" y="102" width="130" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Show in Finder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fls-UD-TEn">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -784,6 +782,26 @@ Photos are downloaded from those sources:
                                     <action selector="showSavedInFinder:" target="g0h-ya-Wle" id="Lza-Ce-8RC"/>
                                 </connections>
                             </button>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-R0-sRS">
+                                <rect key="frame" x="56" y="128" width="369" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Saved photos are stored in ~/Documents/WallpaperMaster" id="Znw-P3-C50">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibQ-qG-joh">
+                                <rect key="frame" x="126" y="157" width="228" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" id="OzQ-CY-EEL">
+                                    <font key="font" metaFont="system"/>
+                                    <string key="title">http://www.nationalgeographic.com
+https://fotki.yandex.ru</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                 </viewController>
