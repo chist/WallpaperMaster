@@ -28,6 +28,14 @@ class StatusMenuController: NSObject {
         
         if let reserved = statusBarMenu.item(withTag: 5) {
             statusBarMenu.setSubmenu(timeSubmenu, for: reserved)
+            
+            let disableTitle = "Disable auto updates"
+            let submenuItem = NSMenuItem(title: disableTitle, action: #selector(updateTimeInterval), keyEquivalent: String())
+            submenuItem.target = self
+            submenuItem.tag = 0
+            submenuItem.state  = 0
+            timeSubmenu.addItem(submenuItem)
+            
             for (index, element) in times.enumerated() {
                 let fullTitle = "\(element.0) " + element.1
                 let submenuItem = NSMenuItem(title: fullTitle, action: #selector(updateTimeInterval), keyEquivalent: String())
@@ -35,13 +43,13 @@ class StatusMenuController: NSObject {
                 submenuItem.state  = 0
                 
                 // enumerate items
-                submenuItem.tag = index
+                submenuItem.tag = index + 1
                 
                 timeSubmenu.addItem(submenuItem)
             }
         }
         
-        updateTimeInterval(timeSubmenu.item(at: 0)!)
+        updateTimeInterval(timeSubmenu.item(at: 1)!)
     }
     
     @IBAction func nextImage(_ sender: NSMenuItem) {
@@ -76,14 +84,21 @@ class StatusMenuController: NSObject {
         desktopUpdater.imageGetter = YandexCollection()
     }
     
-    @IBAction func updateTimeInterval(_ sender: NSMenuItem) {
+    func updateTimeInterval(_ sender: NSMenuItem) {
         let tag = sender.tag
-        let element = times[tag]
         
         // mark current time interval
         for item in timeSubmenu.items {
             item.state = (item.tag == tag) ? 1 : 0
         }
+        
+        // if user disabled auto update
+        if sender.tag == 0 {
+            desktopUpdater.timer?.invalidate()
+            return
+        }
+        
+        let element = times[tag - 1]
         
         let multiplier: Int
         switch element.1 {
