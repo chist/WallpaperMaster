@@ -803,9 +803,9 @@ www.fotki.yandex.ru</string>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6CO-9d-2pb">
-                                <rect key="frame" x="204" y="50" width="72" height="17"/>
+                                <rect key="frame" x="163" y="55" width="155" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 0.2" id="ffF-l2-ihK">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Version 0.9" id="ffF-l2-ihK">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -813,6 +813,9 @@ www.fotki.yandex.ru</string>
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="versionLabel" destination="6CO-9d-2pb" id="IBS-dq-z9f"/>
+                    </connections>
                 </viewController>
                 <customObject id="IYA-tI-fhH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
