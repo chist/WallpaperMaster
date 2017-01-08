@@ -698,6 +698,12 @@
                         <menuItem title="Set update time" tag="5" id="Q2L-S9-Ykv">
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
+                        <menuItem title="About" id="27h-4u-oGr">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <segue destination="Phi-qx-339" kind="show" id="fec-vv-k6a"/>
+                            </connections>
+                        </menuItem>
                         <menuItem title="Quit" tag="6" id="C2B-Cf-ezm">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
@@ -715,6 +721,48 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="68" y="-52"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="uh7-AC-2a2">
+            <objects>
+                <windowController id="Phi-qx-339" sceneMemberID="viewController">
+                    <window key="window" title="WallpaperMaster" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="s8n-cF-3hY">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="249" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                    </window>
+                    <connections>
+                        <segue destination="g0h-ya-Wle" kind="relationship" relationship="window.shadowedContentViewController" id="rhs-dy-1ea"/>
+                    </connections>
+                </windowController>
+                <customObject id="o6D-E3-XUr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QKg-iw-sZJ">
+            <objects>
+                <viewController id="g0h-ya-Wle" sceneMemberID="viewController">
+                    <view key="view" id="sEZ-a5-flV">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ND-K2-YbE">
+                                <rect key="frame" x="75" y="54" width="330" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Copyright © 2017 Ivan Chistyakov. All rights reserved." id="rO4-NL-npI">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="IYA-tI-fhH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="279"/>
         </scene>
     </scenes>
 </document>
