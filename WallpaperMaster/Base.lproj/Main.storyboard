@@ -725,8 +725,8 @@
         <!--Window Controller-->
         <scene sceneID="uh7-AC-2a2">
             <objects>
-                <windowController id="Phi-qx-339" sceneMemberID="viewController">
-                    <window key="window" title="WallpaperMaster" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="s8n-cF-3hY">
+                <windowController showSeguePresentationStyle="single" id="Phi-qx-339" sceneMemberID="viewController">
+                    <window key="window" title="WallpaperMaster" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="" animationBehavior="default" id="s8n-cF-3hY">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="249" width="480" height="270"/>
@@ -751,10 +751,24 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ND-K2-YbE">
-                                <rect key="frame" x="75" y="54" width="330" height="17"/>
+                                <rect key="frame" x="75" y="36" width="330" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Copyright © 2017 Ivan Chistyakov. All rights reserved." id="rO4-NL-npI">
                                     <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JlA-Sk-oQp">
+                                <rect key="frame" x="55" y="156" width="369" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="XQg-GA-xFS">
+                                    <font key="font" metaFont="system"/>
+                                    <string key="title">This app is designed to change wallpapers at all desktops.
+
+Photos are downloaded from those sources:
+                     http://www.nationalgeographic.com
+                     https://fotki.yandex.ru</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
