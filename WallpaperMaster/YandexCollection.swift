@@ -34,6 +34,9 @@ class YandexCollection: ImageGetterDelegate {
         
         // get HTML content of page with month best photos
         let monthHTMLString = getHTML(link: monthLink)
+        if monthHTMLString == nil {
+            return nil
+        }
         
         let linkToUserAlbum: String?
         do {

@@ -91,8 +91,11 @@ class NatGeoCollection: ImageGetterDelegate {
     func getImageOfTheDay() -> DescribedImage {
         let link = contentURL + ".gallery." + getCurrentMonth() + ".json"
         if let JSONString = getSource(link: link) {
-            let link = getLinkToImageOfTheDay(source: JSONString)!
-            return downloader.getImage(from: link)
+            let link = getLinkToImageOfTheDay(source: JSONString)
+            if link == nil {
+                return DescribedImage()
+            }
+            return downloader.getImage(from: link!)
         } else {
             print("Error: failed to get JSON object.")
             return DescribedImage()
@@ -102,8 +105,11 @@ class NatGeoCollection: ImageGetterDelegate {
     func getRandomImage() -> DescribedImage {
         let link = contentURL + ".gallery." + getRandomMonth() + ".json"
         if let JSONString = getSource(link: link) {
-            let link = getLinkToRandomImage(source: JSONString)!
-            return downloader.getImage(from: link)
+            let link = getLinkToRandomImage(source: JSONString)
+            if link == nil {
+                return DescribedImage()
+            }
+            return downloader.getImage(from: link!)
         } else {
             print("Error: failed to get JSON object.")
             return DescribedImage()

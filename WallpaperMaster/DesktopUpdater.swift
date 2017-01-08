@@ -53,12 +53,11 @@ class DesktopUpdater {
             } else {
                 wallpaper = self.imageGetter!.getImageOfTheDay()
             }
-        
             if wallpaper.image == nil {
                 return
-            } else {
-                self.currentWallpaper = wallpaper
             }
+            
+            self.currentWallpaper = wallpaper
             
             let imageURL = self.appFolder.appendingPathComponent("current.jpg")
             wallpaper.image?.savePNG(imageURL.path)

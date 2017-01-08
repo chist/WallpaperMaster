@@ -726,7 +726,7 @@
         <scene sceneID="uh7-AC-2a2">
             <objects>
                 <windowController showSeguePresentationStyle="single" id="Phi-qx-339" sceneMemberID="viewController">
-                    <window key="window" title="WallpaperMaster" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="" animationBehavior="default" id="s8n-cF-3hY">
+                    <window key="window" title="WallpaperMaster" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="s8n-cF-3hY">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="249" width="480" height="270"/>
