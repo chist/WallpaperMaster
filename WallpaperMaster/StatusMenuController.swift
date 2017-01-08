@@ -16,6 +16,8 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var NatGeoOption: NSMenuItem!
     @IBOutlet weak var yandexOption: NSMenuItem!
     
+    let preferencesHolder = PreferencesHolder()
+    
     // periods of wallpaper update in seconds
     let times: [(Int, String)] = [(5, "minutes"), (15, "minutes"), (30, "minutes"),
                                   (1, "hour"), (3, "hours"), (6, "hours"), (1, "day")]
@@ -26,6 +28,7 @@ class StatusMenuController: NSObject {
         statusItem.title = "WM"
         statusItem.menu = statusBarMenu
         
+        // create submenu for the choice of time interval
         if let reserved = statusBarMenu.item(withTag: 5) {
             statusBarMenu.setSubmenu(timeSubmenu, for: reserved)
             
@@ -49,7 +52,17 @@ class StatusMenuController: NSObject {
             }
         }
         
-        updateTimeInterval(timeSubmenu.item(at: 1)!)
+        // mark default image source
+        let defaultSourceOption = preferencesHolder.sourceOption
+        if defaultSourceOption == 0 {
+            NatGeoOption.state = 1
+        } else {
+            yandexOption.state = 1
+        }
+        
+        // update time interval
+        let defaultTimeOption = preferencesHolder.timeOption
+        updateTimeInterval(timeSubmenu.item(at: defaultTimeOption)!)
     }
     
     @IBAction func nextImage(_ sender: NSMenuItem) {
@@ -76,12 +89,14 @@ class StatusMenuController: NSObject {
         NatGeoOption.state = 1
         yandexOption.state = 0
         desktopUpdater.imageGetter = NatGeoCollection()
+        preferencesHolder.setSourceOption(0)
     }
     
     @IBAction func YandexIsChosen(_ sender: NSMenuItem) {
         NatGeoOption.state = 0
         yandexOption.state = 1
         desktopUpdater.imageGetter = YandexCollection()
+        preferencesHolder.setSourceOption(1)
     }
     
     func updateTimeInterval(_ sender: NSMenuItem) {
@@ -91,6 +106,8 @@ class StatusMenuController: NSObject {
         for item in timeSubmenu.items {
             item.state = (item.tag == tag) ? 1 : 0
         }
+        // save chosen option to settings
+        preferencesHolder.setTimeOption(tag)
         
         // if user disabled auto update
         if sender.tag == 0 {

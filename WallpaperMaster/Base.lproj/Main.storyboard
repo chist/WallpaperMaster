@@ -680,7 +680,7 @@
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <menu key="submenu" title="Choose source" id="DkY-aw-nn3">
                                 <items>
-                                    <menuItem title="National Geographic" state="on" id="jcZ-vI-ng4">
+                                    <menuItem title="National Geographic" id="jcZ-vI-ng4">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="NatGeoIsChosen:" target="Im6-qV-bXq" id="1L6-pp-Czl"/>

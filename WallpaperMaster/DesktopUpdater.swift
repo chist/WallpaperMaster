@@ -11,14 +11,19 @@ import Cocoa
 
 class DesktopUpdater {
     var timer: Timer? = nil
-    var imageGetter: ImageGetterDelegate? = nil
+    var imageGetter: ImageGetterDelegate
     var currentWallpaper: DescribedImage? = nil
     var period: Double = 300
     var isRandom: Bool = true
     let saver = Saver()
     
     init() {
-        self.imageGetter = NatGeoCollection()
+        // set default image source
+        if PreferencesHolder().sourceOption == 0 {
+            self.imageGetter = NatGeoCollection()
+        } else {
+            self.imageGetter = YandexCollection()
+        }
         
         // launch timer to update wallpapers automatically
         resetTimer()
@@ -28,17 +33,13 @@ class DesktopUpdater {
     }
     
     @objc func updateWallpaper() {
-        if imageGetter == nil {
-            return
-        }
-        
         DispatchQueue.global().async {
             // download new wallpaper
             let wallpaper: DescribedImage
             if self.isRandom {
-                wallpaper = self.imageGetter!.getRandomImage()
+                wallpaper = self.imageGetter.getRandomImage()
             } else {
-                wallpaper = self.imageGetter!.getImageOfTheDay()
+                wallpaper = self.imageGetter.getImageOfTheDay()
             }
             if wallpaper.image == nil {
                 return
