@@ -764,7 +764,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="XQg-GA-xFS">
                                     <font key="font" metaFont="system"/>
-                                    <string key="title">This app is designed to change wallpapers at all desktops.
+                                    <string key="title">This app is designed to change wallpapers on all desktops.
 
 Photos are downloaded from those sources:</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
