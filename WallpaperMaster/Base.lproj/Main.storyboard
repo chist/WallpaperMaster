@@ -792,12 +792,12 @@ Photos are downloaded from those sources:</string>
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibQ-qG-joh">
-                                <rect key="frame" x="126" y="157" width="228" height="40"/>
+                                <rect key="frame" x="143" y="160" width="195" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" id="OzQ-CY-EEL">
                                     <font key="font" metaFont="system"/>
-                                    <string key="title">http://www.nationalgeographic.com
-https://fotki.yandex.ru</string>
+                                    <string key="title">www.nationalgeographic.com
+www.fotki.yandex.ru</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
