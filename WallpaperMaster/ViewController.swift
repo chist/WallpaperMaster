@@ -16,7 +16,7 @@ class ViewController: NSViewController {
     }
     
     @IBAction func showSavedInFinder(_ sender: NSButton) {
-        print("Show!")
+        Saver().openFavourites()
     }
     
 }

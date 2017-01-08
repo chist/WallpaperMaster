@@ -39,4 +39,7 @@ class Saver {
         wallpaper.image?.savePNG(imageURL.path)
     }
     
+    func openFavourites() {
+        NSWorkspace.shared().openFile(favFolder.path)
+    }
 }
