@@ -10,27 +10,14 @@ import Foundation
 import Cocoa
 
 class DesktopUpdater {
-    let appFolder: URL
-    let favFolder: URL
     var timer: Timer? = nil
     var imageGetter: ImageGetterDelegate? = nil
     var currentWallpaper: DescribedImage? = nil
     var period: Double = 300
     var isRandom: Bool = true
+    let saver = Saver()
     
     init() {
-        // create folder for the application where all the wallpapers will be saved
-        let directory    = FileManager.SearchPathDirectory.documentDirectory
-        let mask         = FileManager.SearchPathDomainMask.userDomainMask
-        let paths        = NSSearchPathForDirectoriesInDomains(directory, mask, true)
-        let documentsDir = paths.first
-        self.appFolder   = URL(fileURLWithPath: documentsDir!).appendingPathComponent("WallpaperMaster")
-        let FMDefault    = FileManager.default
-        try? FMDefault.createDirectory(at: appFolder, withIntermediateDirectories: false, attributes: [:])
-        // create subdirectory for favourites
-        favFolder        = appFolder.appendingPathComponent("Saved")
-        try? FMDefault.createDirectory(at: favFolder, withIntermediateDirectories: false, attributes: [:])
-
         self.imageGetter = NatGeoCollection()
         
         // launch timer to update wallpapers automatically
@@ -59,10 +46,10 @@ class DesktopUpdater {
             
             self.currentWallpaper = wallpaper
             
-            let imageURL = self.appFolder.appendingPathComponent("current.jpg")
-            wallpaper.image?.savePNG(imageURL.path)
+            self.saver.save(wallpaper: wallpaper)
+            let imagePath = self.saver.currentImageURL.relativePath
             
-            let script = "function wallpaper() { \nsqlite3 ~/Library/Application\\ Support/Dock/desktoppicture.db \"update data set value = '$1'\" && killall Dock\n}\nwallpaper " + imageURL.relativePath
+            let script = "function wallpaper() { \nsqlite3 ~/Library/Application\\ Support/Dock/desktoppicture.db \"update data set value = '$1'\" && killall Dock\n}\nwallpaper " + imagePath
             
             let task = Process()
             task.launchPath = "/bin/bash"
@@ -80,9 +67,7 @@ class DesktopUpdater {
     
     func addToFavourites() {
         if let wallpaper = currentWallpaper {
-            let name = wallpaper.name
-            let imageURL = favFolder.appendingPathComponent(name)
-            wallpaper.image?.savePNG(imageURL.path)
+            saver.saveToFavourites(wallpaper)
         }
     }
 }

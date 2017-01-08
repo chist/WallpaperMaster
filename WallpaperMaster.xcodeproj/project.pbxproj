@@ -15,6 +15,7 @@
 		4FAE14261E1EDFB100110CE4 /* YandexCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */; };
 		4FC398E91E1FB3410045B05C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC398E81E1FB3400045B05C /* Extensions.swift */; };
 		4FD5BF8F1E1DA6150024E9B4 /* NatGeoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */; };
+		4FE193621E22B58A00AFC31A /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE193611E22B58A00AFC31A /* Saver.swift */; };
 		4FECB0561E1D767C003FB579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0551E1D767C003FB579 /* AppDelegate.swift */; };
 		4FECB05A1E1D767C003FB579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECB0591E1D767C003FB579 /* Assets.xcassets */; };
 		4FECB05D1E1D767C003FB579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FECB05B1E1D767C003FB579 /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YandexCollection.swift; sourceTree = "<group>"; };
 		4FC398E81E1FB3400045B05C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NatGeoCollection.swift; sourceTree = "<group>"; };
+		4FE193611E22B58A00AFC31A /* Saver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
 		4FECB0521E1D767C003FB579 /* WallpaperMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECB0551E1D767C003FB579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FECB0591E1D767C003FB579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				4FECB0551E1D767C003FB579 /* AppDelegate.swift */,
 				4F0C2F651E211CCD006B41FF /* StatusMenuController.swift */,
 				4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */,
+				4FE193611E22B58A00AFC31A /* Saver.swift */,
 				4FECB0591E1D767C003FB579 /* Assets.xcassets */,
 				4FECB05B1E1D767C003FB579 /* Main.storyboard */,
 				4F0F1ABC1E22706B00C3FECF /* ViewController.swift */,
@@ -343,6 +346,7 @@
 				4FA498631E212D3200E30460 /* DescribedImage.swift in Sources */,
 				4FD5BF8F1E1DA6150024E9B4 /* NatGeoCollection.swift in Sources */,
 				4FECB08F1E1D7760003FB579 /* Helpers.swift in Sources */,
+				4FE193621E22B58A00AFC31A /* Saver.swift in Sources */,
 				4FECB0921E1D7760003FB579 /* NodeSet.swift in Sources */,
 				4F0C2F661E211CCD006B41FF /* StatusMenuController.swift in Sources */,
 				4FECB0911E1D7760003FB579 /* Node.swift in Sources */,
