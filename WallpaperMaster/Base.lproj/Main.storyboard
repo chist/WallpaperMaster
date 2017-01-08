@@ -745,7 +745,7 @@
         <!--View Controller-->
         <scene sceneID="QKg-iw-sZJ">
             <objects>
-                <viewController id="g0h-ya-Wle" sceneMemberID="viewController">
+                <viewController id="g0h-ya-Wle" customClass="ViewController" customModule="WallpaperMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="sEZ-a5-flV">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -760,19 +760,30 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JlA-Sk-oQp">
-                                <rect key="frame" x="55" y="156" width="369" height="85"/>
+                                <rect key="frame" x="56" y="131" width="369" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="XQg-GA-xFS">
                                     <font key="font" metaFont="system"/>
-                                    <string key="title">This app is designed to change wallpapers at all desktops.
+                                    <mutableString key="title">This app is designed to change wallpapers at all desktops.
 
 Photos are downloaded from those sources:
                      http://www.nationalgeographic.com
-                     https://fotki.yandex.ru</string>
+                     https://fotki.yandex.ru  Saved photos are stored in ~/Documents/WallpaperMaster</mutableString>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IMg-qI-C3U">
+                                <rect key="frame" x="174" y="95" width="130" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Show in Finder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fls-UD-TEn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showSavedInFinder:" target="g0h-ya-Wle" id="Lza-Ce-8RC"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
