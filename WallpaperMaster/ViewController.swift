@@ -15,6 +15,11 @@ class ViewController: NSViewController {
         // Do view setup here.
     }
     
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        NSApp.activate(ignoringOtherApps: true)
+    }
+    
     @IBAction func showSavedInFinder(_ sender: NSButton) {
         Saver().openFavourites()
     }
