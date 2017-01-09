@@ -1,0 +1,556 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "C15WallpaperMaster14ViewController"
+provides-member:
+- ["C15WallpaperMaster14ViewController", ""]
+provides-dynamic-lookup:
+- "versionLabel"
+- "viewDidAppear"
+- "showSavedInFinder"
+- "coffeeButtonClicked"
+- "donationLink"
+- "getAppVersion"
+- "viewDidLoad"
+depends-top-level:
+- !private "UnicodeScalarType"
+- "StringLiteralType"
+- !private "Saver"
+- !private "BooleanLiteralType"
+- !private "URL"
+- "NSTextField"
+- "String"
+- !private "Bundle"
+- !private "NSApp"
+- "ViewController"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "NSButton"
+- "NSViewController"
+- !private "NSWorkspace"
+depends-member:
+- !private ["Ps9AnyObject", "Bundle"]
+- !private ["Ps9AnyObject", "NSApp"]
+- !private ["Ps9AnyObject", "NSWorkspace"]
+- !private ["Ps9AnyObject", "Saver"]
+- !private ["Ps9AnyObject", "URL"]
+- !private ["Ps9AnyObject", "activate"]
+- ["Ps9AnyObject", "coffeeButtonClicked"]
+- ["Ps9AnyObject", "donationLink"]
+- ["Ps9AnyObject", "getAppVersion"]
+- !private ["Ps9AnyObject", "infoDictionary"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "open"]
+- !private ["Ps9AnyObject", "openFavourites"]
+- !private ["Ps9AnyObject", "shared"]
+- ["Ps9AnyObject", "showSavedInFinder"]
+- !private ["Ps9AnyObject", "stringValue"]
+- ["Ps9AnyObject", "versionLabel"]
+- ["Ps9AnyObject", "viewDidAppear"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
+- ["CSo6Bundle", "deinit"]
+- !private ["CSo6Bundle", "infoDictionary"]
+- !private ["CSo6Bundle", "main"]
+- !private ["Ps7CVarArg", "Bundle"]
+- !private ["Ps7CVarArg", "Index"]
+- !private ["Ps7CVarArg", "NSApp"]
+- !private ["Ps7CVarArg", "NSWorkspace"]
+- !private ["Ps7CVarArg", "Saver"]
+- !private ["Ps7CVarArg", "SubSequence"]
+- !private ["Ps7CVarArg", "URL"]
+- !private ["Ps7CVarArg", "activate"]
+- ["Ps7CVarArg", "coffeeButtonClicked"]
+- ["Ps7CVarArg", "donationLink"]
+- ["Ps7CVarArg", "getAppVersion"]
+- !private ["Ps7CVarArg", "infoDictionary"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "open"]
+- !private ["Ps7CVarArg", "shared"]
+- ["Ps7CVarArg", "showSavedInFinder"]
+- !private ["Ps7CVarArg", "stringValue"]
+- !private ["Ps7CVarArg", "subscript"]
+- ["Ps7CVarArg", "versionLabel"]
+- ["Ps7CVarArg", "viewDidAppear"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Collection", "Index"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "subscript"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Bundle"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "NSApp"]
+- !private ["Ps28CustomDebugStringConvertible", "NSWorkspace"]
+- !private ["Ps28CustomDebugStringConvertible", "Saver"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "URL"]
+- !private ["Ps28CustomDebugStringConvertible", "activate"]
+- ["Ps28CustomDebugStringConvertible", "coffeeButtonClicked"]
+- ["Ps28CustomDebugStringConvertible", "donationLink"]
+- ["Ps28CustomDebugStringConvertible", "getAppVersion"]
+- !private ["Ps28CustomDebugStringConvertible", "infoDictionary"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "open"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
+- ["Ps28CustomDebugStringConvertible", "showSavedInFinder"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "stringValue"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- ["Ps28CustomDebugStringConvertible", "versionLabel"]
+- ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Index"]
+- !private ["Ps17CustomReflectable", "SubSequence"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Bundle"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "NSApp"]
+- !private ["Ps23CustomStringConvertible", "NSWorkspace"]
+- !private ["Ps23CustomStringConvertible", "Saver"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "URL"]
+- !private ["Ps23CustomStringConvertible", "activate"]
+- ["Ps23CustomStringConvertible", "coffeeButtonClicked"]
+- ["Ps23CustomStringConvertible", "donationLink"]
+- ["Ps23CustomStringConvertible", "getAppVersion"]
+- !private ["Ps23CustomStringConvertible", "infoDictionary"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "open"]
+- !private ["Ps23CustomStringConvertible", "shared"]
+- ["Ps23CustomStringConvertible", "showSavedInFinder"]
+- !private ["Ps23CustomStringConvertible", "stringValue"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Ps23CustomStringConvertible", "versionLabel"]
+- ["Ps23CustomStringConvertible", "viewDidAppear"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Bundle"]
+- !private ["Ps9Equatable", "NSApp"]
+- !private ["Ps9Equatable", "NSWorkspace"]
+- !private ["Ps9Equatable", "Saver"]
+- !private ["Ps9Equatable", "URL"]
+- !private ["Ps9Equatable", "activate"]
+- ["Ps9Equatable", "coffeeButtonClicked"]
+- ["Ps9Equatable", "donationLink"]
+- ["Ps9Equatable", "getAppVersion"]
+- !private ["Ps9Equatable", "infoDictionary"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "open"]
+- !private ["Ps9Equatable", "shared"]
+- ["Ps9Equatable", "showSavedInFinder"]
+- !private ["Ps9Equatable", "stringValue"]
+- ["Ps9Equatable", "versionLabel"]
+- ["Ps9Equatable", "viewDidAppear"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "Bundle"]
+- !private ["Ps8Hashable", "NSApp"]
+- !private ["Ps8Hashable", "NSWorkspace"]
+- !private ["Ps8Hashable", "Saver"]
+- !private ["Ps8Hashable", "URL"]
+- !private ["Ps8Hashable", "activate"]
+- ["Ps8Hashable", "coffeeButtonClicked"]
+- ["Ps8Hashable", "donationLink"]
+- ["Ps8Hashable", "getAppVersion"]
+- !private ["Ps8Hashable", "infoDictionary"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "open"]
+- !private ["Ps8Hashable", "shared"]
+- ["Ps8Hashable", "showSavedInFinder"]
+- !private ["Ps8Hashable", "stringValue"]
+- ["Ps8Hashable", "versionLabel"]
+- ["Ps8Hashable", "viewDidAppear"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Ps13IndexableBase", "Index"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "subscript"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- !private ["PSo15NSAccessibility", "activate"]
+- !private ["PSo15NSAccessibility", "stringValue"]
+- !private ["PSo30NSAccessibilityElementProtocol", "activate"]
+- !private ["PSo30NSAccessibilityElementProtocol", "stringValue"]
+- !private ["PSo34NSAccessibilityNavigableStaticText", "stringValue"]
+- !private ["PSo25NSAccessibilityStaticText", "stringValue"]
+- !private ["PSo29NSAnimatablePropertyContainer", "stringValue"]
+- !private ["PSo25NSAppearanceCustomization", "stringValue"]
+- !private ["CSo13NSApplication", "activate"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "Bundle"]
+- !private ["PSo8NSCoding", "NSApp"]
+- !private ["PSo8NSCoding", "NSWorkspace"]
+- !private ["PSo8NSCoding", "Saver"]
+- !private ["PSo8NSCoding", "URL"]
+- !private ["PSo8NSCoding", "activate"]
+- ["PSo8NSCoding", "coffeeButtonClicked"]
+- ["PSo8NSCoding", "donationLink"]
+- ["PSo8NSCoding", "getAppVersion"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "showSavedInFinder"]
+- !private ["PSo8NSCoding", "stringValue"]
+- ["PSo8NSCoding", "versionLabel"]
+- ["PSo8NSCoding", "viewDidAppear"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["CSo9NSControl", "stringValue"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo21NSDraggingDestination", "stringValue"]
+- !private ["PSo26NSExtensionRequestHandling", "Bundle"]
+- !private ["PSo26NSExtensionRequestHandling", "NSApp"]
+- !private ["PSo26NSExtensionRequestHandling", "NSWorkspace"]
+- !private ["PSo26NSExtensionRequestHandling", "Saver"]
+- !private ["PSo26NSExtensionRequestHandling", "URL"]
+- ["PSo26NSExtensionRequestHandling", "coffeeButtonClicked"]
+- ["PSo26NSExtensionRequestHandling", "donationLink"]
+- ["PSo26NSExtensionRequestHandling", "getAppVersion"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "showSavedInFinder"]
+- ["PSo26NSExtensionRequestHandling", "versionLabel"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "Bundle"]
+- !private ["CSo8NSObject", "NSApp"]
+- ["CSo8NSObject", "NSButton"]
+- ["CSo8NSObject", "NSTextField"]
+- !private ["CSo8NSObject", "NSWorkspace"]
+- !private ["CSo8NSObject", "Saver"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "URL"]
+- !private ["CSo8NSObject", "activate"]
+- ["CSo8NSObject", "coffeeButtonClicked"]
+- ["CSo8NSObject", "donationLink"]
+- ["CSo8NSObject", "getAppVersion"]
+- !private ["CSo8NSObject", "infoDictionary"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "open"]
+- !private ["CSo8NSObject", "shared"]
+- ["CSo8NSObject", "showSavedInFinder"]
+- !private ["CSo8NSObject", "stringValue"]
+- ["CSo8NSObject", "versionLabel"]
+- ["CSo8NSObject", "viewDidAppear"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "Bundle"]
+- !private ["PSo16NSObjectProtocol", "NSApp"]
+- !private ["PSo16NSObjectProtocol", "NSWorkspace"]
+- !private ["PSo16NSObjectProtocol", "Saver"]
+- !private ["PSo16NSObjectProtocol", "URL"]
+- !private ["PSo16NSObjectProtocol", "activate"]
+- ["PSo16NSObjectProtocol", "coffeeButtonClicked"]
+- ["PSo16NSObjectProtocol", "donationLink"]
+- ["PSo16NSObjectProtocol", "getAppVersion"]
+- !private ["PSo16NSObjectProtocol", "infoDictionary"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "open"]
+- !private ["PSo16NSObjectProtocol", "shared"]
+- ["PSo16NSObjectProtocol", "showSavedInFinder"]
+- !private ["PSo16NSObjectProtocol", "stringValue"]
+- ["PSo16NSObjectProtocol", "versionLabel"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo19NSPasteboardReading", "init"]
+- ["PSo19NSPasteboardWriting", "init"]
+- !private ["CSo11NSResponder", "Bundle"]
+- !private ["CSo11NSResponder", "NSApp"]
+- ["CSo11NSResponder", "NSButton"]
+- ["CSo11NSResponder", "NSTextField"]
+- !private ["CSo11NSResponder", "NSWorkspace"]
+- !private ["CSo11NSResponder", "Saver"]
+- ["CSo11NSResponder", "String"]
+- !private ["CSo11NSResponder", "URL"]
+- !private ["CSo11NSResponder", "activate"]
+- ["CSo11NSResponder", "coffeeButtonClicked"]
+- ["CSo11NSResponder", "donationLink"]
+- ["CSo11NSResponder", "getAppVersion"]
+- ["CSo11NSResponder", "init"]
+- ["CSo11NSResponder", "showSavedInFinder"]
+- !private ["CSo11NSResponder", "stringValue"]
+- ["CSo11NSResponder", "versionLabel"]
+- ["CSo11NSResponder", "viewDidAppear"]
+- ["CSo11NSResponder", "viewDidLoad"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo17NSSeguePerforming", "Bundle"]
+- !private ["PSo17NSSeguePerforming", "NSApp"]
+- !private ["PSo17NSSeguePerforming", "NSWorkspace"]
+- !private ["PSo17NSSeguePerforming", "Saver"]
+- !private ["PSo17NSSeguePerforming", "URL"]
+- ["PSo17NSSeguePerforming", "coffeeButtonClicked"]
+- ["PSo17NSSeguePerforming", "donationLink"]
+- ["PSo17NSSeguePerforming", "getAppVersion"]
+- !private ["PSo17NSSeguePerforming", "init"]
+- ["PSo17NSSeguePerforming", "showSavedInFinder"]
+- ["PSo17NSSeguePerforming", "versionLabel"]
+- ["PSo17NSSeguePerforming", "viewDidAppear"]
+- ["PSo17NSSeguePerforming", "viewDidLoad"]
+- ["PSo17NSSeguePerforming", ""]
+- ["CSo8NSString", "init"]
+- !private ["CSo11NSTextField", "stringValue"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "Bundle"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "NSApp"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "NSWorkspace"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "Saver"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "URL"]
+- ["PSo33NSUserInterfaceItemIdentification", "coffeeButtonClicked"]
+- ["PSo33NSUserInterfaceItemIdentification", "donationLink"]
+- ["PSo33NSUserInterfaceItemIdentification", "getAppVersion"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "init"]
+- ["PSo33NSUserInterfaceItemIdentification", "showSavedInFinder"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "stringValue"]
+- ["PSo33NSUserInterfaceItemIdentification", "versionLabel"]
+- ["PSo33NSUserInterfaceItemIdentification", "viewDidAppear"]
+- ["PSo33NSUserInterfaceItemIdentification", "viewDidLoad"]
+- ["PSo33NSUserInterfaceItemIdentification", ""]
+- !private ["PSo26NSUserInterfaceValidations", "activate"]
+- !private ["PSo26NSUserInterfaceValidations", "stringValue"]
+- !private ["CSo6NSView", "stringValue"]
+- !private ["CSo16NSViewController", "Bundle"]
+- !private ["CSo16NSViewController", "NSApp"]
+- ["CSo16NSViewController", "NSButton"]
+- ["CSo16NSViewController", "NSTextField"]
+- !private ["CSo16NSViewController", "NSWorkspace"]
+- !private ["CSo16NSViewController", "Saver"]
+- ["CSo16NSViewController", "String"]
+- !private ["CSo16NSViewController", "URL"]
+- ["CSo16NSViewController", "coffeeButtonClicked"]
+- ["CSo16NSViewController", "deinit"]
+- ["CSo16NSViewController", "donationLink"]
+- ["CSo16NSViewController", "getAppVersion"]
+- ["CSo16NSViewController", "init"]
+- ["CSo16NSViewController", "showSavedInFinder"]
+- ["CSo16NSViewController", "versionLabel"]
+- ["CSo16NSViewController", "viewDidAppear"]
+- ["CSo16NSViewController", "viewDidLoad"]
+- ["CSo16NSViewController", ""]
+- ["CSo11NSWorkspace", "deinit"]
+- !private ["CSo11NSWorkspace", "open"]
+- !private ["CSo11NSWorkspace", "shared"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- ["C15WallpaperMaster5Saver", "deinit"]
+- !private ["C15WallpaperMaster5Saver", "init"]
+- !private ["C15WallpaperMaster5Saver", "openFavourites"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- ["V10Foundation3URL", "deinit"]
+- !private ["V10Foundation3URL", "init"]
+- !private ["Sc", "deinit"]
+- !private ["C15WallpaperMaster14ViewController", "Bundle"]
+- !private ["C15WallpaperMaster14ViewController", "NSApp"]
+- ["C15WallpaperMaster14ViewController", "NSButton"]
+- ["C15WallpaperMaster14ViewController", "NSTextField"]
+- !private ["C15WallpaperMaster14ViewController", "NSWorkspace"]
+- !private ["C15WallpaperMaster14ViewController", "Saver"]
+- ["C15WallpaperMaster14ViewController", "String"]
+- !private ["C15WallpaperMaster14ViewController", "URL"]
+- ["C15WallpaperMaster14ViewController", "coffeeButtonClicked"]
+- ["C15WallpaperMaster14ViewController", "deinit"]
+- ["C15WallpaperMaster14ViewController", "donationLink"]
+- ["C15WallpaperMaster14ViewController", "getAppVersion"]
+- ["C15WallpaperMaster14ViewController", "init"]
+- ["C15WallpaperMaster14ViewController", "showSavedInFinder"]
+- ["C15WallpaperMaster14ViewController", "versionLabel"]
+- ["C15WallpaperMaster14ViewController", "viewDidAppear"]
+- ["C15WallpaperMaster14ViewController", "viewDidLoad"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "stringValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Bundle"]
+- !private ["Ps9_Hashable", "NSApp"]
+- !private ["Ps9_Hashable", "NSWorkspace"]
+- !private ["Ps9_Hashable", "Saver"]
+- !private ["Ps9_Hashable", "URL"]
+- !private ["Ps9_Hashable", "activate"]
+- ["Ps9_Hashable", "coffeeButtonClicked"]
+- ["Ps9_Hashable", "donationLink"]
+- ["Ps9_Hashable", "getAppVersion"]
+- !private ["Ps9_Hashable", "infoDictionary"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "open"]
+- !private ["Ps9_Hashable", "shared"]
+- ["Ps9_Hashable", "showSavedInFinder"]
+- !private ["Ps9_Hashable", "stringValue"]
+- ["Ps9_Hashable", "versionLabel"]
+- ["Ps9_Hashable", "viewDidAppear"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "CSo6Bundle"
+- "Ps7CVarArg"
+- !private "Vs9Character"
+- !private "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Vs10Dictionary"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- "Ps8Hashable"
+- "SQ"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps16IteratorProtocol"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- !private "PSo15NSAccessibility"
+- !private "PSo30NSAccessibilityElementProtocol"
+- !private "PSo34NSAccessibilityNavigableStaticText"
+- !private "PSo25NSAccessibilityStaticText"
+- !private "PSo29NSAnimatablePropertyContainer"
+- !private "PSo25NSAppearanceCustomization"
+- !private "CSo13NSApplication"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "CSo9NSControl"
+- "PSo9NSCopying"
+- !private "PSo21NSDraggingDestination"
+- "PSo26NSExtensionRequestHandling"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo19NSPasteboardReading"
+- "PSo19NSPasteboardWriting"
+- "CSo11NSResponder"
+- "PSo14NSSecureCoding"
+- "PSo17NSSeguePerforming"
+- "CSo8NSString"
+- !private "CSo11NSTextField"
+- "PSo33NSUserInterfaceItemIdentification"
+- !private "PSo26NSUserInterfaceValidations"
+- !private "CSo6NSView"
+- "CSo16NSViewController"
+- "CSo11NSWorkspace"
+- "Sq"
+- !private "P10Foundation20ReferenceConvertible"
+- "C15WallpaperMaster5Saver"
+- !private "Ps8Sequence"
+- !private "Vs5Slice"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- "V10Foundation3URL"
+- !private "Sc"
+- "C15WallpaperMaster14ViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/libxml2/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "84ca86a493a0b4fefdf28360ae339561"

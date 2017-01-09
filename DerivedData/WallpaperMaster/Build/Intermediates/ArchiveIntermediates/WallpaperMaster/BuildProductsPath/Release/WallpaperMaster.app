@@ -1,0 +1,1 @@
+/Users/ivanchistyakov/Desktop/WallpaperMaster/DerivedData/WallpaperMaster/Build/Intermediates/ArchiveIntermediates/WallpaperMaster/InstallationBuildProductsLocation/Applications/WallpaperMaster.app
