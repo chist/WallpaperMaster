@@ -6,10 +6,12 @@
 //  Copyright © 2017 Ivan Chistyakov. All rights reserved.
 //
 
+import Foundation
 import Cocoa
 
 class ViewController: NSViewController {
     @IBOutlet var versionLabel: NSTextField!
+    let donationLink = "https://ko-fi.com/A447IEH"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,12 @@ class ViewController: NSViewController {
     
     @IBAction func showSavedInFinder(_ sender: NSButton) {
         Saver().openFavourites()
+    }
+    
+    @IBAction func coffeeButtonClicked(_ sender: NSButton) {
+        if let donationURL = URL(string: donationLink) {
+            NSWorkspace.shared().open(donationURL)
+        }
     }
     
 }
