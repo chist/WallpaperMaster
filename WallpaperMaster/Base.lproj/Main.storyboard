@@ -776,7 +776,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IMg-qI-C3U">
-                                <rect key="frame" x="175" y="142" width="130" height="32"/>
+                                <rect key="frame" x="171" y="140" width="139" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Show in Finder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fls-UD-TEn">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -787,7 +787,7 @@
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-R0-sRS">
-                                <rect key="frame" x="56" y="167" width="369" height="24"/>
+                                <rect key="frame" x="56" y="166" width="369" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Saved photos are stored in ~/Documents/WallpaperMaster" id="Znw-P3-C50">
                                     <font key="font" metaFont="system"/>
@@ -826,7 +826,7 @@ www.fotki.yandex.ru</string>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XRP-Bl-IOs">
-                                <rect key="frame" x="179" y="58" width="124" height="36"/>
+                                <rect key="frame" x="178" y="61" width="126" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="coffeeImage" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="R8F-Af-wWb">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -848,6 +848,6 @@ www.fotki.yandex.ru</string>
         </scene>
     </scenes>
     <resources>
-        <image name="coffeeImage" width="450" height="114"/>
+        <image name="coffeeImage" width="480" height="110"/>
     </resources>
 </document>

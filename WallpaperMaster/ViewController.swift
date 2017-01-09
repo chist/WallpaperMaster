@@ -11,7 +11,7 @@ import Cocoa
 
 class ViewController: NSViewController {
     @IBOutlet var versionLabel: NSTextField!
-    let donationLink = "https://ko-fi.com/A447IEH"
+    let donationLink = "https://money.yandex.ru/to/410014893378724"
     
     override func viewDidLoad() {
         super.viewDidLoad()
