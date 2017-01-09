@@ -19,10 +19,16 @@ class DesktopUpdater {
     
     init() {
         // set default image source
-        if PreferencesHolder().sourceOption == 0 {
+        let sourceOption = PreferencesHolder().sourceOption
+        switch sourceOption {
+        case 0:
             self.imageGetter = NatGeoCollection()
-        } else {
+        case 1:
             self.imageGetter = YandexCollection()
+        case 2:
+            self.imageGetter = RGOCollection()
+        default:
+            self.imageGetter = NatGeoCollection()
         }
         
         // launch timer to update wallpapers automatically

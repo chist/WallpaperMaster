@@ -686,6 +686,12 @@
                                             <action selector="NatGeoIsChosen:" target="Im6-qV-bXq" id="1L6-pp-Czl"/>
                                         </connections>
                                     </menuItem>
+                                    <menuItem title="RGO" id="jpI-BH-vmF">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="RGOIsChosen:" target="Im6-qV-bXq" id="xgK-1M-vu5"/>
+                                        </connections>
+                                    </menuItem>
                                     <menuItem title="Yandex" id="dcs-Vc-Ro4">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
@@ -715,6 +721,7 @@
                 <customObject id="Im6-qV-bXq" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="WallpaperMaster" customModuleProvider="target">
                     <connections>
                         <outlet property="NatGeoOption" destination="jcZ-vI-ng4" id="Pzr-w7-7Ox"/>
+                        <outlet property="RGOOption" destination="jpI-BH-vmF" id="j7O-rc-KhE"/>
                         <outlet property="statusBarMenu" destination="VoX-4h-GBF" id="tlG-Oy-RrS"/>
                         <outlet property="yandexOption" destination="dcs-Vc-Ro4" id="DU1-hT-de3"/>
                     </connections>
@@ -751,7 +758,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ND-K2-YbE">
-                                <rect key="frame" x="75" y="30" width="330" height="17"/>
+                                <rect key="frame" x="75" y="24" width="330" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Copyright © 2017 Ivan Chistyakov. All rights reserved." id="rO4-NL-npI">
                                     <font key="font" metaFont="system"/>
@@ -772,7 +779,7 @@ Photos are downloaded from those sources:</string>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IMg-qI-C3U">
-                                <rect key="frame" x="175" y="102" width="130" height="32"/>
+                                <rect key="frame" x="175" y="88" width="130" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Show in Finder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fls-UD-TEn">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -783,7 +790,7 @@ Photos are downloaded from those sources:</string>
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-R0-sRS">
-                                <rect key="frame" x="56" y="128" width="369" height="24"/>
+                                <rect key="frame" x="56" y="115" width="369" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Saved photos are stored in ~/Documents/WallpaperMaster" id="Znw-P3-C50">
                                     <font key="font" metaFont="system"/>
@@ -792,18 +799,18 @@ Photos are downloaded from those sources:</string>
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibQ-qG-joh">
-                                <rect key="frame" x="144" y="160" width="195" height="40"/>
+                                <rect key="frame" x="144" y="147" width="195" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" id="OzQ-CY-EEL">
                                     <font key="font" metaFont="system"/>
                                     <string key="title">www.nationalgeographic.com
-www.fotki.yandex.ru</string>
+www.fotki.yandex.ru www.rgo.ru/ru/foto/foto-dnya</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6CO-9d-2pb">
-                                <rect key="frame" x="163" y="55" width="155" height="17"/>
+                                <rect key="frame" x="163" y="46" width="155" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Version 0.9" id="ffF-l2-ihK">
                                     <font key="font" metaFont="system"/>

@@ -15,6 +15,7 @@ class StatusMenuController: NSObject {
     
     @IBOutlet weak var NatGeoOption: NSMenuItem!
     @IBOutlet weak var yandexOption: NSMenuItem!
+    @IBOutlet weak var RGOOption:    NSMenuItem!
     
     let preferencesHolder = PreferencesHolder()
     
@@ -54,10 +55,15 @@ class StatusMenuController: NSObject {
         
         // mark default image source
         let defaultSourceOption = preferencesHolder.sourceOption
-        if defaultSourceOption == 0 {
+        switch defaultSourceOption {
+        case 0:
             NatGeoOption.state = 1
-        } else {
+        case 1:
             yandexOption.state = 1
+        case 2:
+            RGOOption.state    = 1
+        default:
+            NatGeoOption.state = 1
         }
         
         // update time interval
@@ -88,6 +94,7 @@ class StatusMenuController: NSObject {
     @IBAction func NatGeoIsChosen(_ sender: NSMenuItem) {
         NatGeoOption.state = 1
         yandexOption.state = 0
+        RGOOption.state    = 0
         desktopUpdater.imageGetter = NatGeoCollection()
         preferencesHolder.setSourceOption(0)
     }
@@ -95,8 +102,17 @@ class StatusMenuController: NSObject {
     @IBAction func YandexIsChosen(_ sender: NSMenuItem) {
         NatGeoOption.state = 0
         yandexOption.state = 1
+        RGOOption.state    = 0
         desktopUpdater.imageGetter = YandexCollection()
         preferencesHolder.setSourceOption(1)
+    }
+    
+    @IBAction func RGOIsChosen(_ sender: NSMenuItem) {
+        NatGeoOption.state = 0
+        yandexOption.state = 0
+        RGOOption.state    = 1
+        desktopUpdater.imageGetter = RGOCollection()
+        preferencesHolder.setSourceOption(2)
     }
     
     func updateTimeInterval(_ sender: NSMenuItem) {
