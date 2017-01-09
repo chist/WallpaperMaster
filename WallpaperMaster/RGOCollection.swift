@@ -12,14 +12,14 @@ import Cocoa
 class RGOCollection: ImageGetterDelegate {
     let contentURL       = "https://www.rgo.ru/ru/foto/foto-dnya"
     let randomContentURL = "https://www.rgo.ru/ru/foto/foto-dnya?page="
-    let photosQuantity   = 180
+    let photosQuantity   = 185
     
     let downloader = Downloader()
     
     func getLinkToImage(random: Bool) -> String? {
         let pageLink: String
         if random {
-            let num = Int(arc4random()) % self.photosQuantity
+            let num = 1 + Int(arc4random()) % self.photosQuantity
             pageLink = self.randomContentURL + "\(num)"
         } else {
             pageLink = self.contentURL
