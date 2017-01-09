@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F0190C51E20448D00CA2003 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0190C41E20448D00CA2003 /* Downloader.swift */; };
+		4F0491111E2423E800F9AF62 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4F0491101E2423E800F9AF62 /* README.md */; };
 		4F0C2F661E211CCD006B41FF /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0C2F651E211CCD006B41FF /* StatusMenuController.swift */; };
 		4F0F1ABD1E22706B00C3FECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F1ABC1E22706B00C3FECF /* ViewController.swift */; };
 		4FA498631E212D3200E30460 /* DescribedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA498621E212D3200E30460 /* DescribedImage.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		4F0190C41E20448D00CA2003 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		4F0491101E2423E800F9AF62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		4F0C2F651E211CCD006B41FF /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		4F0F1ABC1E22706B00C3FECF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4FA498621E212D3200E30460 /* DescribedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescribedImage.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		4FECB0491E1D767C003FB579 = {
 			isa = PBXGroup;
 			children = (
+				4F0491101E2423E800F9AF62 /* README.md */,
 				4FECB0821E1D7760003FB579 /* Fuzi */,
 				4FECB0541E1D767C003FB579 /* WallpaperMaster */,
 				4FECB0661E1D767D003FB579 /* WallpaperMasterTests */,
@@ -364,6 +367,7 @@
 				4FECB0931E1D7760003FB579 /* Queryable.swift in Sources */,
 				4FAE14241E1ECE6700110CE4 /* DesktopUpdater.swift in Sources */,
 				4FECB08C1E1D7760003FB579 /* Document.swift in Sources */,
+				4F0491111E2423E800F9AF62 /* README.md in Sources */,
 				4FA498631E212D3200E30460 /* DescribedImage.swift in Sources */,
 				4FD5BF8F1E1DA6150024E9B4 /* NatGeoCollection.swift in Sources */,
 				4FECB08F1E1D7760003FB579 /* Helpers.swift in Sources */,
