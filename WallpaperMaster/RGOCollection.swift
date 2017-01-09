@@ -33,7 +33,7 @@ class RGOCollection: ImageGetterDelegate {
         
         do {
             let pageHTML = try HTMLDocument(string: pageHTMLString!, encoding: String.Encoding.utf8)
-            let xpath = "//article//div[@class='field-content']"
+            let xpath = "/html/body/div[@id='page']/div[@id='main']/div[@id='content']/div[@class='term-listing-heading']//article//div[@class='field-content']"
             let anchorArray = pageHTML.xpath(xpath)
             
             // extract link from script description
