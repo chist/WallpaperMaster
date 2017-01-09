@@ -18,9 +18,10 @@ class DesktopUpdater {
     let saver = Saver()
     
     init() {
+        let preferencesHolder = PreferencesHolder()
+        
         // set default image source
-        let sourceOption = PreferencesHolder().sourceOption
-        switch sourceOption {
+        switch preferencesHolder.sourceOption {
         case 0:
             self.imageGetter = NatGeoCollection()
         case 1:
@@ -31,11 +32,13 @@ class DesktopUpdater {
             self.imageGetter = NatGeoCollection()
         }
         
-        // launch timer to update wallpapers automatically
-        resetTimer()
-        
-        // update wallpaper immediately after launch
-        self.updateWallpaper()
+        if preferencesHolder.timeOption != 0 {
+            // launch timer to update wallpapers automatically
+            resetTimer()
+            
+            // update wallpaper immediately after launch
+            self.updateWallpaper()
+        }
     }
     
     @objc func updateWallpaper() {
