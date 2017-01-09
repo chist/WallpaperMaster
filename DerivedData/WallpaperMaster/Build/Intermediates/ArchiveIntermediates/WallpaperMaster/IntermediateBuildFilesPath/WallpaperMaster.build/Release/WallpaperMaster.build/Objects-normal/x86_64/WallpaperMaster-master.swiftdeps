@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
 options: "f546ca9e8c9ab309c0621ca15f0bf59a"
-build_time: [537306018, 28064000]
+build_time: [537310915, 335765000]
 inputs:
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Queryable.swift": [9223372036854775807, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/DesktopUpdater.swift": [9223372036854775807, 0]

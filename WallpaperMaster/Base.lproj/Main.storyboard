@@ -686,7 +686,7 @@
                                             <action selector="NatGeoIsChosen:" target="Im6-qV-bXq" id="1L6-pp-Czl"/>
                                         </connections>
                                     </menuItem>
-                                    <menuItem title="RGO" id="jpI-BH-vmF">
+                                    <menuItem title="Russian Geographical Society" id="jpI-BH-vmF">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="RGOIsChosen:" target="Im6-qV-bXq" id="xgK-1M-vu5"/>
