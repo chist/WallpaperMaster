@@ -22,6 +22,8 @@ class ViewController: NSViewController {
     override func viewDidAppear() {
         super.viewDidAppear()
         NSApp.activate(ignoringOtherApps: true)
+        
+        
     }
     
     func getAppVersion() -> String {

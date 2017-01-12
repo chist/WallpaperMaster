@@ -12,20 +12,20 @@ provides-dynamic-lookup:
 - "proportion"
 depends-top-level:
 - !private "StringLiteralType"
-- "Range"
-- !private "..."
-- !private "!="
 - !private "..<"
 - !private "/"
+- !private "-"
+- !private "!="
+- !private "ExtendedGraphemeClusterType"
+- "Range"
+- !private "+"
 - "String"
-- !private "UnicodeScalarType"
 - "CGFloat"
 - "NSRange"
-- !private "NSNotFound"
-- !private "ExtendedGraphemeClusterType"
-- !private "-"
-- !private "+"
 - "NSImage"
+- !private "..."
+- !private "UnicodeScalarType"
+- !private "NSNotFound"
 depends-member:
 - !private ["Ps9AnyObject", "Index"]
 - !private ["Ps9AnyObject", "characters"]

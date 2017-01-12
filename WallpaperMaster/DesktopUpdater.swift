@@ -39,6 +39,23 @@ class DesktopUpdater {
             // update wallpaper immediately after launch
             self.updateWallpaper()
         }
+        
+        NSWorkspace.shared().notificationCenter.addObserver(self,
+                                                            selector: #selector(spaceChanged),
+                                                            name: NSNotification.Name.NSWorkspaceActiveSpaceDidChange,
+                                                            object: nil)
+    }
+    
+    @objc func spaceChanged() {
+        DispatchQueue.global().async {
+            do {
+                let workspace = NSWorkspace.shared()
+                let screen = NSScreen.main()!
+                try workspace.setDesktopImageURL(self.saver.currentImageURL, for: screen, options: [:])
+            } catch let error {
+                print(error)
+            }
+        }
     }
     
     @objc func updateWallpaper() {
@@ -53,18 +70,13 @@ class DesktopUpdater {
             if wallpaper.image == nil {
                 return
             }
-            
             self.currentWallpaper = wallpaper
             
+            // save wallpaper image to disk
             self.saver.save(wallpaper: wallpaper)
-            let imagePath = self.saver.currentImageURL.relativePath
             
-            let script = "function wallpaper() { \nsqlite3 ~/Library/Application\\ Support/Dock/desktoppicture.db \"update data set value = '$1'\" && killall Dock\n}\nwallpaper " + imagePath
-            
-            let task = Process()
-            task.launchPath = "/bin/bash"
-            task.arguments = ["-c", script]
-            task.launch()
+            // update wallpaper
+            self.spaceChanged()
         }
         
         resetTimer()
@@ -78,24 +90,6 @@ class DesktopUpdater {
     func addToFavourites() {
         if let wallpaper = currentWallpaper {
             saver.saveToFavourites(wallpaper)
-        }
-    }
-}
-
-extension NSImage {
-    var imagePNGRepresentation: Data {
-        return NSBitmapImageRep(data: tiffRepresentation!)!.representation(using: .PNG, properties: [:])!
-    }
-    
-    func savePNG(_ path:String) {
-        do {
-            if let url = URL(string: path) {
-                try imagePNGRepresentation.write(to: url);
-            } else {
-                print("Error: path is underfined.");
-            }
-        } catch {
-            print("Error: image saving failed.");
         }
     }
 }

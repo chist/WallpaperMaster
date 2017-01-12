@@ -18,6 +18,7 @@
 		4FD5BF8F1E1DA6150024E9B4 /* NatGeoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */; };
 		4FE193621E22B58A00AFC31A /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE193611E22B58A00AFC31A /* Saver.swift */; };
 		4FE193641E22BEBB00AFC31A /* PreferencesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE193631E22BEBB00AFC31A /* PreferencesHolder.swift */; };
+		4FEBD35B1E27E5C6000B65F5 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBD35A1E27E5C6000B65F5 /* ErrorHandler.swift */; };
 		4FECB0561E1D767C003FB579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0551E1D767C003FB579 /* AppDelegate.swift */; };
 		4FECB05A1E1D767C003FB579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECB0591E1D767C003FB579 /* Assets.xcassets */; };
 		4FECB05D1E1D767C003FB579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FECB05B1E1D767C003FB579 /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NatGeoCollection.swift; sourceTree = "<group>"; };
 		4FE193611E22B58A00AFC31A /* Saver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
 		4FE193631E22BEBB00AFC31A /* PreferencesHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesHolder.swift; sourceTree = "<group>"; };
+		4FEBD35A1E27E5C6000B65F5 /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		4FECB0521E1D767C003FB579 /* WallpaperMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECB0551E1D767C003FB579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FECB0591E1D767C003FB579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */,
 				4FE193631E22BEBB00AFC31A /* PreferencesHolder.swift */,
 				4FE193611E22B58A00AFC31A /* Saver.swift */,
+				4FEBD35A1E27E5C6000B65F5 /* ErrorHandler.swift */,
 				4FECB0591E1D767C003FB579 /* Assets.xcassets */,
 				4FECB05B1E1D767C003FB579 /* Main.storyboard */,
 				4F0F1ABC1E22706B00C3FECF /* ViewController.swift */,
@@ -378,6 +381,7 @@
 				4FECB0951E1D7BA3003FB579 /* ImageGetterDelegate.swift in Sources */,
 				4F0190C51E20448D00CA2003 /* Downloader.swift in Sources */,
 				4F0F1ABD1E22706B00C3FECF /* ViewController.swift in Sources */,
+				4FEBD35B1E27E5C6000B65F5 /* ErrorHandler.swift in Sources */,
 				4FC398E91E1FB3410045B05C /* Extensions.swift in Sources */,
 				4FAE14261E1EDFB100110CE4 /* YandexCollection.swift in Sources */,
 				4FECB0561E1D767C003FB579 /* AppDelegate.swift in Sources */,
@@ -517,7 +521,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Release;
 		};

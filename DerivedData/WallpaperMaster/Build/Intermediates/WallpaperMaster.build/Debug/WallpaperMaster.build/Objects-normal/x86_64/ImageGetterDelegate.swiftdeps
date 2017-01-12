@@ -7,9 +7,9 @@ provides-member:
 - ["P15WallpaperMaster19ImageGetterDelegate", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ImageGetterDelegate"
-- "Downloader"
 - "DescribedImage"
+- "Downloader"
+- "ImageGetterDelegate"
 depends-member:
 - ["P15WallpaperMaster19ImageGetterDelegate", "DescribedImage"]
 - ["P15WallpaperMaster19ImageGetterDelegate", "Downloader"]
