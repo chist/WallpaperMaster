@@ -20,6 +20,7 @@
 		4FE193641E22BEBB00AFC31A /* PreferencesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE193631E22BEBB00AFC31A /* PreferencesHolder.swift */; };
 		4FE4A91C1E2B8F2A0054CD5B /* SavedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4A91B1E2B8F2A0054CD5B /* SavedCollection.swift */; };
 		4FE4A9201E2BBE800054CD5B /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4A91F1E2BBE800054CD5B /* ImageSource.swift */; };
+		4FE4A9221E2BE32B0054CD5B /* BingCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4A9211E2BE32B0054CD5B /* BingCollection.swift */; };
 		4FEBD35B1E27E5C6000B65F5 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBD35A1E27E5C6000B65F5 /* ErrorHandler.swift */; };
 		4FECB0561E1D767C003FB579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0551E1D767C003FB579 /* AppDelegate.swift */; };
 		4FECB05A1E1D767C003FB579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECB0591E1D767C003FB579 /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		4FE193631E22BEBB00AFC31A /* PreferencesHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesHolder.swift; sourceTree = "<group>"; };
 		4FE4A91B1E2B8F2A0054CD5B /* SavedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedCollection.swift; sourceTree = "<group>"; };
 		4FE4A91F1E2BBE800054CD5B /* ImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
+		4FE4A9211E2BE32B0054CD5B /* BingCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BingCollection.swift; sourceTree = "<group>"; };
 		4FEBD35A1E27E5C6000B65F5 /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		4FECB0521E1D767C003FB579 /* WallpaperMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECB0551E1D767C003FB579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */,
 				4FF51F9C1E23F7EE0028F862 /* RGOCollection.swift */,
 				4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */,
+				4FE4A9211E2BE32B0054CD5B /* BingCollection.swift */,
 				4FE4A91B1E2B8F2A0054CD5B /* SavedCollection.swift */,
 			);
 			name = "Image getters";
@@ -388,6 +391,7 @@
 				4FECB0951E1D7BA3003FB579 /* ImageGetterDelegate.swift in Sources */,
 				4F0190C51E20448D00CA2003 /* Downloader.swift in Sources */,
 				4F0F1ABD1E22706B00C3FECF /* ViewController.swift in Sources */,
+				4FE4A9221E2BE32B0054CD5B /* BingCollection.swift in Sources */,
 				4FEBD35B1E27E5C6000B65F5 /* ErrorHandler.swift in Sources */,
 				4FC398E91E1FB3410045B05C /* Extensions.swift in Sources */,
 				4FAE14261E1EDFB100110CE4 /* YandexCollection.swift in Sources */,

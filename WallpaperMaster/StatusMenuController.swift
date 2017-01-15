@@ -16,6 +16,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
     @IBOutlet weak var NatGeoOption: NSMenuItem!
     @IBOutlet weak var yandexOption: NSMenuItem!
     @IBOutlet weak var RGOOption:    NSMenuItem!
+    @IBOutlet weak var bingOption:   NSMenuItem!
     @IBOutlet weak var savedOption:  NSMenuItem!
     
     let preferencesHolder = PreferencesHolder()
@@ -68,6 +69,8 @@ class StatusMenuController: NSObject, NSMenuDelegate {
             yandexOption.state = 1
         case .RGO:
             RGOOption.state    = 1
+        case .bing:
+            bingOption.state   = 1
         case .saved:
             if Saver.reviseFavouriteImages().count == 0 {
                 NatGeoOption.state  = 1
@@ -125,9 +128,10 @@ class StatusMenuController: NSObject, NSMenuDelegate {
         NatGeoOption.state = 1
         yandexOption.state = 0
         RGOOption.state    = 0
+        bingOption.state   = 0
         savedOption.state  = 0
         desktopUpdater!.imageGetter = NatGeoCollection()
-        preferencesHolder.setSourceOption(0)
+        preferencesHolder.setSourceOption(.NatGeo)
         
         // enable "Get photo of the day" option
         statusBarMenu.item(at: 1)?.isEnabled = true
@@ -137,9 +141,10 @@ class StatusMenuController: NSObject, NSMenuDelegate {
         NatGeoOption.state = 0
         yandexOption.state = 1
         RGOOption.state    = 0
+        bingOption.state   = 0
         savedOption.state  = 0
         desktopUpdater!.imageGetter = YandexCollection()
-        preferencesHolder.setSourceOption(1)
+        preferencesHolder.setSourceOption(.yandex)
         
         // enable "Get photo of the day" option
         statusBarMenu.item(at: 1)?.isEnabled = true
@@ -149,9 +154,23 @@ class StatusMenuController: NSObject, NSMenuDelegate {
         NatGeoOption.state = 0
         yandexOption.state = 0
         RGOOption.state    = 1
+        bingOption.state   = 0
         savedOption.state  = 0
         desktopUpdater!.imageGetter = RGOCollection()
-        preferencesHolder.setSourceOption(2)
+        preferencesHolder.setSourceOption(.RGO)
+        
+        // enable "Get photo of the day" option
+        statusBarMenu.item(at: 1)?.isEnabled = true
+    }
+
+    @IBAction func bingIsChosen(_ sender: NSMenuItem) {
+        NatGeoOption.state = 0
+        yandexOption.state = 0
+        RGOOption.state    = 0
+        bingOption.state   = 1
+        savedOption.state  = 0
+        desktopUpdater!.imageGetter = BingCollection()
+        preferencesHolder.setSourceOption(.bing)
         
         // enable "Get photo of the day" option
         statusBarMenu.item(at: 1)?.isEnabled = true
@@ -161,9 +180,10 @@ class StatusMenuController: NSObject, NSMenuDelegate {
         NatGeoOption.state = 0
         yandexOption.state = 0
         RGOOption.state    = 0
+        bingOption.state   = 0
         savedOption.state  = 1
         desktopUpdater!.imageGetter = SavedCollection()
-        preferencesHolder.setSourceOption(3)
+        preferencesHolder.setSourceOption(.saved)
         
         // disable "Get photo of the day" option
         statusBarMenu.item(at: 1)?.isEnabled = false

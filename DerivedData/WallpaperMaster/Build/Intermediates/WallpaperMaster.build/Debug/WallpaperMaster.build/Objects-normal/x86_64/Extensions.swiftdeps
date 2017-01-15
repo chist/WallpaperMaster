@@ -5,27 +5,27 @@ provides-member:
 - ["SS", ""]
 - ["VSC8_NSRange", ""]
 - ["CSo7NSImage", ""]
-- ["SS", "searchLink"]
+- ["SS", "searchQuotation"]
 - ["VSC8_NSRange", "range"]
 - ["CSo7NSImage", "proportion"]
 provides-dynamic-lookup:
 - "proportion"
 depends-top-level:
-- !private "NSNotFound"
-- "CGFloat"
-- !private "!="
-- !private "..."
-- !private "/"
+- "Range"
 - "NSImage"
+- !private "-"
+- !private "!="
+- !private "ExtendedGraphemeClusterType"
+- !private "/"
+- "CGFloat"
+- !private "UnicodeScalarType"
 - "String"
+- !private "..."
+- !private "NSNotFound"
 - !private "StringLiteralType"
 - "NSRange"
-- "Range"
-- !private "ExtendedGraphemeClusterType"
-- !private "-"
 - !private "+"
 - !private "..<"
-- !private "UnicodeScalarType"
 depends-member:
 - !private ["Ps9AnyObject", "Index"]
 - !private ["Ps9AnyObject", "characters"]
@@ -423,7 +423,7 @@ depends-member:
 - !private ["SS", "index"]
 - !private ["SS", "init"]
 - !private ["SS", "range"]
-- ["SS", "searchLink"]
+- ["SS", "searchQuotation"]
 - !private ["SS", "startIndex"]
 - !private ["SS", "subscript"]
 - !private ["SS", "substring"]
@@ -621,4 +621,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "4874370926e1c920f17db0c64dcdd2d2"
+interface-hash: "9f6c114c34edec21bda278431f65f6ba"

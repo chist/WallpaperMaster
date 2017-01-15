@@ -10,5 +10,6 @@ enum ImageSource: Int {
     case NatGeo = 1
     case RGO    = 2
     case yandex = 3
-    case saved  = 4
+    case bing   = 4
+    case saved  = 5
 }

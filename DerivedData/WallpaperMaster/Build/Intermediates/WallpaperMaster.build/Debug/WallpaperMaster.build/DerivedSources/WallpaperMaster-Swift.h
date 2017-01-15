@@ -150,6 +150,7 @@ SWIFT_CLASS("_TtC15WallpaperMaster20StatusMenuController")
 @property (nonatomic, weak) IBOutlet NSMenuItem * _Null_unspecified NatGeoOption;
 @property (nonatomic, weak) IBOutlet NSMenuItem * _Null_unspecified yandexOption;
 @property (nonatomic, weak) IBOutlet NSMenuItem * _Null_unspecified RGOOption;
+@property (nonatomic, weak) IBOutlet NSMenuItem * _Null_unspecified bingOption;
 @property (nonatomic, weak) IBOutlet NSMenuItem * _Null_unspecified savedOption;
 - (void)awakeFromNib;
 - (void)menuWillOpen:(NSMenu * _Nonnull)menu;
@@ -159,6 +160,7 @@ SWIFT_CLASS("_TtC15WallpaperMaster20StatusMenuController")
 - (IBAction)NatGeoIsChosen:(NSMenuItem * _Nonnull)sender;
 - (IBAction)YandexIsChosen:(NSMenuItem * _Nonnull)sender;
 - (IBAction)RGOIsChosen:(NSMenuItem * _Nonnull)sender;
+- (IBAction)bingIsChosen:(NSMenuItem * _Nonnull)sender;
 - (IBAction)savedIsChosen:(id _Nonnull)sender;
 - (void)updateTimeInterval:(NSMenuItem * _Nonnull)sender;
 - (IBAction)quitClicked:(NSMenuItem * _Nonnull)sender;

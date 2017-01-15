@@ -42,7 +42,7 @@ class RGOCollection: ImageGetterDelegate {
                 return nil
             }
             let piece = String(describing: anchorArray[anchorArray.count - 1])
-            return piece.searchLink(after: "href=")
+            return piece.searchQuotation(after: "href=")
         } catch let error {
             print(error.localizedDescription)
             return nil

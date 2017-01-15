@@ -9,10 +9,10 @@ provides-dynamic-lookup:
 - "applicationDidFinishLaunching"
 - "applicationWillTerminate"
 depends-top-level:
-- "NSApplicationDelegate"
-- "NSObject"
 - "AppDelegate"
+- "NSApplicationDelegate"
 - "Notification"
+- "NSObject"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]

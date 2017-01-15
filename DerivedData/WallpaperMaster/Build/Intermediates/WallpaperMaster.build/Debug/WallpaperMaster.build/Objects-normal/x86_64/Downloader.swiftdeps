@@ -7,15 +7,15 @@ provides-member:
 - ["C15WallpaperMaster10Downloader", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "print"
-- !private "Data"
 - !private "StringLiteralType"
-- !private "URL"
+- !private "Data"
 - "Saver"
+- !private "print"
 - !private "NSImage"
 - "Downloader"
-- "DescribedImage"
 - "String"
+- !private "URL"
+- "DescribedImage"
 depends-member:
 - !private ["Ps9AnyObject", "Data"]
 - !private ["Ps9AnyObject", "DescribedImage"]

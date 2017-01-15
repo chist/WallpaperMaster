@@ -26,6 +26,8 @@ class DesktopUpdater {
             self.imageGetter = YandexCollection()
         case .RGO:
             self.imageGetter = RGOCollection()
+        case .bing:
+            self.imageGetter = BingCollection()
         case .saved:
             self.imageGetter = SavedCollection()
         }

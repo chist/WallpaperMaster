@@ -10,7 +10,7 @@ import Foundation
 import Cocoa
 
 class YandexCollection: ImageGetterDelegate {
-    let contentURL = "https://fotki.yandex.ru/calendar/"
+    let contentURL      = "https://fotki.yandex.ru/calendar/"
     let albumContentURL = "https://fotki.yandex.ru/next"
     let downloader = Downloader()
     let maxFailureCount: Int = 120
@@ -53,7 +53,7 @@ class YandexCollection: ImageGetterDelegate {
             let piece = String(describing: anchorArray[dayIndex])
             
             // extract link to the album from description of a tiny photo
-            let imageLink = piece.searchLink(after: "href=")
+            let imageLink = piece.searchQuotation(after: "href=")
             if imageLink == nil {
                 return nil
             }
@@ -71,7 +71,7 @@ class YandexCollection: ImageGetterDelegate {
             
             // extract link from script description
             let piece = String(describing: anchorArray.first)
-            return piece.searchLink(after: "\"xxxl\":{\"url\":")
+            return piece.searchQuotation(after: "\"xxxl\":{\"url\":")
         } catch let error {
             print(error.localizedDescription)
             return nil

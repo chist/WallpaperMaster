@@ -10,7 +10,7 @@ import Foundation
 import Cocoa
 
 class PreferencesHolder {
-    let defaultTimeOption  : Int         = 1
+    let defaultTimeOption  : Int         = 3
     let defaultSourceOption: ImageSource = ImageSource.NatGeo
     
     var timeOption:   Int {
@@ -34,7 +34,7 @@ class PreferencesHolder {
         UserDefaults.standard.set(option, forKey: "timeOption")
     }
     
-    func setSourceOption(_ option: Int) {
-        UserDefaults.standard.set(option, forKey: "sourceOption")
+    func setSourceOption(_ option: ImageSource) {
+        UserDefaults.standard.set(option.rawValue, forKey: "sourceOption")
     }
 }

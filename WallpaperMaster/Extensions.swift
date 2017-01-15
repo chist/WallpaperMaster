@@ -10,7 +10,7 @@ import Foundation
 import Cocoa
 
 extension String {
-    func searchLink(after substring: String) -> String? {
+    func searchQuotation(after substring: String) -> String? {
         if let index1 = self.range(of: substring + "\"")?.upperBound {
             let cutString = self.substring(from: index1)
             let index     = cutString.characters.index(of: "\"")!

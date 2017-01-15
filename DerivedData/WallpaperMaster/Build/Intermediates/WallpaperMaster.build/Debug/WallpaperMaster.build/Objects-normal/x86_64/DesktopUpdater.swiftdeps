@@ -9,32 +9,34 @@ provides-dynamic-lookup:
 - "updateWallpaper"
 - "spaceChanged"
 depends-top-level:
-- "Bool"
-- !private "ErrorHandler"
-- "IntegerLiteralType"
-- !private "SavedCollection"
-- "FloatLiteralType"
-- "Double"
-- "ImageGetterDelegate"
-- "Saver"
-- !private "PreferencesHolder"
-- !private "YandexCollection"
-- !private "=="
 - "AssignmentPrecedence"
+- !private "=="
+- "Double"
+- !private "BingCollection"
+- "FloatLiteralType"
+- !private "PreferencesHolder"
+- !private "NSScreen"
 - !private "NSWorkspace"
-- !private "DispatchQueue"
+- "Bool"
+- "IntegerLiteralType"
+- !private "YandexCollection"
+- "Saver"
+- "ImageGetterDelegate"
+- !private "ErrorHandler"
+- !private "NatGeoCollection"
 - "DesktopUpdater"
+- "DescribedImage"
+- "ImageSource"
+- !private "DispatchQueue"
+- "BooleanLiteralType"
+- !private "RGOCollection"
+- "Timer"
+- !private "SavedCollection"
+- "Dictionary"
 - !private "!="
 - !private "NSNotification"
-- "ImageSource"
-- "DescribedImage"
-- !private "NatGeoCollection"
-- !private "NSScreen"
-- "BooleanLiteralType"
-- "Timer"
-- "Dictionary"
-- !private "RGOCollection"
 depends-member:
+- !private ["Ps9AnyObject", "BingCollection"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - !private ["Ps9AnyObject", "ErrorHandler"]
 - !private ["Ps9AnyObject", "NSNotification"]
@@ -74,6 +76,8 @@ depends-member:
 - !private ["Ps9AnyObject", "timer"]
 - !private ["Ps9AnyObject", "updateWallpaper"]
 - ["Ps9AnyObject", ""]
+- ["C15WallpaperMaster14BingCollection", "deinit"]
+- !private ["C15WallpaperMaster14BingCollection", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "Key"]
@@ -124,6 +128,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "shared"]
 - ["C15WallpaperMaster14DescribedImage", "deinit"]
 - !private ["C15WallpaperMaster14DescribedImage", "image"]
+- !private ["C15WallpaperMaster14DesktopUpdater", "BingCollection"]
 - ["C15WallpaperMaster14DesktopUpdater", "Bool"]
 - ["C15WallpaperMaster14DesktopUpdater", "DescribedImage"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "DispatchQueue"]
@@ -169,6 +174,7 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addObserver"]
 - !private ["Ps9Equatable", "async"]
+- ["Ps9Equatable", "bing"]
 - !private ["Ps9Equatable", "global"]
 - !private ["Ps9Equatable", "invalidate"]
 - !private ["Ps9Equatable", "main"]
@@ -192,6 +198,7 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addObserver"]
 - !private ["Ps8Hashable", "async"]
+- ["Ps8Hashable", "bing"]
 - !private ["Ps8Hashable", "global"]
 - !private ["Ps8Hashable", "invalidate"]
 - !private ["Ps8Hashable", "main"]
@@ -207,6 +214,7 @@ depends-member:
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "init"]
 - ["O15WallpaperMaster11ImageSource", "NatGeo"]
 - ["O15WallpaperMaster11ImageSource", "RGO"]
+- ["O15WallpaperMaster11ImageSource", "bing"]
 - ["O15WallpaperMaster11ImageSource", "deinit"]
 - ["O15WallpaperMaster11ImageSource", "saved"]
 - ["O15WallpaperMaster11ImageSource", "yandex"]
@@ -263,6 +271,7 @@ depends-member:
 - !private ["Ps16RawRepresentable", "NSWorkspaceActiveSpaceDidChange"]
 - ["Ps16RawRepresentable", "NatGeo"]
 - ["Ps16RawRepresentable", "RGO"]
+- ["Ps16RawRepresentable", "bing"]
 - ["Ps16RawRepresentable", "saved"]
 - ["Ps16RawRepresentable", "yandex"]
 - ["C15WallpaperMaster15SavedCollection", "deinit"]
@@ -290,6 +299,7 @@ depends-member:
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addObserver"]
 - !private ["Ps9_Hashable", "async"]
+- ["Ps9_Hashable", "bing"]
 - !private ["Ps9_Hashable", "global"]
 - !private ["Ps9_Hashable", "invalidate"]
 - !private ["Ps9_Hashable", "main"]
@@ -307,6 +317,7 @@ depends-member:
 - !private ["Ps20_SwiftNewtypeWrapper", "NSWorkspaceActiveSpaceDidChange"]
 depends-nominal:
 - "Ps9AnyObject"
+- "C15WallpaperMaster14BingCollection"
 - "Sb"
 - !private "Ps7CVarArg"
 - !private "Ps10Collection"

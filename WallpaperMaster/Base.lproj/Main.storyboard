@@ -698,7 +698,13 @@
                                             <action selector="YandexIsChosen:" target="Im6-qV-bXq" id="QDX-cz-FNj"/>
                                         </connections>
                                     </menuItem>
-                                    <menuItem isSeparatorItem="YES" id="i2b-nD-YNq"/>
+                                    <menuItem title="Bing" id="dJ9-0j-RHE">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="bingIsChosen:" target="Im6-qV-bXq" id="jbI-sL-HbL"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem isSeparatorItem="YES" id="AkZ-8f-AbM"/>
                                     <menuItem title="Saved" id="L6z-FF-mkl">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
@@ -729,6 +735,7 @@
                     <connections>
                         <outlet property="NatGeoOption" destination="jcZ-vI-ng4" id="Pzr-w7-7Ox"/>
                         <outlet property="RGOOption" destination="jpI-BH-vmF" id="j7O-rc-KhE"/>
+                        <outlet property="bingOption" destination="dJ9-0j-RHE" id="Cqh-NK-Gua"/>
                         <outlet property="savedOption" destination="L6z-FF-mkl" id="wPa-n1-CgG"/>
                         <outlet property="statusBarMenu" destination="VoX-4h-GBF" id="tlG-Oy-RrS"/>
                         <outlet property="yandexOption" destination="dcs-Vc-Ro4" id="DU1-hT-de3"/>
@@ -766,7 +773,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ND-K2-YbE">
-                                <rect key="frame" x="75" y="18" width="330" height="17"/>
+                                <rect key="frame" x="75" y="10" width="330" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Copyright © 2017 Ivan Chistyakov. All rights reserved." id="rO4-NL-npI">
                                     <font key="font" metaFont="system"/>
@@ -784,7 +791,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IMg-qI-C3U">
-                                <rect key="frame" x="171" y="140" width="139" height="32"/>
+                                <rect key="frame" x="171" y="121" width="139" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Show in Finder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fls-UD-TEn">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -795,7 +802,7 @@
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-R0-sRS">
-                                <rect key="frame" x="56" y="166" width="369" height="24"/>
+                                <rect key="frame" x="56" y="146" width="369" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Saved photos are stored in ~/Documents/WallpaperMaster" id="Znw-P3-C50">
                                     <font key="font" metaFont="system"/>
@@ -804,19 +811,19 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibQ-qG-joh">
-                                <rect key="frame" x="144" y="192" width="195" height="51"/>
+                                <rect key="frame" x="144" y="176" width="195" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" id="OzQ-CY-EEL">
                                     <font key="font" metaFont="system"/>
                                     <string key="title">www.nationalgeographic.com
 www.rgo.ru
-www.fotki.yandex.ru</string>
+www.fotki.yandex.ru www.istartedsomething.com</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6CO-9d-2pb">
-                                <rect key="frame" x="163" y="36" width="155" height="17"/>
+                                <rect key="frame" x="163" y="27" width="155" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Version 0.9" id="ffF-l2-ihK">
                                     <font key="font" metaFont="system"/>
@@ -825,7 +832,7 @@ www.fotki.yandex.ru</string>
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qaA-Z2-KSW">
-                                <rect key="frame" x="56" y="94" width="369" height="34"/>
+                                <rect key="frame" x="56" y="82" width="369" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="This app is completely free. Nevetherless, I would like to be encouraged by your small donation." id="6y1-6o-ngt">
                                     <font key="font" metaFont="system"/>
@@ -834,7 +841,7 @@ www.fotki.yandex.ru</string>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XRP-Bl-IOs">
-                                <rect key="frame" x="178" y="59" width="126" height="36"/>
+                                <rect key="frame" x="178" y="46" width="126" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="coffeeImage" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="R8F-Af-wWb">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>

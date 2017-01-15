@@ -6,57 +6,61 @@ provides-nominal:
 provides-member:
 - ["C15WallpaperMaster20StatusMenuController", ""]
 provides-dynamic-lookup:
-- "awakeFromNib"
-- "menuWillOpen"
-- "nextImage"
 - "statusBarMenu"
 - "yandexOption"
 - "timeSubmenu"
-- "savedOption"
-- "quitClicked"
-- "NatGeoOption"
-- "savedIsChosen"
-- "NatGeoIsChosen"
-- "YandexIsChosen"
-- "saveImage"
 - "RGOIsChosen"
-- "RGOOption"
-- "getPhotoOfTheDay"
 - "updateTimeInterval"
+- "bingIsChosen"
+- "bingOption"
+- "nextImage"
+- "saveImage"
+- "NatGeoIsChosen"
+- "menuWillOpen"
+- "getPhotoOfTheDay"
+- "quitClicked"
+- "savedIsChosen"
+- "YandexIsChosen"
+- "NatGeoOption"
 - "statusItem"
+- "awakeFromNib"
+- "savedOption"
+- "RGOOption"
 depends-top-level:
+- "NSMenuItem"
+- !private "YandexCollection"
+- !private "NatGeoCollection"
+- "StringLiteralType"
+- "DesktopUpdater"
 - "NSMenuDelegate"
+- "NSObject"
+- !private ">"
+- "NSVariableStatusItemLength"
+- "NSMenu"
+- !private "~="
+- !private "RGOCollection"
+- !private "*"
+- !private "SavedCollection"
+- !private "BooleanLiteralType"
+- "NSStatusBar"
+- "Int"
+- !private "Double"
+- !private "+"
+- !private "NSApplication"
 - "TernaryPrecedence"
+- "String"
+- !private "=="
+- "AnyObject"
+- "AssignmentPrecedence"
+- "PreferencesHolder"
+- !private "BingCollection"
 - !private "-"
 - !private "Saver"
-- !private "*"
-- !private "NatGeoCollection"
-- !private "+"
-- !private "~="
-- "NSStatusBar"
-- "NSVariableStatusItemLength"
-- !private "UnicodeScalarType"
-- "AssignmentPrecedence"
-- !private "=="
-- !private ">"
-- !private "RGOCollection"
-- "String"
-- !private "SavedCollection"
-- !private "Double"
-- "Int"
-- "NSObject"
-- "NSMenuItem"
-- "StringLiteralType"
 - "StatusMenuController"
-- !private "BooleanLiteralType"
-- "NSMenu"
-- !private "YandexCollection"
-- "PreferencesHolder"
-- "AnyObject"
-- "DesktopUpdater"
-- !private "NSApplication"
+- !private "UnicodeScalarType"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "BingCollection"]
 - !private ["Ps9AnyObject", "DesktopUpdater"]
 - !private ["Ps9AnyObject", "Double"]
 - !private ["Ps9AnyObject", "NSApplication"]
@@ -79,6 +83,8 @@ depends-member:
 - !private ["Ps9AnyObject", "addItem"]
 - !private ["Ps9AnyObject", "addToFavourites"]
 - ["Ps9AnyObject", "awakeFromNib"]
+- ["Ps9AnyObject", "bingIsChosen"]
+- ["Ps9AnyObject", "bingOption"]
 - ["Ps9AnyObject", "confinementRect"]
 - ["Ps9AnyObject", "confinementRectForMenu"]
 - !private ["Ps9AnyObject", "delegate"]
@@ -162,12 +168,15 @@ depends-member:
 - !private ["Vs18BidirectionalSlice", "SubSequence"]
 - !private ["Vs18BidirectionalSlice", "_Element"]
 - !private ["Ps19BinaryFloatingPoint", "init"]
+- ["C15WallpaperMaster14BingCollection", "deinit"]
+- !private ["C15WallpaperMaster14BingCollection", "init"]
 - !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps7CVarArg", "BingCollection"]
 - !private ["Ps7CVarArg", "DesktopUpdater"]
 - !private ["Ps7CVarArg", "Double"]
 - !private ["Ps7CVarArg", "Index"]
@@ -197,6 +206,8 @@ depends-member:
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "addItem"]
 - ["Ps7CVarArg", "awakeFromNib"]
+- ["Ps7CVarArg", "bingIsChosen"]
+- ["Ps7CVarArg", "bingOption"]
 - ["Ps7CVarArg", "confinementRect"]
 - ["Ps7CVarArg", "confinementRectForMenu"]
 - !private ["Ps7CVarArg", "count"]
@@ -255,6 +266,7 @@ depends-member:
 - ["Ps10Comparable", "init"]
 - !private ["Vs20CountableClosedRange", "deinit"]
 - !private ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "BingCollection"]
 - !private ["Ps28CustomDebugStringConvertible", "DesktopUpdater"]
 - !private ["Ps28CustomDebugStringConvertible", "Double"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
@@ -281,6 +293,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addItem"]
 - ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- ["Ps28CustomDebugStringConvertible", "bingIsChosen"]
+- ["Ps28CustomDebugStringConvertible", "bingOption"]
 - ["Ps28CustomDebugStringConvertible", "confinementRect"]
 - ["Ps28CustomDebugStringConvertible", "confinementRectForMenu"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
@@ -342,6 +356,7 @@ depends-member:
 - ["Ps17CustomReflectable", "init"]
 - ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "BingCollection"]
 - !private ["Ps23CustomStringConvertible", "DesktopUpdater"]
 - !private ["Ps23CustomStringConvertible", "Double"]
 - !private ["Ps23CustomStringConvertible", "Index"]
@@ -372,6 +387,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addItem"]
 - ["Ps23CustomStringConvertible", "awakeFromNib"]
+- ["Ps23CustomStringConvertible", "bingIsChosen"]
+- ["Ps23CustomStringConvertible", "bingOption"]
 - ["Ps23CustomStringConvertible", "confinementRect"]
 - ["Ps23CustomStringConvertible", "confinementRectForMenu"]
 - !private ["Ps23CustomStringConvertible", "count"]
@@ -437,6 +454,7 @@ depends-member:
 - !private ["Vs18EnumeratedIterator", "Element"]
 - !private ["Vs18EnumeratedSequence", "Iterator"]
 - ["Vs18EnumeratedSequence", "deinit"]
+- !private ["Ps9Equatable", "BingCollection"]
 - !private ["Ps9Equatable", "DesktopUpdater"]
 - !private ["Ps9Equatable", "Double"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
@@ -464,6 +482,9 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addItem"]
 - ["Ps9Equatable", "awakeFromNib"]
+- ["Ps9Equatable", "bing"]
+- ["Ps9Equatable", "bingIsChosen"]
+- ["Ps9Equatable", "bingOption"]
 - ["Ps9Equatable", "confinementRect"]
 - ["Ps9Equatable", "confinementRectForMenu"]
 - !private ["Ps9Equatable", "delegate"]
@@ -526,6 +547,7 @@ depends-member:
 - !private ["Sf", "deinit"]
 - !private ["Vs7Float80", "deinit"]
 - !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "BingCollection"]
 - !private ["Ps8Hashable", "DesktopUpdater"]
 - !private ["Ps8Hashable", "Double"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
@@ -553,6 +575,9 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addItem"]
 - ["Ps8Hashable", "awakeFromNib"]
+- ["Ps8Hashable", "bing"]
+- ["Ps8Hashable", "bingIsChosen"]
+- ["Ps8Hashable", "bingOption"]
 - ["Ps8Hashable", "confinementRect"]
 - ["Ps8Hashable", "confinementRectForMenu"]
 - !private ["Ps8Hashable", "delegate"]
@@ -596,6 +621,7 @@ depends-member:
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "init"]
 - ["O15WallpaperMaster11ImageSource", "NatGeo"]
 - ["O15WallpaperMaster11ImageSource", "RGO"]
+- ["O15WallpaperMaster11ImageSource", "bing"]
 - ["O15WallpaperMaster11ImageSource", "deinit"]
 - ["O15WallpaperMaster11ImageSource", "saved"]
 - ["O15WallpaperMaster11ImageSource", "yandex"]
@@ -716,6 +742,7 @@ depends-member:
 - !private ["CSo6NSMenu", "item"]
 - !private ["CSo6NSMenu", "items"]
 - !private ["CSo6NSMenu", "setSubmenu"]
+- !private ["PSo14NSMenuDelegate", "BingCollection"]
 - !private ["PSo14NSMenuDelegate", "DesktopUpdater"]
 - !private ["PSo14NSMenuDelegate", "Double"]
 - !private ["PSo14NSMenuDelegate", "NSApplication"]
@@ -732,6 +759,7 @@ depends-member:
 - !private ["PSo14NSMenuDelegate", "Saver"]
 - !private ["PSo14NSMenuDelegate", "String"]
 - !private ["PSo14NSMenuDelegate", "YandexCollection"]
+- !private ["PSo14NSMenuDelegate", "bingOption"]
 - ["PSo14NSMenuDelegate", "confinementRect"]
 - ["PSo14NSMenuDelegate", "confinementRectForMenu"]
 - !private ["PSo14NSMenuDelegate", "desktopUpdater"]
@@ -761,6 +789,7 @@ depends-member:
 - ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSNumber", "deinit"]
 - ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "BingCollection"]
 - ["CSo8NSObject", "DesktopUpdater"]
 - !private ["CSo8NSObject", "Double"]
 - ["CSo8NSObject", "Int"]
@@ -783,6 +812,8 @@ depends-member:
 - ["CSo8NSObject", "YandexIsChosen"]
 - !private ["CSo8NSObject", "addItem"]
 - ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "bingIsChosen"]
+- ["CSo8NSObject", "bingOption"]
 - ["CSo8NSObject", "confinementRect"]
 - ["CSo8NSObject", "confinementRectForMenu"]
 - ["CSo8NSObject", "deinit"]
@@ -822,6 +853,7 @@ depends-member:
 - ["CSo8NSObject", "updateTimeInterval"]
 - ["CSo8NSObject", "yandexOption"]
 - ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "BingCollection"]
 - !private ["PSo16NSObjectProtocol", "DesktopUpdater"]
 - !private ["PSo16NSObjectProtocol", "Double"]
 - !private ["PSo16NSObjectProtocol", "NSApplication"]
@@ -843,6 +875,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "YandexIsChosen"]
 - !private ["PSo16NSObjectProtocol", "addItem"]
 - ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "bingIsChosen"]
+- ["PSo16NSObjectProtocol", "bingOption"]
 - ["PSo16NSObjectProtocol", "confinementRect"]
 - ["PSo16NSObjectProtocol", "confinementRectForMenu"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
@@ -967,6 +1001,7 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - ["Ps16RawRepresentable", "NatGeo"]
 - ["Ps16RawRepresentable", "RGO"]
+- ["Ps16RawRepresentable", "bing"]
 - ["Ps16RawRepresentable", "saved"]
 - ["Ps16RawRepresentable", "yandex"]
 - ["C15WallpaperMaster15SavedCollection", "deinit"]
@@ -995,6 +1030,7 @@ depends-member:
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
 - ["C15WallpaperMaster20StatusMenuController", "AnyObject"]
+- !private ["C15WallpaperMaster20StatusMenuController", "BingCollection"]
 - ["C15WallpaperMaster20StatusMenuController", "DesktopUpdater"]
 - !private ["C15WallpaperMaster20StatusMenuController", "Double"]
 - ["C15WallpaperMaster20StatusMenuController", "Int"]
@@ -1016,6 +1052,8 @@ depends-member:
 - !private ["C15WallpaperMaster20StatusMenuController", "YandexCollection"]
 - ["C15WallpaperMaster20StatusMenuController", "YandexIsChosen"]
 - ["C15WallpaperMaster20StatusMenuController", "awakeFromNib"]
+- ["C15WallpaperMaster20StatusMenuController", "bingIsChosen"]
+- ["C15WallpaperMaster20StatusMenuController", "bingOption"]
 - ["C15WallpaperMaster20StatusMenuController", "confinementRect"]
 - ["C15WallpaperMaster20StatusMenuController", "confinementRectForMenu"]
 - ["C15WallpaperMaster20StatusMenuController", "deinit"]
@@ -1087,6 +1125,7 @@ depends-member:
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "BingCollection"]
 - !private ["Ps9_Hashable", "DesktopUpdater"]
 - !private ["Ps9_Hashable", "Double"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
@@ -1114,6 +1153,9 @@ depends-member:
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addItem"]
 - ["Ps9_Hashable", "awakeFromNib"]
+- ["Ps9_Hashable", "bing"]
+- ["Ps9_Hashable", "bingIsChosen"]
+- ["Ps9_Hashable", "bingOption"]
 - ["Ps9_Hashable", "confinementRect"]
 - ["Ps9_Hashable", "confinementRectForMenu"]
 - !private ["Ps9_Hashable", "delegate"]
@@ -1192,6 +1234,7 @@ depends-nominal:
 - !private "Ps22BidirectionalIndexable"
 - !private "Vs18BidirectionalSlice"
 - !private "Ps19BinaryFloatingPoint"
+- "C15WallpaperMaster14BingCollection"
 - !private "Ps17BitwiseOperations"
 - "Sb"
 - "V12CoreGraphics7CGFloat"
@@ -1332,4 +1375,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "214dcfaa7931c83a95b7e9830969ff5c"
+interface-hash: "049bf426f6c57f3659bcfc638651b0ed"

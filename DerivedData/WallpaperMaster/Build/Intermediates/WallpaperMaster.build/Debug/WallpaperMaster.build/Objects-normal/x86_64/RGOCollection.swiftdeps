@@ -7,28 +7,28 @@ provides-member:
 - ["C15WallpaperMaster13RGOCollection", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Int"
-- "StringLiteralType"
-- !private "!="
-- !private "CharacterSet"
 - "Downloader"
-- "ImageGetterDelegate"
-- !private "+"
-- "String"
-- !private "HTMLDocument"
-- !private "BooleanLiteralType"
-- !private "%"
-- !private "-"
-- !private "NSString"
-- "RGOCollection"
-- !private "print"
-- "Bool"
 - "DescribedImage"
+- "StringLiteralType"
+- "RGOCollection"
+- !private "%"
+- !private "CharacterSet"
 - !private "URL"
-- !private "=="
+- !private "HTMLDocument"
+- !private "+"
+- !private "BooleanLiteralType"
+- !private "-"
+- "String"
+- !private "!="
+- !private "Int"
 - "AssignmentPrecedence"
-- !private "arc4random"
+- !private "=="
 - "CastingPrecedence"
+- !private "print"
+- "ImageGetterDelegate"
+- "Bool"
+- !private "NSString"
+- !private "arc4random"
 depends-member:
 - !private ["Ps9AnyObject", "CharacterSet"]
 - !private ["Ps9AnyObject", "DescribedImage"]
@@ -57,7 +57,7 @@ depends-member:
 - !private ["Ps9AnyObject", "photosQuantity"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "randomContentURL"]
-- !private ["Ps9AnyObject", "searchLink"]
+- !private ["Ps9AnyObject", "searchQuotation"]
 - !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "xpath"]
 - ["Ps9AnyObject", ""]
@@ -73,7 +73,7 @@ depends-member:
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "addingPercentEncoding"]
 - ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "searchLink"]
+- !private ["Ps7CVarArg", "searchQuotation"]
 - !private ["Vs9Character", "deinit"]
 - ["V10Foundation12CharacterSet", "deinit"]
 - !private ["V10Foundation12CharacterSet", "urlQueryAllowed"]
@@ -91,13 +91,13 @@ depends-member:
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "addingPercentEncoding"]
 - ["Ps10Comparable", "init"]
-- !private ["Ps10Comparable", "searchLink"]
+- !private ["Ps10Comparable", "searchQuotation"]
 - !private ["Vs20CountableClosedRange", "deinit"]
 - !private ["Vs14CountableRange", "deinit"]
 - !private ["Ps28CustomDebugStringConvertible", "Encoding"]
 - !private ["Ps28CustomDebugStringConvertible", "addingPercentEncoding"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "searchLink"]
+- !private ["Ps28CustomDebugStringConvertible", "searchQuotation"]
 - !private ["Ps28CustomDebugStringConvertible", "urlQueryAllowed"]
 - !private ["Ps28CustomDebugStringConvertible", "xpath"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Encoding"]
@@ -107,7 +107,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "addingPercentEncoding"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "searchLink"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "searchQuotation"]
 - !private ["Ps17CustomReflectable", "Encoding"]
 - !private ["Ps17CustomReflectable", "IntegerLiteralType"]
 - !private ["Ps17CustomReflectable", "Stride"]
@@ -115,7 +115,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "addingPercentEncoding"]
 - ["Ps17CustomReflectable", "init"]
-- !private ["Ps17CustomReflectable", "searchLink"]
+- !private ["Ps17CustomReflectable", "searchQuotation"]
 - !private ["Ps23CustomStringConvertible", "Encoding"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
@@ -124,7 +124,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addingPercentEncoding"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "rawValue"]
-- !private ["Ps23CustomStringConvertible", "searchLink"]
+- !private ["Ps23CustomStringConvertible", "searchQuotation"]
 - !private ["Ps23CustomStringConvertible", "urlQueryAllowed"]
 - !private ["Ps23CustomStringConvertible", "utf8"]
 - !private ["Ps23CustomStringConvertible", "xpath"]
@@ -145,7 +145,7 @@ depends-member:
 - !private ["Ps9Equatable", "addingPercentEncoding"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "rawValue"]
-- !private ["Ps9Equatable", "searchLink"]
+- !private ["Ps9Equatable", "searchQuotation"]
 - !private ["Ps9Equatable", "urlQueryAllowed"]
 - !private ["Ps9Equatable", "utf8"]
 - !private ["Ps9Equatable", "xpath"]
@@ -156,7 +156,7 @@ depends-member:
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "Encoding"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "addingPercentEncoding"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "searchLink"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "searchQuotation"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
@@ -164,15 +164,15 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "Encoding"]
 - !private ["Ps32ExpressibleByStringInterpolation", "addingPercentEncoding"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "searchLink"]
+- !private ["Ps32ExpressibleByStringInterpolation", "searchQuotation"]
 - !private ["Ps26ExpressibleByStringLiteral", "Encoding"]
 - !private ["Ps26ExpressibleByStringLiteral", "addingPercentEncoding"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
-- !private ["Ps26ExpressibleByStringLiteral", "searchLink"]
+- !private ["Ps26ExpressibleByStringLiteral", "searchQuotation"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "Encoding"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "addingPercentEncoding"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "searchLink"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "searchQuotation"]
 - !private ["Sf", "deinit"]
 - ["C15WallpaperMaster12HTMLDocument", "deinit"]
 - !private ["C15WallpaperMaster12HTMLDocument", "init"]
@@ -185,7 +185,7 @@ depends-member:
 - !private ["Ps8Hashable", "addingPercentEncoding"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "rawValue"]
-- !private ["Ps8Hashable", "searchLink"]
+- !private ["Ps8Hashable", "searchQuotation"]
 - !private ["Ps8Hashable", "urlQueryAllowed"]
 - !private ["Ps8Hashable", "utf8"]
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "CharacterSet"]
@@ -244,51 +244,51 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "addingPercentEncoding"]
 - ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps25LosslessStringConvertible", "searchLink"]
+- !private ["Ps25LosslessStringConvertible", "searchQuotation"]
 - !private ["Ps10MirrorPath", "Encoding"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
 - !private ["Ps10MirrorPath", "addingPercentEncoding"]
 - ["Ps10MirrorPath", "init"]
-- !private ["Ps10MirrorPath", "searchLink"]
+- !private ["Ps10MirrorPath", "searchQuotation"]
 - !private ["PSo8NSCoding", "Encoding"]
 - !private ["PSo8NSCoding", "addingPercentEncoding"]
 - ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "searchLink"]
+- !private ["PSo8NSCoding", "searchQuotation"]
 - !private ["PSo9NSCopying", "Encoding"]
 - !private ["PSo9NSCopying", "addingPercentEncoding"]
 - ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "searchLink"]
+- !private ["PSo9NSCopying", "searchQuotation"]
 - !private ["PSo16NSMutableCopying", "Encoding"]
 - !private ["PSo16NSMutableCopying", "addingPercentEncoding"]
 - ["PSo16NSMutableCopying", "init"]
-- !private ["PSo16NSMutableCopying", "searchLink"]
+- !private ["PSo16NSMutableCopying", "searchQuotation"]
 - !private ["CSo8NSObject", "Encoding"]
 - !private ["CSo8NSObject", "addingPercentEncoding"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "searchLink"]
+- !private ["CSo8NSObject", "searchQuotation"]
 - !private ["PSo16NSObjectProtocol", "Encoding"]
 - !private ["PSo16NSObjectProtocol", "addingPercentEncoding"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "searchLink"]
+- !private ["PSo16NSObjectProtocol", "searchQuotation"]
 - !private ["PSo19NSPasteboardReading", "Encoding"]
 - !private ["PSo19NSPasteboardReading", "addingPercentEncoding"]
 - ["PSo19NSPasteboardReading", "init"]
-- !private ["PSo19NSPasteboardReading", "searchLink"]
+- !private ["PSo19NSPasteboardReading", "searchQuotation"]
 - !private ["PSo19NSPasteboardWriting", "Encoding"]
 - !private ["PSo19NSPasteboardWriting", "addingPercentEncoding"]
 - ["PSo19NSPasteboardWriting", "init"]
-- !private ["PSo19NSPasteboardWriting", "searchLink"]
+- !private ["PSo19NSPasteboardWriting", "searchQuotation"]
 - !private ["PSo14NSSecureCoding", "Encoding"]
 - !private ["PSo14NSSecureCoding", "addingPercentEncoding"]
 - ["PSo14NSSecureCoding", "init"]
-- !private ["PSo14NSSecureCoding", "searchLink"]
+- !private ["PSo14NSSecureCoding", "searchQuotation"]
 - !private ["CSo8NSString", "Encoding"]
 - !private ["CSo8NSString", "addingPercentEncoding"]
 - ["CSo8NSString", "deinit"]
 - ["CSo8NSString", "init"]
-- !private ["CSo8NSString", "searchLink"]
+- !private ["CSo8NSString", "searchQuotation"]
 - !private ["C15WallpaperMaster7NodeSet", "Index"]
 - !private ["C15WallpaperMaster7NodeSet", "IndexDistance"]
 - !private ["C15WallpaperMaster7NodeSet", "SubSequence"]
@@ -354,15 +354,15 @@ depends-member:
 - !private ["SS", "addingPercentEncoding"]
 - ["SS", "deinit"]
 - ["SS", "init"]
-- !private ["SS", "searchLink"]
+- !private ["SS", "searchQuotation"]
 - !private ["Ps16TextOutputStream", "Encoding"]
 - !private ["Ps16TextOutputStream", "addingPercentEncoding"]
 - ["Ps16TextOutputStream", "init"]
-- !private ["Ps16TextOutputStream", "searchLink"]
+- !private ["Ps16TextOutputStream", "searchQuotation"]
 - !private ["Ps20TextOutputStreamable", "Encoding"]
 - !private ["Ps20TextOutputStreamable", "addingPercentEncoding"]
 - ["Ps20TextOutputStreamable", "init"]
-- !private ["Ps20TextOutputStreamable", "searchLink"]
+- !private ["Ps20TextOutputStreamable", "searchQuotation"]
 - ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
 - ["Vs6UInt32", "deinit"]
@@ -378,7 +378,7 @@ depends-member:
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "Encoding"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "addingPercentEncoding"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "searchLink"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "searchQuotation"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
@@ -386,20 +386,20 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "Encoding"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "addingPercentEncoding"]
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
-- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "searchLink"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "searchQuotation"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "Encoding"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "addingPercentEncoding"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
-- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "searchLink"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "searchQuotation"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "Encoding"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "addingPercentEncoding"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "searchLink"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "searchQuotation"]
 - !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "Encoding"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "addingPercentEncoding"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "searchLink"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "searchQuotation"]
 - !private ["Ps9_Hashable", "Encoding"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "Stride"]
@@ -408,7 +408,7 @@ depends-member:
 - !private ["Ps9_Hashable", "addingPercentEncoding"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "rawValue"]
-- !private ["Ps9_Hashable", "searchLink"]
+- !private ["Ps9_Hashable", "searchQuotation"]
 - !private ["Ps9_Hashable", "urlQueryAllowed"]
 - !private ["Ps9_Hashable", "utf8"]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
@@ -431,7 +431,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "addingPercentEncoding"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "searchLink"]
+- !private ["Ps21_ObjectiveCBridgeable", "searchQuotation"]
 - !private ["Ps21_ObjectiveCBridgeable", "urlQueryAllowed"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "IntegerLiteralType"]
