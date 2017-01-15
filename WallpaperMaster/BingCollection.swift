@@ -10,14 +10,17 @@ import Foundation
 import Cocoa
 
 class BingCollection: ImageGetterDelegate {
-    let contentURL      = "http://www.istartedsomething.com/bingimages/"
-    let imageContentURL = "http://www.istartedsomething.com/bingimages/cache/"
+    let contentURL      = "https://www.iorise.com/"
     let downloader = Downloader()
+    
+    func str2(_ num: Int) -> String {
+        return String(format: "%02d", num)
+    }
     
     func getLinkToImage(random: Bool) -> String? {
         let year: Int, month: Int, day: Int
         if random {
-            year         = 2010 + Int(arc4random()) % 7
+            year         = 2015 + Int(arc4random()) % 2
             month        = 1 + Int(arc4random()) % 12
             day          = 1 + Int(arc4random()) % 28
         } else {
@@ -27,8 +30,7 @@ class BingCollection: ImageGetterDelegate {
             month        = calendar.component(.month, from: date as Date)
             day          = calendar.component(.day,   from: date as Date)
         }
-        let monthLink = contentURL + "?m=\(month)&y=\(year)"
-        print("month link: ", monthLink)
+        let monthLink = contentURL + "?m=\(year)" + str2(month) + str2(day)
         
         // get HTML content of page with month best photos
         let monthHTMLString = getHTML(link: monthLink)
@@ -37,25 +39,49 @@ class BingCollection: ImageGetterDelegate {
         }
         
         do {
-            // get description of a specific photo
+            // get some text containing image links
             let monthHTML = try HTMLDocument(string: monthHTMLString!, encoding: String.Encoding.utf8)
-            let xpath = "/html/body/div[4]//table[@class='calendar']//td[@class='dated']"
+            let xpath = "/html//div[@class='entry-content']"
             let anchorArray = monthHTML.xpath(xpath)
+            var text = ""
+            for element in anchorArray {
+                text = text + "\n" + String(describing: element)
+            }
             
-            let dayIndex: Int = day - 1
-            let piece = String(describing: anchorArray[dayIndex])
-            
-            // extract link to the album from description of a tiny photo
-            let src = piece.searchQuotation(after: "data-original=")
-            if src == nil {
+            // get all the image links from web page
+            let ranges: [NSRange] = text.search(substring: "href=\"")
+            if ranges.count == 0 {
                 return nil
             }
             
-            // avoid extra information in the link
-            let offset = String(describing: "resize.php?i=").characters.count
-            let linkEnd = src!.substring(from: src!.index(src!.startIndex, offsetBy: offset))
-            let cropped = linkEnd.substring(to: linkEnd.characters.index(of: "&")!)
-            return imageContentURL + cropped
+            // store all links as [String]
+            var links = [String]()
+            for nsRange in ranges {
+                // convert NSRange to Range
+                let range = nsRange.range(for: text)!
+                
+                let index1    = range.upperBound
+                let cutString = text.substring(from: index1)
+                let index     = cutString.characters.index(of: "\"")!
+                let offset    = cutString.distance(from: cutString.startIndex, to: index)
+                let index2    = text.index(index1, offsetBy: offset - 1)
+                links.append(text[index1...index2])
+            }
+            
+            // find link to image with desired resolution
+            let best = "1920x1080" // without logo
+            for link in links {
+                if link.search(substring: best).count > 0 {
+                    return link
+                }
+            }
+            let good = "1920x1200"
+            for link in links {
+                if link.search(substring: good).count > 0 {
+                    return link
+                }
+            }
+            return nil
         } catch let error {
             print(error.localizedDescription)
             return nil

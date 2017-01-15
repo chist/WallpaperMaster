@@ -28,29 +28,18 @@ class NatGeoCollection: ImageGetterDelegate {
     }
     
     func extractLink(from JSONString: String, random: Bool) -> String? {
-        let searchString = "\"2048\":\""
-        let ranges: [NSRange]
-        
-        do {
-            // Create the regular expression.
-            let regExpr = try NSRegularExpression(pattern: searchString, options: [])
-            
-            // Use the regular expression to get an array of NSTextCheckingResult.
-            // Use map to extract the range from each result.
-            let length = JSONString.characters.count
-            let matches = regExpr.matches(in: JSONString, options: [], range: NSMakeRange(0, length))
-            ranges = matches.map{$0.range}
-        } catch {
-            ranges = []
-        }
-        
+        // get all links with desired resolution
+        let resolution: Int = 2048
+        let ranges: [NSRange] = JSONString.search(substring: "\"\(resolution)\":\"")
         if ranges.count == 0 {
             return nil
         }
         
+        // select the serial number of link to be extracted
         let number: Int = random ? Int(arc4random()) % ranges.count : 0
         let range = ranges[number].range(for: JSONString)!
         
+        // extract link
         let index1    = range.upperBound
         let cutString = JSONString.substring(from: index1)
         let index     = cutString.characters.index(of: "\"")!

@@ -22,6 +22,23 @@ extension String {
             return nil
         }
     }
+    
+    func search(substring: String) -> [NSRange] {
+        let ranges: [NSRange]
+        do {
+            // Create the regular expression.
+            let regExpr = try NSRegularExpression(pattern: substring, options: [])
+            
+            // Use the regular expression to get an array of NSTextCheckingResult.
+            // Use map to extract the range from each result.
+            let length = self.characters.count
+            let matches = regExpr.matches(in: self, options: [], range: NSMakeRange(0, length))
+            ranges = matches.map{$0.range}
+        } catch {
+            ranges = []
+        }
+        return ranges
+    }
 }
 
 extension NSRange {

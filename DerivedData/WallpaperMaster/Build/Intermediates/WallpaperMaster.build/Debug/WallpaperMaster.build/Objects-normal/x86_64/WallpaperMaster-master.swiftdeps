@@ -1,12 +1,12 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
 options: "46cf5b9e6cfd1f372120a1397c340c3f"
-build_time: [537819074, 530978000]
+build_time: [537825336, 717651000]
 inputs:
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Queryable.swift": [535483076, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/DesktopUpdater.swift": [537816536, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Document.swift": [535483076, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/DescribedImage.swift": [537798111, 0]
-  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/NatGeoCollection.swift": [537808415, 0]
+  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/NatGeoCollection.swift": [537825336, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/ImageSource.swift": [537815051, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Helpers.swift": [536858842, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Saver.swift": [537810970, 0]
@@ -16,9 +16,9 @@ inputs:
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/ImageGetterDelegate.swift": [537804499, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Downloader.swift": [537798894, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/ViewController.swift": [537531634, 0]
-  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/BingCollection.swift": [537819074, 0]
+  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/BingCollection.swift": [537824788, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/ErrorHandler.swift": [537807944, 0]
-  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Extensions.swift": [537817728, 0]
+  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Extensions.swift": [537824616, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/YandexCollection.swift": [537817803, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/AppDelegate.swift": [537806369, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/PreferencesHolder.swift": [537817234, 0]
