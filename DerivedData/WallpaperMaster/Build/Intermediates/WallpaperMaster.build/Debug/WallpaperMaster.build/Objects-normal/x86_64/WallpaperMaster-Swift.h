@@ -131,10 +131,11 @@ SWIFT_CLASS("_TtC15WallpaperMaster11AppDelegate")
 @property (nonatomic, readonly) CGFloat proportion;
 @end
 
+@class NSData;
 
 @interface NSImage (SWIFT_EXTENSION(WallpaperMaster))
-@property (nonatomic, readonly, copy) NSData * _Nonnull imagePNGRepresentation;
-- (void)savePNG:(NSString * _Nonnull)path;
+@property (nonatomic, readonly, strong) NSData * _Nullable PNGRepresentation;
+- (void)savePNGTo:(NSURL * _Nonnull)url;
 @end
 
 @class NSMenu;

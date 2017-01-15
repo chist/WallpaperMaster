@@ -6,29 +6,29 @@ provides-nominal:
 provides-member:
 - ["C15WallpaperMaster14ViewController", ""]
 provides-dynamic-lookup:
-- "showSavedInFinder"
-- "viewDidAppear"
-- "versionLabel"
-- "coffeeButtonClicked"
-- "donationLink"
-- "getAppVersion"
 - "viewDidLoad"
+- "getAppVersion"
+- "showSavedInFinder"
+- "donationLink"
+- "coffeeButtonClicked"
+- "versionLabel"
+- "viewDidAppear"
 depends-top-level:
-- "ViewController"
-- !private "UnicodeScalarType"
 - !private "Saver"
-- "NSTextField"
+- !private "NSApp"
+- "ViewController"
 - "NSViewController"
-- "AssignmentPrecedence"
+- !private "UnicodeScalarType"
+- !private "URL"
 - "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "NSWorkspace"
 - "NSButton"
 - "StringLiteralType"
-- "String"
+- "NSTextField"
 - !private "BooleanLiteralType"
+- "String"
 - !private "Bundle"
-- !private "NSWorkspace"
-- !private "URL"
-- !private "NSApp"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "NSApp"]

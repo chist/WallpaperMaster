@@ -8,14 +8,14 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "StringLiteralType"
+- "Int"
+- !private "UserDefaults"
+- "CastingPrecedence"
+- !private "=="
 - "ImageSource"
-- "PreferencesHolder"
 - "FloatLiteralType"
 - "IntegerLiteralType"
-- !private "UserDefaults"
-- "Int"
-- !private "=="
-- "CastingPrecedence"
+- "PreferencesHolder"
 depends-member:
 - ["Ps9AnyObject", "ImageSource"]
 - !private ["Ps9AnyObject", "UserDefaults"]

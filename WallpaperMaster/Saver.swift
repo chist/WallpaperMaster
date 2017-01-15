@@ -39,7 +39,7 @@ class Saver {
     }
     
     static func initCurrentImage() -> URL {
-        return Saver.appFolder.appendingPathComponent("current.jpg")
+        return Saver.appFolder.appendingPathComponent("current.png")
     }
     
     func save(wallpaper: DescribedImage) {
@@ -70,7 +70,7 @@ class Saver {
         
         let curName = self.prefix + wallpaper.name
         Saver.currentImageURL = Saver.appFolder.appendingPathComponent(curName)
-        wallpaper.image?.savePNG(Saver.currentImageURL.path)
+        try wallpaper.image?.savePNG(to: Saver.currentImageURL)
     }
     
     func saveToFavourites(_ wallpaper: DescribedImage) {
@@ -80,7 +80,7 @@ class Saver {
         
         // save image to folder on disk
         let imageURL = Saver.favFolder.appendingPathComponent(wallpaper.name)
-        wallpaper.image?.savePNG(imageURL.path)
+        wallpaper.image?.savePNG(to: imageURL)
     }
     
     func openFavourites() {
@@ -142,19 +142,25 @@ class Saver {
 }
 
 extension NSImage {
-    var imagePNGRepresentation: Data {
-        return NSBitmapImageRep(data: tiffRepresentation!)!.representation(using: .PNG, properties: [:])!
+    var PNGRepresentation: NSData? {
+        if let tiff = self.tiffRepresentation, let tiffData = NSBitmapImageRep(data: tiff) {
+            return tiffData.representation(using: NSBitmapImageFileType.PNG, properties: [:]) as NSData?
+        } else {
+            ErrorHandler.record("tiff or tiffData is nil.")
+        }
+        
+        return nil
     }
     
-    func savePNG(_ path:String) {
-        do {
-            if let url = URL(string: path) {
-                try imagePNGRepresentation.write(to: url);
-            } else {
-               ErrorHandler.record("Error: path is underfined.");
+    func savePNG(to url: URL) {
+        if let png = self.PNGRepresentation {
+            do {
+                try png.write(to: url, options: .atomicWrite)
+            } catch {
+                ErrorHandler.record("Failed to write image to disk.")
             }
-        } catch {
-            ErrorHandler.record("Error: image saving failed.");
+        } else {
+            ErrorHandler.record("Failed to get PNG representation.")
         }
     }
 }
