@@ -70,7 +70,7 @@ class Saver {
         
         let curName = self.prefix + wallpaper.name
         Saver.currentImageURL = Saver.appFolder.appendingPathComponent(curName)
-        try wallpaper.image?.savePNG(to: Saver.currentImageURL)
+        wallpaper.image?.savePNG(to: Saver.currentImageURL)
     }
     
     func saveToFavourites(_ wallpaper: DescribedImage) {

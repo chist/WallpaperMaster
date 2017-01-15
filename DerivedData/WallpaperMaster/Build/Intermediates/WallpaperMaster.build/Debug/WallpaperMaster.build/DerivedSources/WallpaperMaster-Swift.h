@@ -126,6 +126,39 @@ SWIFT_CLASS("_TtC15WallpaperMaster11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSButton;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC15WallpaperMaster21ContactViewController")
+@interface ContactViewController : NSViewController
+@property (nonatomic, readonly, copy) NSString * _Nonnull donationLink;
+- (IBAction)coffeeButtonClicked:(NSButton * _Nonnull)sender;
+- (nullable instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSSegmentedControl;
+@class NSView;
+@class NSTextField;
+
+SWIFT_CLASS("_TtC15WallpaperMaster18MainViewController")
+@interface MainViewController : NSViewController
+@property (nonatomic, strong) IBOutlet NSSegmentedControl * _Null_unspecified menuControl;
+@property (nonatomic, strong) IBOutlet NSView * _Null_unspecified containerView;
+@property (nonatomic, strong) IBOutlet NSTextField * _Null_unspecified versionLabel;
+@property (nonatomic, readonly, strong) NSViewController * _Nonnull sourceVC;
+@property (nonatomic, readonly, strong) NSViewController * _Nonnull contactVC;
+- (void)viewDidLoad;
+- (void)viewDidAppear;
+- (NSString * _Nonnull)getAppVersion;
+- (IBAction)menuPressed:(NSSegmentedControl * _Nonnull)sender;
+- (void)sourcesButtonPressed;
+- (void)contactButtonPressed;
+- (nullable instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 @interface NSImage (SWIFT_EXTENSION(WallpaperMaster))
 @property (nonatomic, readonly) CGFloat proportion;
@@ -136,6 +169,14 @@ SWIFT_CLASS("_TtC15WallpaperMaster11AppDelegate")
 @interface NSImage (SWIFT_EXTENSION(WallpaperMaster))
 @property (nonatomic, readonly, strong) NSData * _Nullable PNGRepresentation;
 - (void)savePNGTo:(NSURL * _Nonnull)url;
+@end
+
+
+SWIFT_CLASS("_TtC15WallpaperMaster21SourcesViewController")
+@interface SourcesViewController : NSViewController
+- (IBAction)showSavedInFinder:(NSButton * _Nonnull)sender;
+- (nullable instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSMenu;
@@ -165,24 +206,6 @@ SWIFT_CLASS("_TtC15WallpaperMaster20StatusMenuController")
 - (void)updateTimeInterval:(NSMenuItem * _Nonnull)sender;
 - (IBAction)quitClicked:(NSMenuItem * _Nonnull)sender;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSTextField;
-@class NSButton;
-@class NSBundle;
-@class NSCoder;
-
-SWIFT_CLASS("_TtC15WallpaperMaster14ViewController")
-@interface ViewController : NSViewController
-@property (nonatomic, strong) IBOutlet NSTextField * _Null_unspecified versionLabel;
-@property (nonatomic, readonly, copy) NSString * _Nonnull donationLink;
-- (void)viewDidLoad;
-- (void)viewDidAppear;
-- (NSString * _Nonnull)getAppVersion;
-- (IBAction)showSavedInFinder:(NSButton * _Nonnull)sender;
-- (IBAction)coffeeButtonClicked:(NSButton * _Nonnull)sender;
-- (nullable instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop

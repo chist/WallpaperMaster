@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["C15WallpaperMaster11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidFinishLaunching"
 - "applicationWillTerminate"
+- "applicationDidFinishLaunching"
 depends-top-level:
+- "NSObject"
+- "Notification"
 - "AppDelegate"
 - "NSApplicationDelegate"
-- "Notification"
-- "NSObject"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]

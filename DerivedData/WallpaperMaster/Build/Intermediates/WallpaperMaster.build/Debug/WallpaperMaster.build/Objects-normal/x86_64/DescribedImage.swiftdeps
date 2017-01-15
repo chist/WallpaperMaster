@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "StringLiteralType"
+- "DescribedImage"
 - "String"
 - !private "abs"
-- "DescribedImage"
 - "NSImage"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "abs"]
 - !private ["Ps9AnyObject", "hashValue"]

@@ -749,31 +749,49 @@
             <objects>
                 <windowController showSeguePresentationStyle="single" id="Phi-qx-339" sceneMemberID="viewController">
                     <window key="window" title="WallpaperMaster" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="s8n-cF-3hY">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="249" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="249" width="480" height="360"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
-                        <value key="minSize" type="size" width="480" height="270"/>
-                        <value key="maxSize" type="size" width="480" height="270"/>
+                        <value key="minSize" type="size" width="480" height="360"/>
+                        <value key="maxSize" type="size" width="480" height="360"/>
                     </window>
                     <connections>
-                        <segue destination="g0h-ya-Wle" kind="relationship" relationship="window.shadowedContentViewController" id="rhs-dy-1ea"/>
+                        <segue destination="cfq-p2-U4d" kind="relationship" relationship="window.shadowedContentViewController" id="zCO-5y-4aY"/>
                     </connections>
                 </windowController>
                 <customObject id="o6D-E3-XUr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="143" y="285"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="QKg-iw-sZJ">
+        <!--Main View Controller-->
+        <scene sceneID="RNT-Af-CKF">
             <objects>
-                <viewController id="g0h-ya-Wle" customClass="ViewController" customModule="WallpaperMaster" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="sEZ-a5-flV">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="cfq-p2-U4d" customClass="MainViewController" customModule="WallpaperMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="HXk-Gy-XZ0">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="290"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Crx-ax-3ie">
+                                <rect key="frame" x="0.0" y="-1" width="480" height="251"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="background" id="U4l-JC-CvE"/>
+                            </imageView>
+                            <containerView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HY3-fH-9XC">
+                                <rect key="frame" x="0.0" y="51" width="480" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </containerView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6CO-9d-2pb">
+                                <rect key="frame" x="163" y="29" width="155" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Version 0.9" id="ffF-l2-ihK">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ND-K2-YbE">
-                                <rect key="frame" x="75" y="10" width="330" height="17"/>
+                                <rect key="frame" x="75" y="11" width="330" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Copyright © 2017 Ivan Chistyakov. All rights reserved." id="rO4-NL-npI">
                                     <font key="font" metaFont="system"/>
@@ -781,37 +799,97 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JlA-Sk-oQp">
-                                <rect key="frame" x="56" y="238" width="369" height="23"/>
+                            <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NMq-dd-c7Z">
+                                <rect key="frame" x="150" y="257" width="182" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Photos are downloaded from those sources:" id="XQg-GA-xFS">
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="quY-uZ-394">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="  Sources  " selected="YES"/>
+                                        <segment label="Contact me" tag="1"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="menuPressed:" target="cfq-p2-U4d" id="TBv-R6-iOH"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="HY3-fH-9XC" id="yjE-1D-A5m"/>
+                        <outlet property="menuControl" destination="NMq-dd-c7Z" id="Uym-bY-nrl"/>
+                        <outlet property="versionLabel" destination="6CO-9d-2pb" id="teA-a3-QC0"/>
+                    </connections>
+                </viewController>
+                <customObject id="3VG-ec-7oU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="748"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="3aJ-tj-L6e">
+            <objects>
+                <viewController storyboardIdentifier="ContactVC" showSeguePresentationStyle="single" id="Fql-QC-3ie" userLabel="Contact View Controller" customClass="ContactViewController" customModule="WallpaperMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="8Sh-vj-TZ6" customClass="ContactV">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2oF-PG-oiq">
+                                <rect key="frame" x="56" y="139" width="369" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="If you dissatisfied or if you have any suggestions, please contact me at ivanappdeveloper@yandex.ru." id="Sxk-lw-3w6">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qaA-Z2-KSW">
+                                <rect key="frame" x="56" y="97" width="369" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="This app is completely free. Nevetherless, I would like to be encouraged by your small donation." id="6y1-6o-ngt">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XRP-Bl-IOs">
+                                <rect key="frame" x="166" y="44" width="149" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="coffeeImage" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="R8F-Af-wWb">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="coffeeButtonClicked:" target="Fql-QC-3ie" id="5hw-nB-tyE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="LWU-A9-uIg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="617"/>
+        </scene>
+        <!--Sources View Controller-->
+        <scene sceneID="z5r-YW-sTL">
+            <objects>
+                <viewController storyboardIdentifier="SourceVC" showSeguePresentationStyle="single" id="qYk-tS-BMw" userLabel="Sources View Controller" customClass="SourcesViewController" customModule="WallpaperMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="H4I-aa-8Xg">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IMg-qI-C3U">
-                                <rect key="frame" x="171" y="121" width="139" height="32"/>
+                                <rect key="frame" x="170" y="16" width="139" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Show in Finder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fls-UD-TEn">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="showSavedInFinder:" target="g0h-ya-Wle" id="Lza-Ce-8RC"/>
+                                    <action selector="showSavedInFinder:" target="qYk-tS-BMw" id="OxA-3z-8Gh"/>
                                 </connections>
                             </button>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-R0-sRS">
-                                <rect key="frame" x="56" y="146" width="369" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Saved photos are stored in ~/Documents/WallpaperMaster" id="Znw-P3-C50">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibQ-qG-joh">
-                                <rect key="frame" x="144" y="176" width="195" height="68"/>
+                                <rect key="frame" x="143" y="94" width="195" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" id="OzQ-CY-EEL">
                                     <font key="font" metaFont="system"/>
@@ -822,47 +900,34 @@ www.fotki.yandex.ru www.iorise.com</string>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6CO-9d-2pb">
-                                <rect key="frame" x="163" y="27" width="155" height="17"/>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-R0-sRS">
+                                <rect key="frame" x="37" y="50" width="407" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Version 0.9" id="ffF-l2-ihK">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Saved photos are stored in ~/Documents/WallpaperMaster/Saved. You can add your images there." id="Znw-P3-C50">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qaA-Z2-KSW">
-                                <rect key="frame" x="56" y="82" width="369" height="34"/>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JlA-Sk-oQp">
+                                <rect key="frame" x="56" y="157" width="369" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="This app is completely free. Nevetherless, I would like to be encouraged by your small donation." id="6y1-6o-ngt">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Photos are downloaded from those sources:" id="XQg-GA-xFS">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XRP-Bl-IOs">
-                                <rect key="frame" x="178" y="46" width="126" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="coffeeImage" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="R8F-Af-wWb">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="coffeeButtonClicked:" target="g0h-ya-Wle" id="fDC-Me-S1d"/>
-                                </connections>
-                            </button>
                         </subviews>
                     </view>
-                    <connections>
-                        <outlet property="versionLabel" destination="6CO-9d-2pb" id="IBS-dq-z9f"/>
-                    </connections>
                 </viewController>
-                <customObject id="IYA-tI-fhH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="SPL-9n-xn9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719" y="279"/>
+            <point key="canvasLocation" x="721" y="884"/>
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="960" height="540"/>
         <image name="coffeeImage" width="480" height="110"/>
     </resources>
 </document>
