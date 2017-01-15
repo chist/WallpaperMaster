@@ -19,7 +19,7 @@ class ErrorHandler {
         let appFolder    = URL(fileURLWithPath: documentsDir!).appendingPathComponent("WallpaperMaster")
         let fileurl      =  appFolder.appendingPathComponent("log.txt")
         
-        let string = getCurrentTime() + error + "\n"
+        let string = getCurrentTime() + " " + error + "\n"
         let data = string.data(using: String.Encoding.utf8, allowLossyConversion: false)!
         
         if FileManager.default.fileExists(atPath: fileurl.path) {
@@ -50,7 +50,13 @@ class ErrorHandler {
         let hour     = calendar.component(.hour,   from: date as Date)
         let minute   = calendar.component(.minute, from: date as Date)
         let second   = calendar.component(.second, from: date as Date)
-        let timeString = "\(day)-\(month)-\(year) \(hour):\(minute):\(second) "
+        let calendarString = str2(day)  + "-" + str2(month)  + "-" + str2(year)
+        let clockString    = str2(hour) + "-" + str2(minute) + "-" + str2(second)
+        let timeString = calendarString + " " + clockString
         return timeString
+    }
+    
+    static func str2(_ num: Int) -> String {
+        return String(format: "%02d", num)
     }
 }
