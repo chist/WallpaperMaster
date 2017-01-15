@@ -10,7 +10,7 @@ import Foundation
 import Cocoa
 
 class BingCollection: ImageGetterDelegate {
-    let contentURL      = "https://www.iorise.com/"
+    let contentURL = "https://www.iorise.com/"
     let downloader = Downloader()
     
     func str2(_ num: Int) -> String {

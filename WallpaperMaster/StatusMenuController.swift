@@ -19,13 +19,13 @@ class StatusMenuController: NSObject, NSMenuDelegate {
     @IBOutlet weak var bingOption:   NSMenuItem!
     @IBOutlet weak var savedOption:  NSMenuItem!
     
+    var options = [ImageSource : NSMenuItem]()
     let preferencesHolder = PreferencesHolder()
+    var desktopUpdater: DesktopUpdater? = nil
     
     // periods of wallpaper update in seconds
     let times: [(Int, String)] = [(5, "minutes"), (15, "minutes"), (30, "minutes"),
                                   (1, "hour"), (3, "hours"), (6, "hours"), (1, "day")]
-    
-    var desktopUpdater: DesktopUpdater? = nil
     
     override func awakeFromNib() {
         // add menu to status bar
@@ -59,26 +59,19 @@ class StatusMenuController: NSObject, NSMenuDelegate {
             }
         }
         
+        // create dictionary of image sources and option items
+        options[.NatGeo] = NatGeoOption
+        options[.RGO]    = RGOOption
+        options[.yandex] = yandexOption
+        options[.bing]   = bingOption
+        options[.saved]  = savedOption
+        
         // mark default image source
-        let defaultSourceOption = preferencesHolder.sourceOption
-        var checkedSourceOption = defaultSourceOption
-        switch defaultSourceOption {
-        case .NatGeo:
-            NatGeoOption.state = 1
-        case .yandex:
-            yandexOption.state = 1
-        case .RGO:
-            RGOOption.state    = 1
-        case .bing:
-            bingOption.state   = 1
-        case .saved:
-            if Saver.reviseFavouriteImages().count == 0 {
-                NatGeoOption.state  = 1
-                checkedSourceOption = .NatGeo
-            } else {
-                savedOption.state   = 1
-            }
+        var defaultSource = preferencesHolder.sourceOption
+        if defaultSource == .saved && Saver.reviseFavouriteImages().count == 0 {
+            defaultSource = .NatGeo
         }
+        updateItemStates(current: defaultSource)
         
         // mark savedOption as active / inactive
         if Saver.reviseFavouriteImages().count > 0 {
@@ -88,11 +81,11 @@ class StatusMenuController: NSObject, NSMenuDelegate {
         }
         
         // update time interval
-        let defaultTimeOption = preferencesHolder.timeOption
-        updateTimeInterval(timeSubmenu.item(at: defaultTimeOption)!)
+        let defaultTime = preferencesHolder.timeOption
+        updateTimeInterval(timeSubmenu.item(at: defaultTime)!)
         
         // initialize desktopUpdater
-        desktopUpdater = DesktopUpdater(source: checkedSourceOption)
+        desktopUpdater = DesktopUpdater(source: defaultSource)
     }
     
     func menuWillOpen(_ menu: NSMenu) {
@@ -124,69 +117,44 @@ class StatusMenuController: NSObject, NSMenuDelegate {
         desktopUpdater?.addToFavourites()
     }
     
+    func updateItemStates(current: ImageSource) {
+        // mark current source option with tick
+        for (key, value) in options {
+            value.state = (key == current) ? 1 : 0
+        }
+        
+        // enable / disable "Get photo of the day" option
+        statusBarMenu.item(at: 1)?.isEnabled = (current != .saved)
+    }
+    
     @IBAction func NatGeoIsChosen(_ sender: NSMenuItem) {
-        NatGeoOption.state = 1
-        yandexOption.state = 0
-        RGOOption.state    = 0
-        bingOption.state   = 0
-        savedOption.state  = 0
+        updateItemStates(current: .NatGeo)
         desktopUpdater!.imageGetter = NatGeoCollection()
         preferencesHolder.setSourceOption(.NatGeo)
-        
-        // enable "Get photo of the day" option
-        statusBarMenu.item(at: 1)?.isEnabled = true
     }
     
     @IBAction func YandexIsChosen(_ sender: NSMenuItem) {
-        NatGeoOption.state = 0
-        yandexOption.state = 1
-        RGOOption.state    = 0
-        bingOption.state   = 0
-        savedOption.state  = 0
+        updateItemStates(current: .yandex)
         desktopUpdater!.imageGetter = YandexCollection()
         preferencesHolder.setSourceOption(.yandex)
-        
-        // enable "Get photo of the day" option
-        statusBarMenu.item(at: 1)?.isEnabled = true
     }
     
     @IBAction func RGOIsChosen(_ sender: NSMenuItem) {
-        NatGeoOption.state = 0
-        yandexOption.state = 0
-        RGOOption.state    = 1
-        bingOption.state   = 0
-        savedOption.state  = 0
+        updateItemStates(current: .RGO)
         desktopUpdater!.imageGetter = RGOCollection()
         preferencesHolder.setSourceOption(.RGO)
-        
-        // enable "Get photo of the day" option
-        statusBarMenu.item(at: 1)?.isEnabled = true
     }
 
     @IBAction func bingIsChosen(_ sender: NSMenuItem) {
-        NatGeoOption.state = 0
-        yandexOption.state = 0
-        RGOOption.state    = 0
-        bingOption.state   = 1
-        savedOption.state  = 0
+        updateItemStates(current: .bing)
         desktopUpdater!.imageGetter = BingCollection()
         preferencesHolder.setSourceOption(.bing)
-        
-        // enable "Get photo of the day" option
-        statusBarMenu.item(at: 1)?.isEnabled = true
     }
     
     @IBAction func savedIsChosen(_ sender: AnyObject) {
-        NatGeoOption.state = 0
-        yandexOption.state = 0
-        RGOOption.state    = 0
-        bingOption.state   = 0
-        savedOption.state  = 1
+        updateItemStates(current: .saved)
         desktopUpdater!.imageGetter = SavedCollection()
         preferencesHolder.setSourceOption(.saved)
-        
-        // disable "Get photo of the day" option
-        statusBarMenu.item(at: 1)?.isEnabled = false
     }
     
     
