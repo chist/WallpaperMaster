@@ -9,32 +9,34 @@ provides-dynamic-lookup:
 - "spaceChanged"
 - "updateWallpaper"
 depends-top-level:
-- "Saver"
-- "Double"
-- !private "YandexCollection"
+- !private "!="
+- "ImageSource"
+- !private "NatGeoCollection"
+- !private "NSNotification"
+- !private "NSScreen"
+- "BooleanLiteralType"
+- !private "RGOCollection"
 - "ImageGetterDelegate"
-- "IntegerLiteralType"
-- !private "DispatchQueue"
+- !private "ErrorHandler"
 - "Bool"
 - "FloatLiteralType"
-- "Dictionary"
-- !private "~="
-- "AssignmentPrecedence"
-- !private "PreferencesHolder"
-- !private "RGOCollection"
-- !private "NSNotification"
-- !private "=="
-- !private "NatGeoCollection"
-- !private "NSScreen"
-- !private "NSWorkspace"
-- "DesktopUpdater"
-- "Timer"
-- !private "print"
-- !private "!="
-- "BooleanLiteralType"
+- !private "DispatchQueue"
 - "DescribedImage"
+- !private "SavedCollection"
+- "Dictionary"
+- "DesktopUpdater"
+- "IntegerLiteralType"
+- !private "=="
+- "AssignmentPrecedence"
+- "Saver"
+- "Double"
+- "Timer"
+- !private "YandexCollection"
+- !private "PreferencesHolder"
+- !private "NSWorkspace"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchQueue"]
+- !private ["Ps9AnyObject", "ErrorHandler"]
 - !private ["Ps9AnyObject", "NSNotification"]
 - !private ["Ps9AnyObject", "NSScreen"]
 - !private ["Ps9AnyObject", "NSWorkspace"]
@@ -42,6 +44,7 @@ depends-member:
 - !private ["Ps9AnyObject", "NatGeoCollection"]
 - !private ["Ps9AnyObject", "PreferencesHolder"]
 - !private ["Ps9AnyObject", "RGOCollection"]
+- !private ["Ps9AnyObject", "SavedCollection"]
 - ["Ps9AnyObject", "Saver"]
 - !private ["Ps9AnyObject", "Timer"]
 - !private ["Ps9AnyObject", "YandexCollection"]
@@ -58,7 +61,7 @@ depends-member:
 - !private ["Ps9AnyObject", "main"]
 - !private ["Ps9AnyObject", "notificationCenter"]
 - !private ["Ps9AnyObject", "period"]
-- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "record"]
 - !private ["Ps9AnyObject", "resetTimer"]
 - !private ["Ps9AnyObject", "save"]
 - !private ["Ps9AnyObject", "saveToFavourites"]
@@ -66,18 +69,15 @@ depends-member:
 - !private ["Ps9AnyObject", "scheduledTimer"]
 - !private ["Ps9AnyObject", "setDesktopImageURL"]
 - !private ["Ps9AnyObject", "shared"]
-- !private ["Ps9AnyObject", "sourceOption"]
 - !private ["Ps9AnyObject", "spaceChanged"]
 - !private ["Ps9AnyObject", "timeOption"]
 - !private ["Ps9AnyObject", "timer"]
 - !private ["Ps9AnyObject", "updateWallpaper"]
 - ["Ps9AnyObject", ""]
-- !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "Name"]
-- !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "Value"]
 - !private ["Ps7CVarArg", "addObserver"]
 - !private ["Ps7CVarArg", "async"]
@@ -88,13 +88,9 @@ depends-member:
 - !private ["Ps7CVarArg", "scheduledTimer"]
 - !private ["Ps7CVarArg", "setDesktopImageURL"]
 - !private ["Ps7CVarArg", "shared"]
-- !private ["Vs11ClosedRange", "deinit"]
 - !private ["Ps10Collection", "Key"]
 - !private ["Ps10Collection", "Value"]
 - !private ["Ps10Comparable", "NSWorkspaceActiveSpaceDidChange"]
-- !private ["Ps10Comparable", "Stride"]
-- !private ["Vs20CountableClosedRange", "deinit"]
-- !private ["Vs14CountableRange", "deinit"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "Name"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
@@ -108,16 +104,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setDesktopImageURL"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
 - ["Ps28CustomDebugStringConvertible", "some"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "Key"]
-- !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "Value"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - ["Ps17CustomReflectable", "some"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "Name"]
-- !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addObserver"]
@@ -135,13 +128,16 @@ depends-member:
 - ["C15WallpaperMaster14DesktopUpdater", "DescribedImage"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "DispatchQueue"]
 - ["C15WallpaperMaster14DesktopUpdater", "Double"]
+- !private ["C15WallpaperMaster14DesktopUpdater", "ErrorHandler"]
 - ["C15WallpaperMaster14DesktopUpdater", "ImageGetterDelegate"]
+- ["C15WallpaperMaster14DesktopUpdater", "ImageSource"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "NSNotification"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "NSScreen"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "NSWorkspace"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "NatGeoCollection"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "PreferencesHolder"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "RGOCollection"]
+- !private ["C15WallpaperMaster14DesktopUpdater", "SavedCollection"]
 - ["C15WallpaperMaster14DesktopUpdater", "Saver"]
 - ["C15WallpaperMaster14DesktopUpdater", "Timer"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "YandexCollection"]
@@ -152,7 +148,6 @@ depends-member:
 - ["C15WallpaperMaster14DesktopUpdater", "init"]
 - ["C15WallpaperMaster14DesktopUpdater", "isRandom"]
 - ["C15WallpaperMaster14DesktopUpdater", "period"]
-- !private ["C15WallpaperMaster14DesktopUpdater", "print"]
 - ["C15WallpaperMaster14DesktopUpdater", "resetTimer"]
 - ["C15WallpaperMaster14DesktopUpdater", "saver"]
 - ["C15WallpaperMaster14DesktopUpdater", "spaceChanged"]
@@ -169,7 +164,8 @@ depends-member:
 - ["Sd", "deinit"]
 - !private ["Ps9Equatable", "NSWorkspaceActiveSpaceDidChange"]
 - !private ["Ps9Equatable", "Name"]
-- !private ["Ps9Equatable", "Stride"]
+- ["Ps9Equatable", "NatGeo"]
+- ["Ps9Equatable", "RGO"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addObserver"]
 - !private ["Ps9Equatable", "async"]
@@ -177,18 +173,22 @@ depends-member:
 - !private ["Ps9Equatable", "invalidate"]
 - !private ["Ps9Equatable", "main"]
 - !private ["Ps9Equatable", "notificationCenter"]
+- ["Ps9Equatable", "saved"]
 - !private ["Ps9Equatable", "scheduledTimer"]
 - !private ["Ps9Equatable", "setDesktopImageURL"]
 - !private ["Ps9Equatable", "shared"]
+- ["Ps9Equatable", "yandex"]
 - !private ["Ps5Error", "deinit"]
+- !private ["Ps5Error", "localizedDescription"]
+- !private ["C15WallpaperMaster12ErrorHandler", "record"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps8Hashable", "NSWorkspaceActiveSpaceDidChange"]
 - !private ["Ps8Hashable", "Name"]
-- !private ["Ps8Hashable", "Stride"]
+- ["Ps8Hashable", "NatGeo"]
+- ["Ps8Hashable", "RGO"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addObserver"]
 - !private ["Ps8Hashable", "async"]
@@ -196,23 +196,26 @@ depends-member:
 - !private ["Ps8Hashable", "invalidate"]
 - !private ["Ps8Hashable", "main"]
 - !private ["Ps8Hashable", "notificationCenter"]
+- ["Ps8Hashable", "saved"]
 - !private ["Ps8Hashable", "scheduledTimer"]
 - !private ["Ps8Hashable", "setDesktopImageURL"]
 - !private ["Ps8Hashable", "shared"]
+- ["Ps8Hashable", "yandex"]
 - ["P15WallpaperMaster19ImageGetterDelegate", "deinit"]
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "getImageOfTheDay"]
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "getRandomImage"]
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "init"]
+- ["O15WallpaperMaster11ImageSource", "NatGeo"]
+- ["O15WallpaperMaster11ImageSource", "RGO"]
+- ["O15WallpaperMaster11ImageSource", "deinit"]
+- ["O15WallpaperMaster11ImageSource", "saved"]
+- ["O15WallpaperMaster11ImageSource", "yandex"]
 - !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "Value"]
 - !private ["Ps13IndexableBase", "Key"]
 - !private ["Ps13IndexableBase", "Value"]
-- !private ["Si", "Stride"]
 - ["Si", "deinit"]
-- !private ["Ps7Integer", "Stride"]
-- !private ["Ps17IntegerArithmetic", "Stride"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps10MirrorPath", "Stride"]
 - !private ["PSo8NSCoding", "Name"]
 - !private ["PSo9NSCopying", "Name"]
 - !private ["CSo14NSNotification", "Name"]
@@ -254,12 +257,16 @@ depends-member:
 - ["Sq", "some"]
 - ["C15WallpaperMaster17PreferencesHolder", "deinit"]
 - !private ["C15WallpaperMaster17PreferencesHolder", "init"]
-- !private ["C15WallpaperMaster17PreferencesHolder", "sourceOption"]
 - !private ["C15WallpaperMaster17PreferencesHolder", "timeOption"]
 - ["C15WallpaperMaster13RGOCollection", "deinit"]
 - !private ["C15WallpaperMaster13RGOCollection", "init"]
-- !private ["Vs5Range", "deinit"]
 - !private ["Ps16RawRepresentable", "NSWorkspaceActiveSpaceDidChange"]
+- ["Ps16RawRepresentable", "NatGeo"]
+- ["Ps16RawRepresentable", "RGO"]
+- ["Ps16RawRepresentable", "saved"]
+- ["Ps16RawRepresentable", "yandex"]
+- ["C15WallpaperMaster15SavedCollection", "deinit"]
+- !private ["C15WallpaperMaster15SavedCollection", "init"]
 - !private ["C15WallpaperMaster5Saver", "currentImageURL"]
 - ["C15WallpaperMaster5Saver", "deinit"]
 - ["C15WallpaperMaster5Saver", "init"]
@@ -268,20 +275,18 @@ depends-member:
 - ["V10ObjectiveC8Selector", "deinit"]
 - !private ["Ps8Sequence", "Key"]
 - !private ["Ps8Sequence", "Value"]
-- !private ["Ps13SignedInteger", "Stride"]
-- !private ["Ps12SignedNumber", "Stride"]
-- !private ["Ps10Strideable", "Stride"]
+- !private ["SS", "deinit"]
 - ["CSo5Timer", "deinit"]
 - !private ["CSo5Timer", "invalidate"]
 - !private ["CSo5Timer", "scheduledTimer"]
 - ["C15WallpaperMaster16YandexCollection", "deinit"]
 - !private ["C15WallpaperMaster16YandexCollection", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "Name"]
 - !private ["Ps9_Hashable", "NSWorkspaceActiveSpaceDidChange"]
 - !private ["Ps9_Hashable", "Name"]
-- !private ["Ps9_Hashable", "Stride"]
+- ["Ps9_Hashable", "NatGeo"]
+- ["Ps9_Hashable", "RGO"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addObserver"]
 - !private ["Ps9_Hashable", "async"]
@@ -289,31 +294,23 @@ depends-member:
 - !private ["Ps9_Hashable", "invalidate"]
 - !private ["Ps9_Hashable", "main"]
 - !private ["Ps9_Hashable", "notificationCenter"]
+- ["Ps9_Hashable", "saved"]
 - !private ["Ps9_Hashable", "scheduledTimer"]
 - !private ["Ps9_Hashable", "setDesktopImageURL"]
 - !private ["Ps9_Hashable", "shared"]
-- !private ["Ps14_Incrementable", "Stride"]
-- !private ["Ps8_Integer", "Stride"]
-- !private ["Ps18_IntegerArithmetic", "Stride"]
+- ["Ps9_Hashable", "yandex"]
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "NSWorkspaceActiveSpaceDidChange"]
-- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
-- !private ["Ps14_SignedInteger", "Stride"]
-- !private ["Ps11_Strideable", "Stride"]
 - !private ["Ps20_SwiftNewtypeWrapper", "NSWorkspaceActiveSpaceDidChange"]
 depends-nominal:
 - "Ps9AnyObject"
-- !private "Ps17BitwiseOperations"
 - "Sb"
 - !private "Ps7CVarArg"
-- !private "Vs11ClosedRange"
 - !private "Ps10Collection"
 - !private "Ps10Comparable"
-- !private "Vs20CountableClosedRange"
-- !private "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
@@ -324,21 +321,19 @@ depends-nominal:
 - !private "CSo14DispatchObject"
 - "CSo13DispatchQueue"
 - "Sd"
-- !private "Ps9Equatable"
+- "Ps9Equatable"
 - !private "Ps5Error"
+- !private "C15WallpaperMaster12ErrorHandler"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
-- !private "Ps27ExpressibleByIntegerLiteral"
 - "Ps23ExpressibleByNilLiteral"
-- !private "Ps8Hashable"
+- "Ps8Hashable"
 - "P15WallpaperMaster19ImageGetterDelegate"
+- "O15WallpaperMaster11ImageSource"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - "Si"
-- !private "Ps7Integer"
-- !private "Ps17IntegerArithmetic"
 - !private "Ps25LosslessStringConvertible"
-- !private "Ps10MirrorPath"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "CSo14NSNotification"
@@ -353,27 +348,19 @@ depends-nominal:
 - "Sq"
 - "C15WallpaperMaster17PreferencesHolder"
 - "C15WallpaperMaster13RGOCollection"
-- !private "Vs5Range"
-- !private "Ps16RawRepresentable"
+- "Ps16RawRepresentable"
+- "C15WallpaperMaster15SavedCollection"
 - "C15WallpaperMaster5Saver"
 - "V10ObjectiveC8Selector"
 - !private "Ps8Sequence"
-- !private "Ps13SignedInteger"
-- !private "Ps12SignedNumber"
-- !private "Ps10Strideable"
+- !private "SS"
 - "CSo5Timer"
 - "C15WallpaperMaster16YandexCollection"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
-- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
-- !private "Ps9_Hashable"
-- !private "Ps14_Incrementable"
-- !private "Ps8_Integer"
-- !private "Ps18_IntegerArithmetic"
+- "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
-- !private "Ps14_SignedInteger"
-- !private "Ps11_Strideable"
 - !private "Ps20_SwiftNewtypeWrapper"
 depends-dynamic-lookup:
 depends-external:
@@ -390,4 +377,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "c0016cb4e35967bcd59382d0f286d53e"
+interface-hash: "fd1030ae7c9a5e63e093be2d1aa1d09f"

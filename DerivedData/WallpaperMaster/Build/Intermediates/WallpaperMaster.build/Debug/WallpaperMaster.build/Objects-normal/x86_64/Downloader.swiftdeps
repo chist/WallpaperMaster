@@ -7,21 +7,25 @@ provides-member:
 - ["C15WallpaperMaster10Downloader", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Data"
-- "String"
-- "Downloader"
-- !private "StringLiteralType"
 - !private "NSImage"
+- "Saver"
+- "String"
 - !private "URL"
+- "Downloader"
+- !private "Data"
+- !private "StringLiteralType"
 - "DescribedImage"
 - !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "Data"]
 - !private ["Ps9AnyObject", "DescribedImage"]
 - !private ["Ps9AnyObject", "NSImage"]
+- ["Ps9AnyObject", "Saver"]
 - !private ["Ps9AnyObject", "URL"]
-- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "saver"]
+- !private ["Ps9AnyObject", "selectFavouriteImage"]
 - ["Ps9AnyObject", ""]
 - !private ["Ps23BidirectionalCollection", "init"]
 - !private ["Ps22BidirectionalIndexable", "init"]
@@ -39,12 +43,15 @@ depends-member:
 - !private ["C15WallpaperMaster10Downloader", "Data"]
 - ["C15WallpaperMaster10Downloader", "DescribedImage"]
 - !private ["C15WallpaperMaster10Downloader", "NSImage"]
+- ["C15WallpaperMaster10Downloader", "Saver"]
 - ["C15WallpaperMaster10Downloader", "String"]
 - !private ["C15WallpaperMaster10Downloader", "URL"]
 - ["C15WallpaperMaster10Downloader", "deinit"]
+- ["C15WallpaperMaster10Downloader", "getFavouriteImage"]
 - ["C15WallpaperMaster10Downloader", "getImage"]
 - ["C15WallpaperMaster10Downloader", "init"]
 - !private ["C15WallpaperMaster10Downloader", "print"]
+- ["C15WallpaperMaster10Downloader", "saver"]
 - !private ["Ps9Equatable", "init"]
 - ["Ps5Error", "deinit"]
 - !private ["Ps5Error", "localizedDescription"]
@@ -75,6 +82,9 @@ depends-member:
 - !private ["Ps26RangeReplaceableCollection", "init"]
 - !private ["Ps25RangeReplaceableIndexable", "init"]
 - !private ["P10Foundation20ReferenceConvertible", "init"]
+- ["C15WallpaperMaster5Saver", "deinit"]
+- ["C15WallpaperMaster5Saver", "init"]
+- !private ["C15WallpaperMaster5Saver", "selectFavouriteImage"]
 - !private ["Ps8Sequence", "init"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
@@ -135,6 +145,7 @@ depends-nominal:
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
 - !private "P10Foundation20ReferenceConvertible"
+- "C15WallpaperMaster5Saver"
 - !private "Ps8Sequence"
 - "SS"
 - !private "Ps16TextOutputStream"
@@ -165,4 +176,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "44f0551529827f64deb6620aeaf30646"
+interface-hash: "3899f08a20424506b763ae3990747f5d"

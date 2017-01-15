@@ -10,6 +10,9 @@ import Foundation
 import Cocoa
 
 class Downloader {
+    let saver = Saver()
+    
+    // download image from the Internet and add link and generated name as a description
     func getImage(from link: String) -> DescribedImage {
         do {
             let data = try Data(contentsOf: URL(string: link)!)
@@ -19,5 +22,10 @@ class Downloader {
             print(error.localizedDescription)
             return DescribedImage(nil, from: "")
         }
+    }
+    
+    // choose random image from folder
+    func getFavouriteImage() -> DescribedImage {
+        return saver.selectFavouriteImage()
     }
 }

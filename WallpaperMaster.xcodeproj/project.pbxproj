@@ -18,6 +18,8 @@
 		4FD5BF8F1E1DA6150024E9B4 /* NatGeoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */; };
 		4FE193621E22B58A00AFC31A /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE193611E22B58A00AFC31A /* Saver.swift */; };
 		4FE193641E22BEBB00AFC31A /* PreferencesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE193631E22BEBB00AFC31A /* PreferencesHolder.swift */; };
+		4FE4A91C1E2B8F2A0054CD5B /* SavedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4A91B1E2B8F2A0054CD5B /* SavedCollection.swift */; };
+		4FE4A9201E2BBE800054CD5B /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4A91F1E2BBE800054CD5B /* ImageSource.swift */; };
 		4FEBD35B1E27E5C6000B65F5 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBD35A1E27E5C6000B65F5 /* ErrorHandler.swift */; };
 		4FECB0561E1D767C003FB579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0551E1D767C003FB579 /* AppDelegate.swift */; };
 		4FECB05A1E1D767C003FB579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECB0591E1D767C003FB579 /* Assets.xcassets */; };
@@ -65,6 +67,8 @@
 		4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NatGeoCollection.swift; sourceTree = "<group>"; };
 		4FE193611E22B58A00AFC31A /* Saver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
 		4FE193631E22BEBB00AFC31A /* PreferencesHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesHolder.swift; sourceTree = "<group>"; };
+		4FE4A91B1E2B8F2A0054CD5B /* SavedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedCollection.swift; sourceTree = "<group>"; };
+		4FE4A91F1E2BBE800054CD5B /* ImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
 		4FEBD35A1E27E5C6000B65F5 /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		4FECB0521E1D767C003FB579 /* WallpaperMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECB0551E1D767C003FB579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,13 +129,11 @@
 		4FAE14221E1ECCFA00110CE4 /* Image getters */ = {
 			isa = PBXGroup;
 			children = (
+				4FE4A91F1E2BBE800054CD5B /* ImageSource.swift */,
 				4FD5BF8E1E1DA6150024E9B4 /* NatGeoCollection.swift */,
 				4FF51F9C1E23F7EE0028F862 /* RGOCollection.swift */,
 				4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */,
-				4FC398E81E1FB3400045B05C /* Extensions.swift */,
-				4F0190C41E20448D00CA2003 /* Downloader.swift */,
-				4FA498621E212D3200E30460 /* DescribedImage.swift */,
-				4FECB0941E1D7BA3003FB579 /* ImageGetterDelegate.swift */,
+				4FE4A91B1E2B8F2A0054CD5B /* SavedCollection.swift */,
 			);
 			name = "Image getters";
 			sourceTree = "<group>";
@@ -162,6 +164,10 @@
 		4FECB0541E1D767C003FB579 /* WallpaperMaster */ = {
 			isa = PBXGroup;
 			children = (
+				4FC398E81E1FB3400045B05C /* Extensions.swift */,
+				4F0190C41E20448D00CA2003 /* Downloader.swift */,
+				4FA498621E212D3200E30460 /* DescribedImage.swift */,
+				4FECB0941E1D7BA3003FB579 /* ImageGetterDelegate.swift */,
 				4FAE14221E1ECCFA00110CE4 /* Image getters */,
 				4FECB0551E1D767C003FB579 /* AppDelegate.swift */,
 				4F0C2F651E211CCD006B41FF /* StatusMenuController.swift */,
@@ -373,6 +379,7 @@
 				4F0491111E2423E800F9AF62 /* README.md in Sources */,
 				4FA498631E212D3200E30460 /* DescribedImage.swift in Sources */,
 				4FD5BF8F1E1DA6150024E9B4 /* NatGeoCollection.swift in Sources */,
+				4FE4A9201E2BBE800054CD5B /* ImageSource.swift in Sources */,
 				4FECB08F1E1D7760003FB579 /* Helpers.swift in Sources */,
 				4FE193621E22B58A00AFC31A /* Saver.swift in Sources */,
 				4FECB0921E1D7760003FB579 /* NodeSet.swift in Sources */,
@@ -389,6 +396,7 @@
 				4FECB08E1E1D7760003FB579 /* Error.swift in Sources */,
 				4FF51F9D1E23F7EE0028F862 /* RGOCollection.swift in Sources */,
 				4FECB08D1E1D7760003FB579 /* Element.swift in Sources */,
+				4FE4A91C1E2B8F2A0054CD5B /* SavedCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

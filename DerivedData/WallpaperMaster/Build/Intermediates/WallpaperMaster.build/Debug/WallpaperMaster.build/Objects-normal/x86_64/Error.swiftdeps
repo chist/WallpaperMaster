@@ -7,16 +7,16 @@ provides-member:
 - ["O15WallpaperMaster8XMLError", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "StringLiteralType"
+- "Int"
+- !private "^-^"
+- "Error"
 - !private "xmlGetLastError"
 - !private "xmlResetError"
-- !private "??"
 - !private "CharacterSet"
-- "Error"
-- "Int"
-- "XMLError"
-- !private "^-^"
+- !private "??"
 - "String"
-- !private "StringLiteralType"
+- "XMLError"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "trimmingCharacters"]

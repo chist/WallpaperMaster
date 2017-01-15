@@ -678,7 +678,7 @@
                         </menuItem>
                         <menuItem title="Choose source" id="qfT-LM-h6m">
                             <modifierMask key="keyEquivalentModifierMask"/>
-                            <menu key="submenu" title="Choose source" id="DkY-aw-nn3">
+                            <menu key="submenu" title="Choose source" autoenablesItems="NO" id="DkY-aw-nn3">
                                 <items>
                                     <menuItem title="National Geographic" id="jcZ-vI-ng4">
                                         <modifierMask key="keyEquivalentModifierMask"/>
@@ -696,6 +696,13 @@
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="YandexIsChosen:" target="Im6-qV-bXq" id="QDX-cz-FNj"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem isSeparatorItem="YES" id="i2b-nD-YNq"/>
+                                    <menuItem title="Saved" id="L6z-FF-mkl">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="savedIsChosen:" target="Im6-qV-bXq" id="Hn3-yX-sFn"/>
                                         </connections>
                                     </menuItem>
                                 </items>
@@ -722,6 +729,7 @@
                     <connections>
                         <outlet property="NatGeoOption" destination="jcZ-vI-ng4" id="Pzr-w7-7Ox"/>
                         <outlet property="RGOOption" destination="jpI-BH-vmF" id="j7O-rc-KhE"/>
+                        <outlet property="savedOption" destination="L6z-FF-mkl" id="wPa-n1-CgG"/>
                         <outlet property="statusBarMenu" destination="VoX-4h-GBF" id="tlG-Oy-RrS"/>
                         <outlet property="yandexOption" destination="dcs-Vc-Ro4" id="DU1-hT-de3"/>
                     </connections>

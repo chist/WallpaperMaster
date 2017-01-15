@@ -17,22 +17,20 @@ class DesktopUpdater {
     var isRandom: Bool = true
     let saver = Saver()
     
-    init() {
-        let preferencesHolder = PreferencesHolder()
-        
+    init(source: ImageSource) {
         // set default image source
-        switch preferencesHolder.sourceOption {
-        case 0:
+        switch source {
+        case .NatGeo:
             self.imageGetter = NatGeoCollection()
-        case 1:
+        case .yandex:
             self.imageGetter = YandexCollection()
-        case 2:
+        case .RGO:
             self.imageGetter = RGOCollection()
-        default:
-            self.imageGetter = NatGeoCollection()
+        case .saved:
+            self.imageGetter = SavedCollection()
         }
         
-        if preferencesHolder.timeOption != 0 {
+        if PreferencesHolder().timeOption != 0 {
             // launch timer to update wallpapers automatically
             resetTimer()
             
@@ -51,9 +49,9 @@ class DesktopUpdater {
             do {
                 let workspace = NSWorkspace.shared()
                 let screen = NSScreen.main()!
-                try workspace.setDesktopImageURL(self.saver.currentImageURL, for: screen, options: [:])
+                try workspace.setDesktopImageURL(Saver.currentImageURL, for: screen, options: [:])
             } catch let error {
-                print(error)
+                ErrorHandler.record(error.localizedDescription)
             }
         }
     }

@@ -142,20 +142,23 @@ SWIFT_CLASS("_TtC15WallpaperMaster11AppDelegate")
 @class NSMenuItem;
 
 SWIFT_CLASS("_TtC15WallpaperMaster20StatusMenuController")
-@interface StatusMenuController : NSObject
+@interface StatusMenuController : NSObject <NSMenuDelegate>
 @property (nonatomic, strong) IBOutlet NSMenu * _Null_unspecified statusBarMenu;
 @property (nonatomic, readonly, strong) NSStatusItem * _Nonnull statusItem;
 @property (nonatomic, readonly, strong) NSMenu * _Nonnull timeSubmenu;
 @property (nonatomic, weak) IBOutlet NSMenuItem * _Null_unspecified NatGeoOption;
 @property (nonatomic, weak) IBOutlet NSMenuItem * _Null_unspecified yandexOption;
 @property (nonatomic, weak) IBOutlet NSMenuItem * _Null_unspecified RGOOption;
+@property (nonatomic, weak) IBOutlet NSMenuItem * _Null_unspecified savedOption;
 - (void)awakeFromNib;
+- (void)menuWillOpen:(NSMenu * _Nonnull)menu;
 - (IBAction)nextImage:(NSMenuItem * _Nonnull)sender;
 - (IBAction)getPhotoOfTheDay:(NSMenuItem * _Nonnull)sender;
 - (IBAction)saveImage:(NSMenuItem * _Nonnull)sender;
 - (IBAction)NatGeoIsChosen:(NSMenuItem * _Nonnull)sender;
 - (IBAction)YandexIsChosen:(NSMenuItem * _Nonnull)sender;
 - (IBAction)RGOIsChosen:(NSMenuItem * _Nonnull)sender;
+- (IBAction)savedIsChosen:(id _Nonnull)sender;
 - (void)updateTimeInterval:(NSMenuItem * _Nonnull)sender;
 - (IBAction)quitClicked:(NSMenuItem * _Nonnull)sender;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
