@@ -20,13 +20,18 @@ class MainViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // display current app version and build number
         versionLabel.stringValue = self.getAppVersion()
         
+        // load initial view
         self.sourcesButtonPressed()
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
+        
+        // place app window into focus
+        self.view.window?.makeKey()
         NSApp.activate(ignoringOtherApps: true)
     }
     
@@ -45,16 +50,21 @@ class MainViewController: NSViewController {
         }
     }
     
-    func sourcesButtonPressed() {
+    func cleanContainerView() {
+        sourceVC.removeFromParentViewController()
+        sourceVC.view.removeFromSuperview()
         contactVC.removeFromParentViewController()
         contactVC.view.removeFromSuperview()
+    }
+    
+    func sourcesButtonPressed() {
+        self.cleanContainerView()
         self.addChildViewController(sourceVC)
         self.containerView.addSubview(sourceVC.view)
     }
     
     func contactButtonPressed() {
-        sourceVC.removeFromParentViewController()
-        sourceVC.view.removeFromSuperview()
+        self.cleanContainerView()
         self.addChildViewController(contactVC)
         self.containerView.addSubview(contactVC.view)
     }

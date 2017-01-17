@@ -7,15 +7,15 @@ provides-member:
 - ["C15WallpaperMaster17PreferencesHolder", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
-- "PreferencesHolder"
 - "ImageSource"
-- !private "StringLiteralType"
+- "PreferencesHolder"
+- !private "UserDefaults"
+- "Int"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - "CastingPrecedence"
 - !private "=="
-- "FloatLiteralType"
-- !private "UserDefaults"
-- "IntegerLiteralType"
+- !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "ImageSource"]
 - !private ["Ps9AnyObject", "UserDefaults"]

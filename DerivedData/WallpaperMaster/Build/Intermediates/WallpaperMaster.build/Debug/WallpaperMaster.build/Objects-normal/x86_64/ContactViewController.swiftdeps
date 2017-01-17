@@ -1,0 +1,239 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ContactViewController"
+provides-nominal:
+- "C15WallpaperMaster21ContactViewController"
+provides-member:
+- ["C15WallpaperMaster21ContactViewController", ""]
+provides-dynamic-lookup:
+- "coffeeButtonClicked"
+- "donationLink"
+depends-top-level:
+- "StringLiteralType"
+- "NSButton"
+- !private "URL"
+- !private "NSWorkspace"
+- "ContactViewController"
+- "NSViewController"
+depends-member:
+- !private ["Ps9AnyObject", "NSWorkspace"]
+- !private ["Ps9AnyObject", "URL"]
+- ["Ps9AnyObject", "coffeeButtonClicked"]
+- ["Ps9AnyObject", "donationLink"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "open"]
+- !private ["Ps9AnyObject", "shared"]
+- ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "NSWorkspace"]
+- !private ["Ps7CVarArg", "URL"]
+- ["Ps7CVarArg", "coffeeButtonClicked"]
+- ["Ps7CVarArg", "donationLink"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "open"]
+- !private ["Ps7CVarArg", "shared"]
+- ["Ps7CVarArg", ""]
+- ["Ps10Comparable", "init"]
+- ["C15WallpaperMaster21ContactViewController", "NSButton"]
+- !private ["C15WallpaperMaster21ContactViewController", "NSWorkspace"]
+- !private ["C15WallpaperMaster21ContactViewController", "URL"]
+- ["C15WallpaperMaster21ContactViewController", "coffeeButtonClicked"]
+- ["C15WallpaperMaster21ContactViewController", "deinit"]
+- ["C15WallpaperMaster21ContactViewController", "donationLink"]
+- ["C15WallpaperMaster21ContactViewController", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "NSWorkspace"]
+- !private ["Ps28CustomDebugStringConvertible", "URL"]
+- ["Ps28CustomDebugStringConvertible", "coffeeButtonClicked"]
+- ["Ps28CustomDebugStringConvertible", "donationLink"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "open"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "NSWorkspace"]
+- !private ["Ps23CustomStringConvertible", "URL"]
+- ["Ps23CustomStringConvertible", "coffeeButtonClicked"]
+- ["Ps23CustomStringConvertible", "donationLink"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "open"]
+- !private ["Ps23CustomStringConvertible", "shared"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "NSWorkspace"]
+- !private ["Ps9Equatable", "URL"]
+- ["Ps9Equatable", "coffeeButtonClicked"]
+- ["Ps9Equatable", "donationLink"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "open"]
+- !private ["Ps9Equatable", "shared"]
+- ["Ps9Equatable", ""]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "NSWorkspace"]
+- !private ["Ps8Hashable", "URL"]
+- ["Ps8Hashable", "coffeeButtonClicked"]
+- ["Ps8Hashable", "donationLink"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "open"]
+- !private ["Ps8Hashable", "shared"]
+- ["Ps8Hashable", ""]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "NSWorkspace"]
+- !private ["PSo8NSCoding", "URL"]
+- ["PSo8NSCoding", "coffeeButtonClicked"]
+- ["PSo8NSCoding", "donationLink"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", ""]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "NSWorkspace"]
+- !private ["PSo26NSExtensionRequestHandling", "URL"]
+- ["PSo26NSExtensionRequestHandling", "coffeeButtonClicked"]
+- ["PSo26NSExtensionRequestHandling", "donationLink"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "NSButton"]
+- !private ["CSo8NSObject", "NSWorkspace"]
+- !private ["CSo8NSObject", "URL"]
+- ["CSo8NSObject", "coffeeButtonClicked"]
+- ["CSo8NSObject", "donationLink"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "open"]
+- !private ["CSo8NSObject", "shared"]
+- !private ["PSo16NSObjectProtocol", "NSWorkspace"]
+- !private ["PSo16NSObjectProtocol", "URL"]
+- ["PSo16NSObjectProtocol", "coffeeButtonClicked"]
+- ["PSo16NSObjectProtocol", "donationLink"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "open"]
+- !private ["PSo16NSObjectProtocol", "shared"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo19NSPasteboardReading", "init"]
+- ["PSo19NSPasteboardWriting", "init"]
+- ["CSo11NSResponder", "NSButton"]
+- !private ["CSo11NSResponder", "NSWorkspace"]
+- !private ["CSo11NSResponder", "URL"]
+- ["CSo11NSResponder", "coffeeButtonClicked"]
+- ["CSo11NSResponder", "donationLink"]
+- ["CSo11NSResponder", "init"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo17NSSeguePerforming", "NSWorkspace"]
+- !private ["PSo17NSSeguePerforming", "URL"]
+- ["PSo17NSSeguePerforming", "coffeeButtonClicked"]
+- ["PSo17NSSeguePerforming", "donationLink"]
+- !private ["PSo17NSSeguePerforming", "init"]
+- ["PSo17NSSeguePerforming", ""]
+- ["CSo8NSString", "init"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "NSWorkspace"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "URL"]
+- ["PSo33NSUserInterfaceItemIdentification", "coffeeButtonClicked"]
+- ["PSo33NSUserInterfaceItemIdentification", "donationLink"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "init"]
+- ["PSo33NSUserInterfaceItemIdentification", ""]
+- ["CSo16NSViewController", "NSButton"]
+- !private ["CSo16NSViewController", "NSWorkspace"]
+- !private ["CSo16NSViewController", "URL"]
+- ["CSo16NSViewController", "coffeeButtonClicked"]
+- ["CSo16NSViewController", "deinit"]
+- ["CSo16NSViewController", "donationLink"]
+- ["CSo16NSViewController", "init"]
+- ["CSo16NSViewController", ""]
+- ["CSo11NSWorkspace", "deinit"]
+- !private ["CSo11NSWorkspace", "open"]
+- !private ["CSo11NSWorkspace", "shared"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["V10Foundation3URL", "deinit"]
+- !private ["V10Foundation3URL", "init"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "NSWorkspace"]
+- !private ["Ps9_Hashable", "URL"]
+- ["Ps9_Hashable", "coffeeButtonClicked"]
+- ["Ps9_Hashable", "donationLink"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "open"]
+- !private ["Ps9_Hashable", "shared"]
+- ["Ps9_Hashable", ""]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "Ps7CVarArg"
+- "Ps10Comparable"
+- "C15WallpaperMaster21ContactViewController"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo19NSPasteboardReading"
+- "PSo19NSPasteboardWriting"
+- "CSo11NSResponder"
+- "PSo14NSSecureCoding"
+- "PSo17NSSeguePerforming"
+- "CSo8NSString"
+- "PSo33NSUserInterfaceItemIdentification"
+- "CSo16NSViewController"
+- "CSo11NSWorkspace"
+- "Sq"
+- !private "P10Foundation20ReferenceConvertible"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "V10Foundation3URL"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/libxml2/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "d0c1b06e8bf8eeb2d752baf695b5aeda"

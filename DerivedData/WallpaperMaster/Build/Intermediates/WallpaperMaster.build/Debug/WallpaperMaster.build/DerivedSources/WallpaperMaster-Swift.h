@@ -153,6 +153,7 @@ SWIFT_CLASS("_TtC15WallpaperMaster18MainViewController")
 - (void)viewDidAppear;
 - (NSString * _Nonnull)getAppVersion;
 - (IBAction)menuPressed:(NSSegmentedControl * _Nonnull)sender;
+- (void)cleanContainerView;
 - (void)sourcesButtonPressed;
 - (void)contactButtonPressed;
 - (nullable instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

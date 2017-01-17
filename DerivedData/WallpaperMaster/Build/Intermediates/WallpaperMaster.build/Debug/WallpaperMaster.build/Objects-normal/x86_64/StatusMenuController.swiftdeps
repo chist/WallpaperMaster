@@ -6,67 +6,69 @@ provides-nominal:
 provides-member:
 - ["C15WallpaperMaster20StatusMenuController", ""]
 provides-dynamic-lookup:
-- "RGOIsChosen"
-- "statusBarMenu"
-- "yandexOption"
 - "getPhotoOfTheDay"
+- "statusBarMenu"
+- "RGOIsChosen"
 - "timeSubmenu"
 - "bingOption"
-- "menuWillOpen"
+- "yandexOption"
 - "saveImage"
-- "NatGeoOption"
-- "NatGeoIsChosen"
-- "nextImage"
 - "savedIsChosen"
+- "NatGeoOption"
+- "nextImage"
 - "quitClicked"
 - "bingIsChosen"
-- "YandexIsChosen"
+- "NatGeoIsChosen"
+- "menuWillOpen"
 - "RGOOption"
 - "savedOption"
-- "awakeFromNib"
-- "statusItem"
+- "YandexIsChosen"
 - "updateTimeInterval"
+- "statusItem"
+- "awakeFromNib"
 depends-top-level:
-- !private "~="
-- !private "Double"
-- "NSMenuDelegate"
-- "StringLiteralType"
 - !private ">"
-- !private "NatGeoCollection"
-- "DesktopUpdater"
-- "ImageSource"
-- !private "RGOCollection"
 - "NSObject"
-- "NSMenuItem"
-- !private "BingCollection"
-- !private "*"
-- "PreferencesHolder"
-- !private "&&"
-- "NSStatusBar"
-- !private "BooleanLiteralType"
-- "NSVariableStatusItemLength"
-- !private "YandexCollection"
-- !private "NSApplication"
-- "NSMenu"
-- !private "UnicodeScalarType"
-- "TernaryPrecedence"
-- "Int"
-- "String"
-- !private "+"
-- "StatusMenuController"
-- "AnyObject"
-- "AssignmentPrecedence"
-- !private "-"
-- !private "=="
-- !private "!="
-- !private "Saver"
+- "DesktopUpdater"
+- "NSMenuDelegate"
+- !private "Double"
+- !private "~="
+- !private "RGOCollection"
 - !private "SavedCollection"
+- !private "+"
+- "AssignmentPrecedence"
+- "AnyObject"
+- !private "=="
+- !private "*"
+- !private "NatGeoCollection"
+- !private "NSApplication"
+- "TernaryPrecedence"
+- !private "&&"
+- "NSMenu"
+- !private "BingCollection"
+- "ImageSource"
+- "NSVariableStatusItemLength"
+- "NSStatusBar"
+- "PreferencesHolder"
+- !private "NSApp"
+- "Int"
+- !private "BooleanLiteralType"
+- !private "YandexCollection"
+- "StatusMenuController"
+- !private "Saver"
+- !private "-"
+- "StringLiteralType"
+- !private "!="
+- "NSMenuItem"
+- "String"
+- !private "UnicodeScalarType"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "BingCollection"]
 - !private ["Ps9AnyObject", "DesktopUpdater"]
 - !private ["Ps9AnyObject", "Double"]
 - ["Ps9AnyObject", "ImageSource"]
+- !private ["Ps9AnyObject", "NSApp"]
 - !private ["Ps9AnyObject", "NSApplication"]
 - ["Ps9AnyObject", "NSMenu"]
 - ["Ps9AnyObject", "NSMenuItem"]
@@ -84,6 +86,7 @@ depends-member:
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "YandexCollection"]
 - ["Ps9AnyObject", "YandexIsChosen"]
+- !private ["Ps9AnyObject", "activate"]
 - !private ["Ps9AnyObject", "addItem"]
 - !private ["Ps9AnyObject", "addToFavourites"]
 - ["Ps9AnyObject", "awakeFromNib"]
@@ -138,6 +141,7 @@ depends-member:
 - ["Ps9AnyObject", "updateItemStates"]
 - ["Ps9AnyObject", "updateTimeInterval"]
 - !private ["Ps9AnyObject", "updateWallpaper"]
+- !private ["Ps9AnyObject", "windows"]
 - ["Ps9AnyObject", "yandexOption"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Index"]
@@ -190,6 +194,7 @@ depends-member:
 - !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
 - !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "NSApp"]
 - !private ["Ps7CVarArg", "NSApplication"]
 - ["Ps7CVarArg", "NSMenu"]
 - ["Ps7CVarArg", "NSMenuItem"]
@@ -211,6 +216,7 @@ depends-member:
 - ["Ps7CVarArg", "YandexIsChosen"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "activate"]
 - !private ["Ps7CVarArg", "addItem"]
 - ["Ps7CVarArg", "awakeFromNib"]
 - ["Ps7CVarArg", "bingIsChosen"]
@@ -256,6 +262,7 @@ depends-member:
 - !private ["Ps7CVarArg", "title"]
 - ["Ps7CVarArg", "updateItemStates"]
 - ["Ps7CVarArg", "updateTimeInterval"]
+- !private ["Ps7CVarArg", "windows"]
 - ["Ps7CVarArg", "yandexOption"]
 - ["Ps7CVarArg", ""]
 - !private ["Vs9Character", "deinit"]
@@ -283,6 +290,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "NSApp"]
 - !private ["Ps28CustomDebugStringConvertible", "NSApplication"]
 - ["Ps28CustomDebugStringConvertible", "NSMenu"]
 - ["Ps28CustomDebugStringConvertible", "NSMenuItem"]
@@ -302,6 +310,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "YandexCollection"]
 - ["Ps28CustomDebugStringConvertible", "YandexIsChosen"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "activate"]
 - !private ["Ps28CustomDebugStringConvertible", "addItem"]
 - ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
 - ["Ps28CustomDebugStringConvertible", "bingIsChosen"]
@@ -348,6 +357,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - ["Ps28CustomDebugStringConvertible", "updateItemStates"]
 - ["Ps28CustomDebugStringConvertible", "updateTimeInterval"]
+- !private ["Ps28CustomDebugStringConvertible", "windows"]
 - ["Ps28CustomDebugStringConvertible", "yandexOption"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
@@ -378,6 +388,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "NSApp"]
 - !private ["Ps23CustomStringConvertible", "NSApplication"]
 - ["Ps23CustomStringConvertible", "NSMenu"]
 - ["Ps23CustomStringConvertible", "NSMenuItem"]
@@ -400,6 +411,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "activate"]
 - !private ["Ps23CustomStringConvertible", "addItem"]
 - ["Ps23CustomStringConvertible", "awakeFromNib"]
 - ["Ps23CustomStringConvertible", "bingIsChosen"]
@@ -445,6 +457,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "title"]
 - ["Ps23CustomStringConvertible", "updateItemStates"]
 - ["Ps23CustomStringConvertible", "updateTimeInterval"]
+- !private ["Ps23CustomStringConvertible", "windows"]
 - ["Ps23CustomStringConvertible", "yandexOption"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
@@ -481,6 +494,7 @@ depends-member:
 - !private ["Ps9Equatable", "Double"]
 - ["Ps9Equatable", "ImageSource"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "NSApp"]
 - !private ["Ps9Equatable", "NSApplication"]
 - ["Ps9Equatable", "NSMenu"]
 - ["Ps9Equatable", "NSMenuItem"]
@@ -504,6 +518,7 @@ depends-member:
 - ["Ps9Equatable", "YandexIsChosen"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "activate"]
 - !private ["Ps9Equatable", "addItem"]
 - ["Ps9Equatable", "awakeFromNib"]
 - !private ["Ps9Equatable", "bing"]
@@ -548,6 +563,7 @@ depends-member:
 - !private ["Ps9Equatable", "title"]
 - ["Ps9Equatable", "updateItemStates"]
 - ["Ps9Equatable", "updateTimeInterval"]
+- !private ["Ps9Equatable", "windows"]
 - !private ["Ps9Equatable", "yandex"]
 - ["Ps9Equatable", "yandexOption"]
 - ["Ps9Equatable", ""]
@@ -581,6 +597,7 @@ depends-member:
 - !private ["Ps8Hashable", "Double"]
 - ["Ps8Hashable", "ImageSource"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSApp"]
 - !private ["Ps8Hashable", "NSApplication"]
 - ["Ps8Hashable", "NSMenu"]
 - ["Ps8Hashable", "NSMenuItem"]
@@ -604,6 +621,7 @@ depends-member:
 - ["Ps8Hashable", "YandexIsChosen"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "activate"]
 - !private ["Ps8Hashable", "addItem"]
 - ["Ps8Hashable", "awakeFromNib"]
 - !private ["Ps8Hashable", "bing"]
@@ -648,6 +666,7 @@ depends-member:
 - !private ["Ps8Hashable", "title"]
 - ["Ps8Hashable", "updateItemStates"]
 - ["Ps8Hashable", "updateTimeInterval"]
+- !private ["Ps8Hashable", "windows"]
 - !private ["Ps8Hashable", "yandex"]
 - ["Ps8Hashable", "yandexOption"]
 - ["Ps8Hashable", ""]
@@ -718,6 +737,7 @@ depends-member:
 - !private ["Ps16MutableIndexable", "count"]
 - !private ["Ps16MutableIndexable", "enumerated"]
 - !private ["Ps16MutableIndexable", "subscript"]
+- !private ["PSo15NSAccessibility", "activate"]
 - !private ["PSo15NSAccessibility", "addItem"]
 - !private ["PSo15NSAccessibility", "delegate"]
 - ["PSo15NSAccessibility", "init"]
@@ -731,6 +751,8 @@ depends-member:
 - !private ["PSo15NSAccessibility", "target"]
 - !private ["PSo15NSAccessibility", "terminate"]
 - !private ["PSo15NSAccessibility", "title"]
+- !private ["PSo15NSAccessibility", "windows"]
+- !private ["PSo30NSAccessibilityElementProtocol", "activate"]
 - !private ["PSo30NSAccessibilityElementProtocol", "addItem"]
 - !private ["PSo30NSAccessibilityElementProtocol", "delegate"]
 - ["PSo30NSAccessibilityElementProtocol", "init"]
@@ -744,9 +766,13 @@ depends-member:
 - !private ["PSo30NSAccessibilityElementProtocol", "target"]
 - !private ["PSo30NSAccessibilityElementProtocol", "terminate"]
 - !private ["PSo30NSAccessibilityElementProtocol", "title"]
+- !private ["PSo30NSAccessibilityElementProtocol", "windows"]
+- !private ["CSo13NSApplication", "activate"]
 - ["CSo13NSApplication", "deinit"]
 - !private ["CSo13NSApplication", "shared"]
 - !private ["CSo13NSApplication", "terminate"]
+- !private ["CSo13NSApplication", "windows"]
+- !private ["PSo8NSCoding", "activate"]
 - !private ["PSo8NSCoding", "addItem"]
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "init"]
@@ -760,6 +786,7 @@ depends-member:
 - !private ["PSo8NSCoding", "target"]
 - !private ["PSo8NSCoding", "terminate"]
 - !private ["PSo8NSCoding", "title"]
+- !private ["PSo8NSCoding", "windows"]
 - !private ["PSo9NSCopying", "addItem"]
 - !private ["PSo9NSCopying", "delegate"]
 - ["PSo9NSCopying", "init"]
@@ -782,6 +809,7 @@ depends-member:
 - !private ["PSo14NSMenuDelegate", "DesktopUpdater"]
 - !private ["PSo14NSMenuDelegate", "Double"]
 - ["PSo14NSMenuDelegate", "ImageSource"]
+- !private ["PSo14NSMenuDelegate", "NSApp"]
 - !private ["PSo14NSMenuDelegate", "NSApplication"]
 - ["PSo14NSMenuDelegate", "NSMenu"]
 - ["PSo14NSMenuDelegate", "NSMenuItem"]
@@ -833,6 +861,7 @@ depends-member:
 - !private ["CSo8NSObject", "Double"]
 - ["CSo8NSObject", "ImageSource"]
 - ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "NSApp"]
 - !private ["CSo8NSObject", "NSApplication"]
 - ["CSo8NSObject", "NSMenu"]
 - ["CSo8NSObject", "NSMenuItem"]
@@ -850,6 +879,7 @@ depends-member:
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "YandexCollection"]
 - ["CSo8NSObject", "YandexIsChosen"]
+- !private ["CSo8NSObject", "activate"]
 - !private ["CSo8NSObject", "addItem"]
 - ["CSo8NSObject", "awakeFromNib"]
 - ["CSo8NSObject", "bingIsChosen"]
@@ -893,12 +923,14 @@ depends-member:
 - !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "updateItemStates"]
 - ["CSo8NSObject", "updateTimeInterval"]
+- !private ["CSo8NSObject", "windows"]
 - ["CSo8NSObject", "yandexOption"]
 - ["CSo8NSObject", ""]
 - !private ["PSo16NSObjectProtocol", "BingCollection"]
 - !private ["PSo16NSObjectProtocol", "DesktopUpdater"]
 - !private ["PSo16NSObjectProtocol", "Double"]
 - ["PSo16NSObjectProtocol", "ImageSource"]
+- !private ["PSo16NSObjectProtocol", "NSApp"]
 - !private ["PSo16NSObjectProtocol", "NSApplication"]
 - ["PSo16NSObjectProtocol", "NSMenu"]
 - ["PSo16NSObjectProtocol", "NSMenuItem"]
@@ -916,6 +948,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "YandexCollection"]
 - ["PSo16NSObjectProtocol", "YandexIsChosen"]
+- !private ["PSo16NSObjectProtocol", "activate"]
 - !private ["PSo16NSObjectProtocol", "addItem"]
 - ["PSo16NSObjectProtocol", "awakeFromNib"]
 - ["PSo16NSObjectProtocol", "bingIsChosen"]
@@ -958,12 +991,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "title"]
 - ["PSo16NSObjectProtocol", "updateItemStates"]
 - ["PSo16NSObjectProtocol", "updateTimeInterval"]
+- !private ["PSo16NSObjectProtocol", "windows"]
 - ["PSo16NSObjectProtocol", "yandexOption"]
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo19NSPasteboardReading", "init"]
 - ["PSo19NSPasteboardWriting", "init"]
+- !private ["CSo11NSResponder", "activate"]
 - !private ["CSo11NSResponder", "shared"]
 - !private ["CSo11NSResponder", "terminate"]
+- !private ["CSo11NSResponder", "windows"]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo11NSStatusBar", "deinit"]
 - ["CSo11NSStatusBar", "statusItem"]
@@ -983,8 +1019,10 @@ depends-member:
 - !private ["PSo33NSUserInterfaceItemIdentification", "tag"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "target"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "title"]
+- !private ["PSo26NSUserInterfaceValidations", "activate"]
 - !private ["PSo26NSUserInterfaceValidations", "shared"]
 - !private ["PSo26NSUserInterfaceValidations", "terminate"]
+- !private ["PSo26NSUserInterfaceValidations", "windows"]
 - !private ["PSo28NSValidatedUserInterfaceItem", "init"]
 - !private ["PSo28NSValidatedUserInterfaceItem", "isEnabled"]
 - !private ["PSo28NSValidatedUserInterfaceItem", "state"]
@@ -1082,6 +1120,7 @@ depends-member:
 - !private ["C15WallpaperMaster20StatusMenuController", "Double"]
 - ["C15WallpaperMaster20StatusMenuController", "ImageSource"]
 - ["C15WallpaperMaster20StatusMenuController", "Int"]
+- !private ["C15WallpaperMaster20StatusMenuController", "NSApp"]
 - !private ["C15WallpaperMaster20StatusMenuController", "NSApplication"]
 - ["C15WallpaperMaster20StatusMenuController", "NSMenu"]
 - ["C15WallpaperMaster20StatusMenuController", "NSMenuItem"]
@@ -1180,6 +1219,7 @@ depends-member:
 - !private ["Ps9_Hashable", "Double"]
 - ["Ps9_Hashable", "ImageSource"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
+- !private ["Ps9_Hashable", "NSApp"]
 - !private ["Ps9_Hashable", "NSApplication"]
 - ["Ps9_Hashable", "NSMenu"]
 - ["Ps9_Hashable", "NSMenuItem"]
@@ -1203,6 +1243,7 @@ depends-member:
 - ["Ps9_Hashable", "YandexIsChosen"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "activate"]
 - !private ["Ps9_Hashable", "addItem"]
 - ["Ps9_Hashable", "awakeFromNib"]
 - !private ["Ps9_Hashable", "bing"]
@@ -1247,6 +1288,7 @@ depends-member:
 - !private ["Ps9_Hashable", "title"]
 - ["Ps9_Hashable", "updateItemStates"]
 - ["Ps9_Hashable", "updateTimeInterval"]
+- !private ["Ps9_Hashable", "windows"]
 - !private ["Ps9_Hashable", "yandex"]
 - ["Ps9_Hashable", "yandexOption"]
 - ["Ps9_Hashable", ""]

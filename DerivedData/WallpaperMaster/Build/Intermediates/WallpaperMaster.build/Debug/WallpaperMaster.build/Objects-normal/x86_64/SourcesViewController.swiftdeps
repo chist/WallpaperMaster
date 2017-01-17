@@ -1,0 +1,124 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SourcesViewController"
+provides-nominal:
+- "C15WallpaperMaster21SourcesViewController"
+provides-member:
+- ["C15WallpaperMaster21SourcesViewController", ""]
+provides-dynamic-lookup:
+- "showSavedInFinder"
+depends-top-level:
+- !private "Saver"
+- "NSViewController"
+- "NSButton"
+- "SourcesViewController"
+depends-member:
+- !private ["Ps9AnyObject", "Saver"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "openFavourites"]
+- ["Ps9AnyObject", "showSavedInFinder"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps7CVarArg", "Saver"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "showSavedInFinder"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "Saver"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "showSavedInFinder"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Saver"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "showSavedInFinder"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Saver"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "showSavedInFinder"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "Saver"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "showSavedInFinder"]
+- ["Ps8Hashable", ""]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "Saver"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "showSavedInFinder"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "Saver"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "showSavedInFinder"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "NSButton"]
+- !private ["CSo8NSObject", "Saver"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "showSavedInFinder"]
+- !private ["PSo16NSObjectProtocol", "Saver"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "showSavedInFinder"]
+- ["PSo16NSObjectProtocol", ""]
+- ["CSo11NSResponder", "NSButton"]
+- !private ["CSo11NSResponder", "Saver"]
+- ["CSo11NSResponder", "init"]
+- ["CSo11NSResponder", "showSavedInFinder"]
+- !private ["PSo17NSSeguePerforming", "Saver"]
+- !private ["PSo17NSSeguePerforming", "init"]
+- ["PSo17NSSeguePerforming", "showSavedInFinder"]
+- ["PSo17NSSeguePerforming", ""]
+- !private ["PSo33NSUserInterfaceItemIdentification", "Saver"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "init"]
+- ["PSo33NSUserInterfaceItemIdentification", "showSavedInFinder"]
+- ["PSo33NSUserInterfaceItemIdentification", ""]
+- ["CSo16NSViewController", "NSButton"]
+- !private ["CSo16NSViewController", "Saver"]
+- ["CSo16NSViewController", "deinit"]
+- ["CSo16NSViewController", "init"]
+- ["CSo16NSViewController", "showSavedInFinder"]
+- ["CSo16NSViewController", ""]
+- ["Sq", "deinit"]
+- ["C15WallpaperMaster5Saver", "deinit"]
+- !private ["C15WallpaperMaster5Saver", "init"]
+- !private ["C15WallpaperMaster5Saver", "openFavourites"]
+- ["C15WallpaperMaster21SourcesViewController", "NSButton"]
+- !private ["C15WallpaperMaster21SourcesViewController", "Saver"]
+- ["C15WallpaperMaster21SourcesViewController", "deinit"]
+- ["C15WallpaperMaster21SourcesViewController", "init"]
+- ["C15WallpaperMaster21SourcesViewController", "showSavedInFinder"]
+- !private ["Ps9_Hashable", "Saver"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "showSavedInFinder"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "CSo11NSResponder"
+- "PSo17NSSeguePerforming"
+- "PSo33NSUserInterfaceItemIdentification"
+- "CSo16NSViewController"
+- "Sq"
+- "C15WallpaperMaster5Saver"
+- "C15WallpaperMaster21SourcesViewController"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/libxml2/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "f5d01db80930bc36d5bf518a1004c79f"

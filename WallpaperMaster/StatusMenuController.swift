@@ -89,6 +89,11 @@ class StatusMenuController: NSObject, NSMenuDelegate {
     }
     
     func menuWillOpen(_ menu: NSMenu) {
+        // place app window into focus
+        if NSApplication.shared().windows.count > 1 {
+            NSApp.activate(ignoringOtherApps: true)
+        }
+        
         // disable favFolder as option if it is empty
         if Saver.reviseFavouriteImages().count > 0 {
             self.savedOption.isEnabled = true

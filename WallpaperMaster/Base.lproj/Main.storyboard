@@ -767,7 +767,7 @@
         <!--Main View Controller-->
         <scene sceneID="RNT-Af-CKF">
             <objects>
-                <viewController id="cfq-p2-U4d" customClass="MainViewController" customModule="WallpaperMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuVC" id="cfq-p2-U4d" customClass="MainViewController" customModule="WallpaperMaster" sceneMemberID="viewController">
                     <view key="view" id="HXk-Gy-XZ0">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="290"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -828,8 +828,8 @@
         <!--Contact View Controller-->
         <scene sceneID="3aJ-tj-L6e">
             <objects>
-                <viewController storyboardIdentifier="ContactVC" showSeguePresentationStyle="single" id="Fql-QC-3ie" userLabel="Contact View Controller" customClass="ContactViewController" customModule="WallpaperMaster" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="8Sh-vj-TZ6" customClass="ContactV">
+                <viewController storyboardIdentifier="ContactVC" showSeguePresentationStyle="single" id="Fql-QC-3ie" userLabel="Contact View Controller" customClass="ContactViewController" customModule="WallpaperMaster" sceneMemberID="viewController">
+                    <view key="view" id="8Sh-vj-TZ6">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -872,7 +872,7 @@
         <!--Sources View Controller-->
         <scene sceneID="z5r-YW-sTL">
             <objects>
-                <viewController storyboardIdentifier="SourceVC" showSeguePresentationStyle="single" id="qYk-tS-BMw" userLabel="Sources View Controller" customClass="SourcesViewController" customModule="WallpaperMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SourceVC" showSeguePresentationStyle="single" id="qYk-tS-BMw" userLabel="Sources View Controller" customClass="SourcesViewController" customModule="WallpaperMaster" sceneMemberID="viewController">
                     <view key="view" id="H4I-aa-8Xg">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>

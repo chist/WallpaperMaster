@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
 options: "46cf5b9e6cfd1f372120a1397c340c3f"
-build_time: [537835584, 821013000]
+build_time: [538002940, 171644000]
 inputs:
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Queryable.swift": [535483076, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/DesktopUpdater.swift": [537816536, 0]
@@ -11,7 +11,7 @@ inputs:
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Helpers.swift": [536858842, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Saver.swift": [537831223, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/NodeSet.swift": [535483076, 0]
-  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/StatusMenuController.swift": [537827192, 0]
+  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/StatusMenuController.swift": [538002939, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Node.swift": [535483076, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/ImageGetterDelegate.swift": [537804499, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Downloader.swift": [537798894, 0]
@@ -25,6 +25,6 @@ inputs:
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/PreferencesHolder.swift": [537817234, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Error.swift": [535483076, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/RGOCollection.swift": [537817817, 0]
-  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/MainViewController.swift": [537835584, 0]
+  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/MainViewController.swift": [538001893, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Element.swift": [535483076, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/SavedCollection.swift": [537794391, 0]
