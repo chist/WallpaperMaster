@@ -69,7 +69,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
         // mark default image source
         var defaultSource = preferencesHolder.sourceOption
         if defaultSource == .saved && Saver.reviseFavouriteImages().count == 0 {
-            defaultSource = .NatGeo
+            defaultSource = preferencesHolder.defaultSourceOption
         }
         updateItemStates(current: defaultSource)
         

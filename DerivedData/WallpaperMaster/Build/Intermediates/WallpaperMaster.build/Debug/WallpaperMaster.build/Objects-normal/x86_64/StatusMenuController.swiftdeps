@@ -6,62 +6,62 @@ provides-nominal:
 provides-member:
 - ["C15WallpaperMaster20StatusMenuController", ""]
 provides-dynamic-lookup:
+- "savedOption"
 - "getPhotoOfTheDay"
-- "statusBarMenu"
 - "RGOIsChosen"
-- "timeSubmenu"
-- "bingOption"
-- "yandexOption"
+- "statusItem"
+- "RGOOption"
+- "YandexIsChosen"
 - "saveImage"
-- "savedIsChosen"
+- "menuWillOpen"
+- "updateTimeInterval"
 - "NatGeoOption"
-- "nextImage"
-- "quitClicked"
 - "bingIsChosen"
 - "NatGeoIsChosen"
-- "menuWillOpen"
-- "RGOOption"
-- "savedOption"
-- "YandexIsChosen"
-- "updateTimeInterval"
-- "statusItem"
+- "quitClicked"
+- "nextImage"
+- "statusBarMenu"
+- "bingOption"
+- "savedIsChosen"
 - "awakeFromNib"
+- "yandexOption"
+- "timeSubmenu"
 depends-top-level:
-- !private ">"
-- "NSObject"
+- "NSMenuItem"
+- "TernaryPrecedence"
+- !private "BingCollection"
+- "PreferencesHolder"
 - "DesktopUpdater"
-- "NSMenuDelegate"
-- !private "Double"
+- !private "UnicodeScalarType"
+- !private "YandexCollection"
+- "Int"
+- !private "Saver"
 - !private "~="
-- !private "RGOCollection"
-- !private "SavedCollection"
-- !private "+"
+- !private ">"
 - "AssignmentPrecedence"
-- "AnyObject"
 - !private "=="
+- "StatusMenuController"
+- !private "+"
+- !private "-"
+- !private "&&"
+- "AnyObject"
+- !private "!="
+- !private "RGOCollection"
+- "StringLiteralType"
+- "NSVariableStatusItemLength"
+- !private "SavedCollection"
+- "NSMenu"
+- "String"
+- "NSStatusBar"
+- !private "NSApplication"
+- !private "Double"
+- "NSObject"
+- "NSMenuDelegate"
 - !private "*"
 - !private "NatGeoCollection"
-- !private "NSApplication"
-- "TernaryPrecedence"
-- !private "&&"
-- "NSMenu"
-- !private "BingCollection"
-- "ImageSource"
-- "NSVariableStatusItemLength"
-- "NSStatusBar"
-- "PreferencesHolder"
-- !private "NSApp"
-- "Int"
 - !private "BooleanLiteralType"
-- !private "YandexCollection"
-- "StatusMenuController"
-- !private "Saver"
-- !private "-"
-- "StringLiteralType"
-- !private "!="
-- "NSMenuItem"
-- "String"
-- !private "UnicodeScalarType"
+- !private "NSApp"
+- "ImageSource"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "BingCollection"]
@@ -94,6 +94,7 @@ depends-member:
 - ["Ps9AnyObject", "bingOption"]
 - ["Ps9AnyObject", "confinementRect"]
 - ["Ps9AnyObject", "confinementRectForMenu"]
+- !private ["Ps9AnyObject", "defaultSourceOption"]
 - !private ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "desktopUpdater"]
 - ["Ps9AnyObject", "getPhotoOfTheDay"]
@@ -1033,6 +1034,7 @@ depends-member:
 - !private ["C15WallpaperMaster16NatGeoCollection", "init"]
 - ["Sq", "deinit"]
 - ["Sq", "some"]
+- !private ["C15WallpaperMaster17PreferencesHolder", "defaultSourceOption"]
 - ["C15WallpaperMaster17PreferencesHolder", "deinit"]
 - ["C15WallpaperMaster17PreferencesHolder", "init"]
 - !private ["C15WallpaperMaster17PreferencesHolder", "setSourceOption"]

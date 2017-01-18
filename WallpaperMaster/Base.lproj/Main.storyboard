@@ -680,6 +680,12 @@
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <menu key="submenu" title="Choose source" autoenablesItems="NO" id="DkY-aw-nn3">
                                 <items>
+                                    <menuItem title="Bing" id="dJ9-0j-RHE">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="bingIsChosen:" target="Im6-qV-bXq" id="jbI-sL-HbL"/>
+                                        </connections>
+                                    </menuItem>
                                     <menuItem title="National Geographic" id="jcZ-vI-ng4">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
@@ -696,12 +702,6 @@
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="YandexIsChosen:" target="Im6-qV-bXq" id="QDX-cz-FNj"/>
-                                        </connections>
-                                    </menuItem>
-                                    <menuItem title="Bing" id="dJ9-0j-RHE">
-                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                        <connections>
-                                            <action selector="bingIsChosen:" target="Im6-qV-bXq" id="jbI-sL-HbL"/>
                                         </connections>
                                     </menuItem>
                                     <menuItem isSeparatorItem="YES" id="AkZ-8f-AbM"/>

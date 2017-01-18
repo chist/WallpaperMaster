@@ -11,7 +11,7 @@ import Cocoa
 
 class PreferencesHolder {
     let defaultTimeOption  : Int         = 3
-    let defaultSourceOption: ImageSource = ImageSource.NatGeo
+    let defaultSourceOption: ImageSource = .bing
     
     var timeOption:   Int {
         return UserDefaults.standard.object(forKey: "timeOption") as! Int
