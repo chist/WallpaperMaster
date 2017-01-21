@@ -7,64 +7,56 @@ provides-member:
 - ["C15WallpaperMaster14BingCollection", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "URL"
-- !private ">"
-- "StringLiteralType"
-- !private "NSString"
-- "ImageGetterDelegate"
-- !private "NSCalendar"
-- !private "ExtendedGraphemeClusterType"
-- "DescribedImage"
-- !private "%"
-- !private "!="
-- "Downloader"
-- !private "NSDate"
-- "BingCollection"
-- !private "-"
-- !private "HTMLDocument"
-- !private "BooleanLiteralType"
-- "String"
-- !private "Date"
-- "Bool"
-- !private "NSRange"
-- !private "..."
-- !private "=="
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- "Int"
+- !private "Day"
 - !private "+"
-- !private "UnicodeScalarType"
-- !private "CharacterSet"
+- !private "ExtendedGraphemeClusterType"
+- !private "BooleanLiteralType"
+- "DescribedImage"
+- !private "!="
+- "Int"
 - !private "print"
-- !private "arc4random"
+- !private "HTMLDocument"
+- !private "<"
+- !private "DateGenerator"
+- !private "String"
+- "StringLiteralType"
+- !private "Bool"
+- !private "NSRange"
+- "BingCollection"
+- "Downloader"
+- "ImageGetterDelegate"
+- !private "=="
+- !private "AssignmentPrecedence"
+- !private "..."
+- !private "UnicodeScalarType"
+- !private ">"
+- !private "-"
 depends-member:
-- !private ["Ps9AnyObject", "CharacterSet"]
+- !private ["Ps9AnyObject", "DateGenerator"]
+- !private ["Ps9AnyObject", "Day"]
 - !private ["Ps9AnyObject", "DescribedImage"]
 - ["Ps9AnyObject", "Downloader"]
 - !private ["Ps9AnyObject", "Encoding"]
 - !private ["Ps9AnyObject", "HTMLDocument"]
-- !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "Iterator"]
-- !private ["Ps9AnyObject", "NSCalendar"]
-- !private ["Ps9AnyObject", "NSDate"]
-- !private ["Ps9AnyObject", "NSString"]
 - !private ["Ps9AnyObject", "String"]
-- !private ["Ps9AnyObject", "URL"]
 - !private ["Ps9AnyObject", "_Element"]
-- !private ["Ps9AnyObject", "addingPercentEncoding"]
-- !private ["Ps9AnyObject", "arc4random"]
 - !private ["Ps9AnyObject", "characters"]
 - !private ["Ps9AnyObject", "contentURL"]
-- !private ["Ps9AnyObject", "current"]
+- !private ["Ps9AnyObject", "day"]
 - !private ["Ps9AnyObject", "distance"]
-- ["Ps9AnyObject", "downloader"]
+- !private ["Ps9AnyObject", "downloader"]
 - !private ["Ps9AnyObject", "getHTML"]
 - !private ["Ps9AnyObject", "getImage"]
 - ["Ps9AnyObject", "getImageOfTheDay"]
 - !private ["Ps9AnyObject", "getLinkToImage"]
+- !private ["Ps9AnyObject", "getPreceding"]
+- !private ["Ps9AnyObject", "getRandomDay"]
 - ["Ps9AnyObject", "getRandomImage"]
 - !private ["Ps9AnyObject", "index"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "maxFailureCount"]
+- !private ["Ps9AnyObject", "month"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "search"]
 - !private ["Ps9AnyObject", "startIndex"]
@@ -72,13 +64,14 @@ depends-member:
 - !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "substring"]
 - !private ["Ps9AnyObject", "xpath"]
+- !private ["Ps9AnyObject", "year"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "IndexDistance"]
 - !private ["Sa", "Iterator"]
 - !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
-- ["Sa", "deinit"]
+- !private ["Sa", "deinit"]
 - !private ["Sa", "init"]
 - !private ["Ps23BidirectionalCollection", "Index"]
 - !private ["Ps23BidirectionalCollection", "IndexDistance"]
@@ -96,61 +89,50 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "count"]
 - !private ["Ps22BidirectionalIndexable", "index"]
 - !private ["Ps22BidirectionalIndexable", "init"]
-- ["C15WallpaperMaster14BingCollection", "Bool"]
-- !private ["C15WallpaperMaster14BingCollection", "CharacterSet"]
-- !private ["C15WallpaperMaster14BingCollection", "Date"]
+- !private ["C15WallpaperMaster14BingCollection", "Bool"]
+- !private ["C15WallpaperMaster14BingCollection", "DateGenerator"]
+- !private ["C15WallpaperMaster14BingCollection", "Day"]
 - ["C15WallpaperMaster14BingCollection", "DescribedImage"]
 - ["C15WallpaperMaster14BingCollection", "Downloader"]
 - !private ["C15WallpaperMaster14BingCollection", "HTMLDocument"]
 - ["C15WallpaperMaster14BingCollection", "Int"]
-- !private ["C15WallpaperMaster14BingCollection", "NSCalendar"]
-- !private ["C15WallpaperMaster14BingCollection", "NSDate"]
 - !private ["C15WallpaperMaster14BingCollection", "NSRange"]
-- !private ["C15WallpaperMaster14BingCollection", "NSString"]
-- ["C15WallpaperMaster14BingCollection", "String"]
-- !private ["C15WallpaperMaster14BingCollection", "URL"]
-- !private ["C15WallpaperMaster14BingCollection", "arc4random"]
-- ["C15WallpaperMaster14BingCollection", "contentURL"]
+- !private ["C15WallpaperMaster14BingCollection", "String"]
+- !private ["C15WallpaperMaster14BingCollection", "contentURL"]
 - ["C15WallpaperMaster14BingCollection", "deinit"]
-- ["C15WallpaperMaster14BingCollection", "downloader"]
-- ["C15WallpaperMaster14BingCollection", "getHTML"]
+- !private ["C15WallpaperMaster14BingCollection", "downloader"]
 - ["C15WallpaperMaster14BingCollection", "getImageOfTheDay"]
-- ["C15WallpaperMaster14BingCollection", "getLinkToImage"]
+- !private ["C15WallpaperMaster14BingCollection", "getLinkToImage"]
 - ["C15WallpaperMaster14BingCollection", "getRandomImage"]
 - ["C15WallpaperMaster14BingCollection", "init"]
+- !private ["C15WallpaperMaster14BingCollection", "maxFailureCount"]
 - !private ["C15WallpaperMaster14BingCollection", "print"]
-- ["C15WallpaperMaster14BingCollection", "str2"]
-- !private ["Ps17BitwiseOperations", "init"]
+- !private ["C15WallpaperMaster14BingCollection", "str2"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "Encoding"]
 - !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "_Element"]
-- !private ["Ps7CVarArg", "addingPercentEncoding"]
 - !private ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "characters"]
 - !private ["Ps7CVarArg", "count"]
-- !private ["Ps7CVarArg", "current"]
 - !private ["Ps7CVarArg", "distance"]
+- !private ["Ps7CVarArg", "getHTML"]
 - !private ["Ps7CVarArg", "index"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "search"]
 - !private ["Ps7CVarArg", "startIndex"]
 - !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "substring"]
-- !private ["V10Foundation8Calendar", "component"]
-- ["V10Foundation8Calendar", "deinit"]
-- ["Vs9Character", "deinit"]
+- !private ["Vs9Character", "deinit"]
 - !private ["Vs9Character", "init"]
-- ["V10Foundation12CharacterSet", "deinit"]
-- !private ["V10Foundation12CharacterSet", "urlQueryAllowed"]
 - !private ["VSS13CharacterView", "Index"]
 - !private ["VSS13CharacterView", "Iterator"]
 - !private ["VSS13CharacterView", "_Element"]
-- ["VSS13CharacterView", "deinit"]
+- !private ["VSS13CharacterView", "deinit"]
 - !private ["VSS13CharacterView", "index"]
-- ["Vs11ClosedRange", "deinit"]
+- !private ["Vs11ClosedRange", "deinit"]
 - !private ["Ps10Collection", "Index"]
 - !private ["Ps10Collection", "IndexDistance"]
 - !private ["Ps10Collection", "Iterator"]
@@ -160,30 +142,24 @@ depends-member:
 - !private ["Ps10Collection", "index"]
 - !private ["Ps10Collection", "init"]
 - !private ["Ps10Comparable", "Encoding"]
-- !private ["Ps10Comparable", "addingPercentEncoding"]
 - !private ["Ps10Comparable", "characters"]
 - !private ["Ps10Comparable", "distance"]
+- !private ["Ps10Comparable", "getHTML"]
 - !private ["Ps10Comparable", "index"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "search"]
 - !private ["Ps10Comparable", "startIndex"]
 - !private ["Ps10Comparable", "subscript"]
 - !private ["Ps10Comparable", "substring"]
-- !private ["OV10Foundation8Calendar9Component", "day"]
-- ["OV10Foundation8Calendar9Component", "deinit"]
-- !private ["OV10Foundation8Calendar9Component", "month"]
-- !private ["OV10Foundation8Calendar9Component", "year"]
 - !private ["Ps28CustomDebugStringConvertible", "Encoding"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
-- !private ["Ps28CustomDebugStringConvertible", "addingPercentEncoding"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "characters"]
-- !private ["Ps28CustomDebugStringConvertible", "component"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
-- !private ["Ps28CustomDebugStringConvertible", "current"]
 - !private ["Ps28CustomDebugStringConvertible", "distance"]
+- !private ["Ps28CustomDebugStringConvertible", "getHTML"]
 - !private ["Ps28CustomDebugStringConvertible", "index"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "search"]
@@ -191,13 +167,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "substring"]
 - !private ["Ps28CustomDebugStringConvertible", "upperBound"]
-- !private ["Ps28CustomDebugStringConvertible", "urlQueryAllowed"]
 - !private ["Ps28CustomDebugStringConvertible", "xpath"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Encoding"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "addingPercentEncoding"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "characters"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "distance"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "getHTML"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "index"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "range"]
@@ -210,12 +185,11 @@ depends-member:
 - !private ["Ps17CustomReflectable", "Iterator"]
 - !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
-- !private ["Ps17CustomReflectable", "addingPercentEncoding"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "characters"]
-- !private ["Ps17CustomReflectable", "component"]
 - !private ["Ps17CustomReflectable", "count"]
 - !private ["Ps17CustomReflectable", "distance"]
+- !private ["Ps17CustomReflectable", "getHTML"]
 - !private ["Ps17CustomReflectable", "index"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "range"]
@@ -229,56 +203,50 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "addingPercentEncoding"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "characters"]
-- !private ["Ps23CustomStringConvertible", "component"]
 - !private ["Ps23CustomStringConvertible", "count"]
-- !private ["Ps23CustomStringConvertible", "current"]
 - !private ["Ps23CustomStringConvertible", "distance"]
+- !private ["Ps23CustomStringConvertible", "getHTML"]
 - !private ["Ps23CustomStringConvertible", "index"]
 - ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "rawValue"]
 - !private ["Ps23CustomStringConvertible", "search"]
 - !private ["Ps23CustomStringConvertible", "startIndex"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "substring"]
 - !private ["Ps23CustomStringConvertible", "upperBound"]
-- !private ["Ps23CustomStringConvertible", "urlQueryAllowed"]
 - !private ["Ps23CustomStringConvertible", "utf8"]
 - !private ["Ps23CustomStringConvertible", "xpath"]
-- ["V10Foundation4Date", "deinit"]
+- !private ["C15WallpaperMaster13DateGenerator", "getPreceding"]
+- !private ["C15WallpaperMaster13DateGenerator", "getRandomDay"]
+- !private ["C15WallpaperMaster3Day", "day"]
+- !private ["C15WallpaperMaster3Day", "deinit"]
+- !private ["C15WallpaperMaster3Day", "init"]
+- !private ["C15WallpaperMaster3Day", "month"]
+- !private ["C15WallpaperMaster3Day", "year"]
 - ["C15WallpaperMaster14DescribedImage", "deinit"]
 - !private ["C15WallpaperMaster14DescribedImage", "init"]
 - !private ["Sd", "deinit"]
 - ["C15WallpaperMaster10Downloader", "deinit"]
 - !private ["C15WallpaperMaster10Downloader", "getImage"]
 - ["C15WallpaperMaster10Downloader", "init"]
-- ["VE10FoundationSS8Encoding", "deinit"]
-- !private ["VE10FoundationSS8Encoding", "rawValue"]
+- !private ["VE10FoundationSS8Encoding", "deinit"]
 - !private ["VE10FoundationSS8Encoding", "utf8"]
 - !private ["Ps9Equatable", "Encoding"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- !private ["Ps9Equatable", "addingPercentEncoding"]
 - !private ["Ps9Equatable", "characters"]
-- !private ["Ps9Equatable", "component"]
-- !private ["Ps9Equatable", "current"]
-- !private ["Ps9Equatable", "day"]
 - !private ["Ps9Equatable", "distance"]
+- !private ["Ps9Equatable", "getHTML"]
 - !private ["Ps9Equatable", "index"]
 - ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "month"]
-- !private ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "search"]
 - !private ["Ps9Equatable", "startIndex"]
 - !private ["Ps9Equatable", "subscript"]
 - !private ["Ps9Equatable", "substring"]
 - !private ["Ps9Equatable", "upperBound"]
-- !private ["Ps9Equatable", "urlQueryAllowed"]
 - !private ["Ps9Equatable", "utf8"]
 - !private ["Ps9Equatable", "xpath"]
-- !private ["Ps9Equatable", "year"]
-- ["Ps5Error", "deinit"]
+- !private ["Ps5Error", "deinit"]
 - !private ["Ps5Error", "localizedDescription"]
 - !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
@@ -286,23 +254,21 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
-- !private ["Ps25ExpressibleByArrayLiteral", "urlQueryAllowed"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "Encoding"]
-- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "addingPercentEncoding"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "characters"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "distance"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "getHTML"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "index"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "search"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "startIndex"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "substring"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "Encoding"]
-- !private ["Ps32ExpressibleByStringInterpolation", "addingPercentEncoding"]
 - !private ["Ps32ExpressibleByStringInterpolation", "characters"]
 - !private ["Ps32ExpressibleByStringInterpolation", "distance"]
+- !private ["Ps32ExpressibleByStringInterpolation", "getHTML"]
 - !private ["Ps32ExpressibleByStringInterpolation", "index"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "search"]
@@ -310,9 +276,9 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "subscript"]
 - !private ["Ps32ExpressibleByStringInterpolation", "substring"]
 - !private ["Ps26ExpressibleByStringLiteral", "Encoding"]
-- !private ["Ps26ExpressibleByStringLiteral", "addingPercentEncoding"]
 - !private ["Ps26ExpressibleByStringLiteral", "characters"]
 - !private ["Ps26ExpressibleByStringLiteral", "distance"]
+- !private ["Ps26ExpressibleByStringLiteral", "getHTML"]
 - !private ["Ps26ExpressibleByStringLiteral", "index"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "search"]
@@ -320,9 +286,9 @@ depends-member:
 - !private ["Ps26ExpressibleByStringLiteral", "subscript"]
 - !private ["Ps26ExpressibleByStringLiteral", "substring"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "Encoding"]
-- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "addingPercentEncoding"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "characters"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "distance"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "getHTML"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "index"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "search"]
@@ -330,49 +296,37 @@ depends-member:
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "subscript"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "substring"]
 - !private ["Sf", "deinit"]
-- ["C15WallpaperMaster12HTMLDocument", "deinit"]
+- !private ["C15WallpaperMaster12HTMLDocument", "deinit"]
 - !private ["C15WallpaperMaster12HTMLDocument", "init"]
 - !private ["C15WallpaperMaster12HTMLDocument", "xpath"]
 - !private ["Ps8Hashable", "Encoding"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "addingPercentEncoding"]
 - !private ["Ps8Hashable", "characters"]
-- !private ["Ps8Hashable", "component"]
-- !private ["Ps8Hashable", "current"]
-- !private ["Ps8Hashable", "day"]
 - !private ["Ps8Hashable", "distance"]
+- !private ["Ps8Hashable", "getHTML"]
 - !private ["Ps8Hashable", "index"]
 - ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "month"]
-- !private ["Ps8Hashable", "rawValue"]
 - !private ["Ps8Hashable", "search"]
 - !private ["Ps8Hashable", "startIndex"]
 - !private ["Ps8Hashable", "subscript"]
 - !private ["Ps8Hashable", "substring"]
-- !private ["Ps8Hashable", "urlQueryAllowed"]
 - !private ["Ps8Hashable", "utf8"]
-- !private ["Ps8Hashable", "year"]
-- !private ["P15WallpaperMaster19ImageGetterDelegate", "CharacterSet"]
+- !private ["P15WallpaperMaster19ImageGetterDelegate", "DateGenerator"]
+- !private ["P15WallpaperMaster19ImageGetterDelegate", "Day"]
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "DescribedImage"]
 - ["P15WallpaperMaster19ImageGetterDelegate", "Downloader"]
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "HTMLDocument"]
-- !private ["P15WallpaperMaster19ImageGetterDelegate", "Int"]
-- !private ["P15WallpaperMaster19ImageGetterDelegate", "NSCalendar"]
-- !private ["P15WallpaperMaster19ImageGetterDelegate", "NSDate"]
-- !private ["P15WallpaperMaster19ImageGetterDelegate", "NSString"]
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "String"]
-- !private ["P15WallpaperMaster19ImageGetterDelegate", "URL"]
-- !private ["P15WallpaperMaster19ImageGetterDelegate", "arc4random"]
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "contentURL"]
-- ["P15WallpaperMaster19ImageGetterDelegate", "downloader"]
-- !private ["P15WallpaperMaster19ImageGetterDelegate", "getHTML"]
+- !private ["P15WallpaperMaster19ImageGetterDelegate", "downloader"]
 - ["P15WallpaperMaster19ImageGetterDelegate", "getImageOfTheDay"]
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "getLinkToImage"]
 - ["P15WallpaperMaster19ImageGetterDelegate", "getRandomImage"]
+- !private ["P15WallpaperMaster19ImageGetterDelegate", "maxFailureCount"]
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "print"]
 - !private ["P15WallpaperMaster19ImageGetterDelegate", "str2"]
 - ["P15WallpaperMaster19ImageGetterDelegate", ""]
-- ["VVSS13CharacterView5Index", "deinit"]
+- !private ["VVSS13CharacterView5Index", "deinit"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "IndexDistance"]
 - !private ["Ps9Indexable", "Iterator"]
@@ -391,19 +345,16 @@ depends-member:
 - !private ["Ps13IndexableBase", "init"]
 - !private ["Vs16IndexingIterator", "Element"]
 - ["Si", "deinit"]
-- !private ["Si", "init"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
-- !private ["Ps7Integer", "init"]
-- !private ["Ps17IntegerArithmetic", "init"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps25LosslessStringConvertible", "Encoding"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps25LosslessStringConvertible", "addingPercentEncoding"]
 - !private ["Ps25LosslessStringConvertible", "characters"]
 - !private ["Ps25LosslessStringConvertible", "distance"]
+- !private ["Ps25LosslessStringConvertible", "getHTML"]
 - !private ["Ps25LosslessStringConvertible", "index"]
 - ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "search"]
@@ -411,9 +362,9 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "subscript"]
 - !private ["Ps25LosslessStringConvertible", "substring"]
 - !private ["Ps10MirrorPath", "Encoding"]
-- !private ["Ps10MirrorPath", "addingPercentEncoding"]
 - !private ["Ps10MirrorPath", "characters"]
 - !private ["Ps10MirrorPath", "distance"]
+- !private ["Ps10MirrorPath", "getHTML"]
 - !private ["Ps10MirrorPath", "index"]
 - ["Ps10MirrorPath", "init"]
 - !private ["Ps10MirrorPath", "search"]
@@ -432,12 +383,10 @@ depends-member:
 - !private ["Ps16MutableIndexable", "append"]
 - !private ["Ps16MutableIndexable", "count"]
 - !private ["Ps16MutableIndexable", "init"]
-- !private ["CSo10NSCalendar", "current"]
 - !private ["PSo8NSCoding", "Encoding"]
-- !private ["PSo8NSCoding", "addingPercentEncoding"]
 - !private ["PSo8NSCoding", "characters"]
-- !private ["PSo8NSCoding", "current"]
 - !private ["PSo8NSCoding", "distance"]
+- !private ["PSo8NSCoding", "getHTML"]
 - !private ["PSo8NSCoding", "index"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "search"]
@@ -445,22 +394,19 @@ depends-member:
 - !private ["PSo8NSCoding", "subscript"]
 - !private ["PSo8NSCoding", "substring"]
 - !private ["PSo9NSCopying", "Encoding"]
-- !private ["PSo9NSCopying", "addingPercentEncoding"]
 - !private ["PSo9NSCopying", "characters"]
-- !private ["PSo9NSCopying", "current"]
 - !private ["PSo9NSCopying", "distance"]
+- !private ["PSo9NSCopying", "getHTML"]
 - !private ["PSo9NSCopying", "index"]
 - ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "search"]
 - !private ["PSo9NSCopying", "startIndex"]
 - !private ["PSo9NSCopying", "subscript"]
 - !private ["PSo9NSCopying", "substring"]
-- ["CSo6NSDate", "deinit"]
-- !private ["CSo6NSDate", "init"]
 - !private ["PSo16NSMutableCopying", "Encoding"]
-- !private ["PSo16NSMutableCopying", "addingPercentEncoding"]
 - !private ["PSo16NSMutableCopying", "characters"]
 - !private ["PSo16NSMutableCopying", "distance"]
+- !private ["PSo16NSMutableCopying", "getHTML"]
 - !private ["PSo16NSMutableCopying", "index"]
 - ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "search"]
@@ -468,10 +414,9 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "subscript"]
 - !private ["PSo16NSMutableCopying", "substring"]
 - !private ["CSo8NSObject", "Encoding"]
-- !private ["CSo8NSObject", "addingPercentEncoding"]
 - !private ["CSo8NSObject", "characters"]
-- !private ["CSo8NSObject", "current"]
 - !private ["CSo8NSObject", "distance"]
+- !private ["CSo8NSObject", "getHTML"]
 - !private ["CSo8NSObject", "index"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "search"]
@@ -479,10 +424,9 @@ depends-member:
 - !private ["CSo8NSObject", "subscript"]
 - !private ["CSo8NSObject", "substring"]
 - !private ["PSo16NSObjectProtocol", "Encoding"]
-- !private ["PSo16NSObjectProtocol", "addingPercentEncoding"]
 - !private ["PSo16NSObjectProtocol", "characters"]
-- !private ["PSo16NSObjectProtocol", "current"]
 - !private ["PSo16NSObjectProtocol", "distance"]
+- !private ["PSo16NSObjectProtocol", "getHTML"]
 - !private ["PSo16NSObjectProtocol", "index"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "search"]
@@ -490,9 +434,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - !private ["PSo16NSObjectProtocol", "substring"]
 - !private ["PSo19NSPasteboardReading", "Encoding"]
-- !private ["PSo19NSPasteboardReading", "addingPercentEncoding"]
 - !private ["PSo19NSPasteboardReading", "characters"]
 - !private ["PSo19NSPasteboardReading", "distance"]
+- !private ["PSo19NSPasteboardReading", "getHTML"]
 - !private ["PSo19NSPasteboardReading", "index"]
 - ["PSo19NSPasteboardReading", "init"]
 - !private ["PSo19NSPasteboardReading", "search"]
@@ -500,9 +444,9 @@ depends-member:
 - !private ["PSo19NSPasteboardReading", "subscript"]
 - !private ["PSo19NSPasteboardReading", "substring"]
 - !private ["PSo19NSPasteboardWriting", "Encoding"]
-- !private ["PSo19NSPasteboardWriting", "addingPercentEncoding"]
 - !private ["PSo19NSPasteboardWriting", "characters"]
 - !private ["PSo19NSPasteboardWriting", "distance"]
+- !private ["PSo19NSPasteboardWriting", "getHTML"]
 - !private ["PSo19NSPasteboardWriting", "index"]
 - ["PSo19NSPasteboardWriting", "init"]
 - !private ["PSo19NSPasteboardWriting", "search"]
@@ -510,10 +454,9 @@ depends-member:
 - !private ["PSo19NSPasteboardWriting", "subscript"]
 - !private ["PSo19NSPasteboardWriting", "substring"]
 - !private ["PSo14NSSecureCoding", "Encoding"]
-- !private ["PSo14NSSecureCoding", "addingPercentEncoding"]
 - !private ["PSo14NSSecureCoding", "characters"]
-- !private ["PSo14NSSecureCoding", "current"]
 - !private ["PSo14NSSecureCoding", "distance"]
+- !private ["PSo14NSSecureCoding", "getHTML"]
 - !private ["PSo14NSSecureCoding", "index"]
 - ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "search"]
@@ -521,10 +464,9 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "subscript"]
 - !private ["PSo14NSSecureCoding", "substring"]
 - !private ["CSo8NSString", "Encoding"]
-- !private ["CSo8NSString", "addingPercentEncoding"]
 - !private ["CSo8NSString", "characters"]
-- ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "distance"]
+- !private ["CSo8NSString", "getHTML"]
 - !private ["CSo8NSString", "index"]
 - ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "search"]
@@ -533,7 +475,7 @@ depends-member:
 - !private ["CSo8NSString", "substring"]
 - !private ["C15WallpaperMaster7NodeSet", "Iterator"]
 - !private ["C15WallpaperMaster7NodeSet", "_Element"]
-- ["C15WallpaperMaster7NodeSet", "deinit"]
+- !private ["C15WallpaperMaster7NodeSet", "deinit"]
 - ["Sq", "deinit"]
 - !private ["P15WallpaperMaster9Queryable", "init"]
 - !private ["P15WallpaperMaster9Queryable", "xpath"]
@@ -549,7 +491,7 @@ depends-member:
 - !private ["Ps21RandomAccessIndexable", "append"]
 - !private ["Ps21RandomAccessIndexable", "count"]
 - !private ["Ps21RandomAccessIndexable", "init"]
-- ["Vs5Range", "deinit"]
+- !private ["Vs5Range", "deinit"]
 - !private ["Vs5Range", "upperBound"]
 - !private ["Ps26RangeReplaceableCollection", "Index"]
 - !private ["Ps26RangeReplaceableCollection", "IndexDistance"]
@@ -567,11 +509,7 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "count"]
 - !private ["Ps25RangeReplaceableIndexable", "index"]
 - !private ["Ps25RangeReplaceableIndexable", "init"]
-- !private ["Ps16RawRepresentable", "rawValue"]
 - !private ["Ps16RawRepresentable", "utf8"]
-- !private ["P10Foundation20ReferenceConvertible", "component"]
-- !private ["P10Foundation20ReferenceConvertible", "init"]
-- !private ["P10Foundation20ReferenceConvertible", "urlQueryAllowed"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
 - !private ["Ps8Sequence", "IndexDistance"]
@@ -581,15 +519,11 @@ depends-member:
 - !private ["Ps8Sequence", "count"]
 - !private ["Ps8Sequence", "index"]
 - !private ["Ps8Sequence", "init"]
-- !private ["Ps10SetAlgebra", "urlQueryAllowed"]
-- !private ["Ps13SignedInteger", "init"]
-- !private ["Ps12SignedNumber", "init"]
-- !private ["Ps10Strideable", "init"]
 - !private ["SS", "Encoding"]
-- !private ["SS", "addingPercentEncoding"]
 - !private ["SS", "characters"]
 - ["SS", "deinit"]
 - !private ["SS", "distance"]
+- !private ["SS", "getHTML"]
 - !private ["SS", "index"]
 - ["SS", "init"]
 - !private ["SS", "search"]
@@ -597,9 +531,9 @@ depends-member:
 - !private ["SS", "subscript"]
 - !private ["SS", "substring"]
 - !private ["Ps16TextOutputStream", "Encoding"]
-- !private ["Ps16TextOutputStream", "addingPercentEncoding"]
 - !private ["Ps16TextOutputStream", "characters"]
 - !private ["Ps16TextOutputStream", "distance"]
+- !private ["Ps16TextOutputStream", "getHTML"]
 - !private ["Ps16TextOutputStream", "index"]
 - ["Ps16TextOutputStream", "init"]
 - !private ["Ps16TextOutputStream", "search"]
@@ -607,26 +541,24 @@ depends-member:
 - !private ["Ps16TextOutputStream", "subscript"]
 - !private ["Ps16TextOutputStream", "substring"]
 - !private ["Ps20TextOutputStreamable", "Encoding"]
-- !private ["Ps20TextOutputStreamable", "addingPercentEncoding"]
 - !private ["Ps20TextOutputStreamable", "characters"]
 - !private ["Ps20TextOutputStreamable", "distance"]
+- !private ["Ps20TextOutputStreamable", "getHTML"]
 - !private ["Ps20TextOutputStreamable", "index"]
 - ["Ps20TextOutputStreamable", "init"]
 - !private ["Ps20TextOutputStreamable", "search"]
 - !private ["Ps20TextOutputStreamable", "startIndex"]
 - !private ["Ps20TextOutputStreamable", "subscript"]
 - !private ["Ps20TextOutputStreamable", "substring"]
-- ["Su", "deinit"]
+- !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
-- ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
-- ["V10Foundation3URL", "deinit"]
-- !private ["V10Foundation3URL", "init"]
 - !private ["Sc", "deinit"]
 - !private ["C15WallpaperMaster11XMLDocument", "init"]
 - !private ["C15WallpaperMaster11XMLDocument", "xpath"]
-- ["C15WallpaperMaster10XMLElement", "deinit"]
+- !private ["C15WallpaperMaster10XMLElement", "deinit"]
 - !private ["Ps14_ArrayProtocol", "IndexDistance"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
 - !private ["Ps14_ArrayProtocol", "_Element"]
@@ -641,20 +573,19 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "Encoding"]
-- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "addingPercentEncoding"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "characters"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "distance"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "getHTML"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "index"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "search"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "startIndex"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "subscript"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "substring"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "Encoding"]
-- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "addingPercentEncoding"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "characters"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "distance"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "getHTML"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "index"]
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "search"]
@@ -662,9 +593,9 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "subscript"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "substring"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "Encoding"]
-- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "addingPercentEncoding"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "characters"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "distance"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "getHTML"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "index"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "search"]
@@ -672,21 +603,19 @@ depends-member:
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "subscript"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "substring"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "Encoding"]
-- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "addingPercentEncoding"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "characters"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "distance"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "getHTML"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "index"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "search"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "startIndex"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "subscript"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "substring"]
-- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "Encoding"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "addingPercentEncoding"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "characters"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "current"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "distance"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "getHTML"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "index"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "search"]
@@ -695,41 +624,28 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "substring"]
 - !private ["Ps9_Hashable", "Encoding"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps9_Hashable", "addingPercentEncoding"]
 - !private ["Ps9_Hashable", "characters"]
-- !private ["Ps9_Hashable", "component"]
-- !private ["Ps9_Hashable", "current"]
-- !private ["Ps9_Hashable", "day"]
 - !private ["Ps9_Hashable", "distance"]
+- !private ["Ps9_Hashable", "getHTML"]
 - !private ["Ps9_Hashable", "index"]
 - ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "month"]
-- !private ["Ps9_Hashable", "rawValue"]
 - !private ["Ps9_Hashable", "search"]
 - !private ["Ps9_Hashable", "startIndex"]
 - !private ["Ps9_Hashable", "subscript"]
 - !private ["Ps9_Hashable", "substring"]
-- !private ["Ps9_Hashable", "urlQueryAllowed"]
 - !private ["Ps9_Hashable", "utf8"]
-- !private ["Ps9_Hashable", "year"]
-- !private ["Ps14_Incrementable", "init"]
-- !private ["Ps8_Integer", "init"]
-- !private ["Ps18_IntegerArithmetic", "init"]
-- !private ["P10Foundation14_MutableBoxing", "component"]
-- !private ["P10Foundation18_MutablePairBoxing", "urlQueryAllowed"]
-- ["VSC8_NSRange", "deinit"]
+- !private ["VSC8_NSRange", "deinit"]
 - !private ["VSC8_NSRange", "range"]
 - !private ["Ps21_ObjectiveCBridgeable", "Encoding"]
 - !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "addingPercentEncoding"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "characters"]
-- !private ["Ps21_ObjectiveCBridgeable", "component"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "getHTML"]
 - !private ["Ps21_ObjectiveCBridgeable", "index"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "range"]
@@ -737,50 +653,43 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "startIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "substring"]
-- !private ["Ps21_ObjectiveCBridgeable", "urlQueryAllowed"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
-- !private ["Ps14_SignedInteger", "init"]
-- !private ["Ps11_Strideable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
-- "Sa"
+- !private "Sa"
 - !private "Ps23BidirectionalCollection"
 - !private "Ps22BidirectionalIndexable"
 - "C15WallpaperMaster14BingCollection"
-- !private "Ps17BitwiseOperations"
 - "Sb"
 - "Ps7CVarArg"
-- "V10Foundation8Calendar"
-- "Vs9Character"
-- "V10Foundation12CharacterSet"
-- "VSS13CharacterView"
-- "Vs11ClosedRange"
+- !private "Vs9Character"
+- !private "VSS13CharacterView"
+- !private "Vs11ClosedRange"
 - !private "Ps10Collection"
 - "Ps10Comparable"
-- "OV10Foundation8Calendar9Component"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "V10Foundation4Date"
+- !private "C15WallpaperMaster13DateGenerator"
+- !private "C15WallpaperMaster3Day"
 - "C15WallpaperMaster14DescribedImage"
 - !private "Sd"
 - "C15WallpaperMaster10Downloader"
-- "VE10FoundationSS8Encoding"
+- !private "VE10FoundationSS8Encoding"
 - "Ps9Equatable"
-- "Ps5Error"
+- !private "Ps5Error"
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps27ExpressibleByIntegerLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Sf"
-- "C15WallpaperMaster12HTMLDocument"
+- !private "C15WallpaperMaster12HTMLDocument"
 - "Ps8Hashable"
 - "P15WallpaperMaster19ImageGetterDelegate"
-- "VVSS13CharacterView5Index"
+- !private "VVSS13CharacterView5Index"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
@@ -789,17 +698,13 @@ depends-nominal:
 - !private "Vs5Int32"
 - !private "Vs5Int64"
 - !private "Vs4Int8"
-- !private "Ps7Integer"
-- !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
 - "Ps25LosslessStringConvertible"
 - "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
-- !private "CSo10NSCalendar"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
-- "CSo6NSDate"
 - "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -807,54 +712,39 @@ depends-nominal:
 - "PSo19NSPasteboardWriting"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
-- "C15WallpaperMaster7NodeSet"
+- !private "C15WallpaperMaster7NodeSet"
 - "Sq"
 - !private "P15WallpaperMaster9Queryable"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"
-- "Vs5Range"
+- !private "Vs5Range"
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
 - !private "Ps16RawRepresentable"
-- !private "P10Foundation20ReferenceConvertible"
 - !private "Ps8Sequence"
-- !private "Ps10SetAlgebra"
-- !private "Ps13SignedInteger"
-- !private "Ps12SignedNumber"
-- !private "Ps10Strideable"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
-- "Su"
+- !private "Su"
 - !private "Vs6UInt16"
-- "Vs6UInt32"
+- !private "Vs6UInt32"
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
-- "V10Foundation3URL"
 - !private "Sc"
 - !private "C15WallpaperMaster11XMLDocument"
-- "C15WallpaperMaster10XMLElement"
+- !private "C15WallpaperMaster10XMLElement"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
-- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- !private "Ps34_ExpressibleByFileReferenceLiteral"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
-- !private "Ps14_Incrementable"
-- !private "Ps8_Integer"
-- !private "Ps18_IntegerArithmetic"
-- !private "P10Foundation14_MutableBoxing"
-- !private "P10Foundation18_MutablePairBoxing"
-- "VSC8_NSRange"
+- !private "VSC8_NSRange"
 - "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
-- !private "Ps14_SignedInteger"
-- !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
@@ -870,4 +760,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "61244ec3ae07f355cf78b1ec73307252"
+interface-hash: "fdd7d343806e43a42fa12fc90735103d"

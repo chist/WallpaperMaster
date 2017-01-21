@@ -10,7 +10,7 @@ import Foundation
 import Cocoa
 
 class SavedCollection: ImageGetterDelegate {
-    var downloader = Downloader()
+    private let downloader = Downloader()
     
     // option is unavailable for that collection
     func getImageOfTheDay() -> DescribedImage {

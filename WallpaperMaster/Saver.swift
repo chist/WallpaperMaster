@@ -10,11 +10,11 @@ import Foundation
 import Cocoa
 
 class Saver {
-    static var appFolder:        URL    = Saver.initAppFolder()
-    static var favFolder:        URL    = Saver.initFavFolder()
-    static var currentImageURL:  URL    = Saver.initCurrentImage()
-    let        maxAttempts:      Int    = 5
-    let        prefix:           String = "c"
+    static internal var appFolder:       URL    = Saver.initAppFolder()
+    static internal var favFolder:       URL    = Saver.initFavFolder()
+    static internal var currentImageURL: URL    = Saver.initCurrentImage()
+    private let         maxAttempts:     Int    = 5
+    private let         prefix:          String = "c"
     
     static func initAppFolder() -> URL {
         // create folder for the application where all the wallpapers will be saved
@@ -29,7 +29,7 @@ class Saver {
         return appFolder
     }
     
-    static func initFavFolder() -> URL {
+    static private func initFavFolder() -> URL {
         // create subdirectory for favourites
         let FMDefault    = FileManager.default
         let favFolder        = Saver.appFolder.appendingPathComponent("Saved")
@@ -38,11 +38,11 @@ class Saver {
         return favFolder
     }
     
-    static func initCurrentImage() -> URL {
+    static private func initCurrentImage() -> URL {
         return Saver.appFolder.appendingPathComponent("current.png")
     }
     
-    func save(wallpaper: DescribedImage) {
+    internal func save(wallpaper: DescribedImage) {
         // create folders in case they were deleted
         Saver.appFolder = Saver.initAppFolder()
         Saver.favFolder = Saver.initFavFolder()
@@ -73,7 +73,7 @@ class Saver {
         wallpaper.image?.savePNG(to: Saver.currentImageURL)
     }
     
-    func saveToFavourites(_ wallpaper: DescribedImage) {
+    internal func saveToFavourites(_ wallpaper: DescribedImage) {
         // create folders in case they were deleted
         Saver.appFolder = Saver.initAppFolder()
         Saver.favFolder = Saver.initFavFolder()
@@ -83,7 +83,11 @@ class Saver {
         wallpaper.image?.savePNG(to: imageURL)
     }
     
-    func openFavourites() {
+    internal func openFavourites() {
+        // create folders in case they were deleted
+        Saver.appFolder = Saver.initAppFolder()
+        Saver.favFolder = Saver.initFavFolder()
+        
         NSWorkspace.shared().openFile(Saver.favFolder.path)
     }
     
@@ -100,7 +104,7 @@ class Saver {
         return namesArray
     }
     
-    func selectFavouriteImage() -> DescribedImage {
+    internal func selectFavouriteImage() -> DescribedImage {
         // array of all images' names in favFolder
         let namesArray = Saver.reviseFavouriteImages()
         

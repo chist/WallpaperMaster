@@ -8,15 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "xmlResetError"
+- "Int"
+- "XMLError"
 - !private "StringLiteralType"
 - !private "^-^"
+- "String"
 - !private "CharacterSet"
-- "Error"
 - !private "xmlGetLastError"
 - !private "??"
-- "Int"
-- "String"
-- "XMLError"
+- "Error"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "trimmingCharacters"]

@@ -6,34 +6,28 @@ provides-nominal:
 provides-member:
 - ["C15WallpaperMaster18MainViewController", ""]
 provides-dynamic-lookup:
-- "menuPressed"
-- "cleanContainerView"
 - "versionLabel"
-- "containerView"
-- "viewDidAppear"
-- "contactButtonPressed"
-- "sourcesButtonPressed"
-- "getAppVersion"
-- "viewDidLoad"
-- "sourceVC"
+- "menuPressed"
 - "menuControl"
-- "contactVC"
+- "viewDidAppear"
+- "containerView"
+- "viewDidLoad"
 depends-top-level:
-- "String"
+- !private "BooleanLiteralType"
 - !private "Bundle"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- "NSSegmentedControl"
-- !private "=="
+- !private "UnicodeScalarType"
 - "MainViewController"
 - "NSStoryboard"
-- "NSView"
-- !private "NSApp"
-- "StringLiteralType"
-- !private "UnicodeScalarType"
-- "NSTextField"
-- !private "BooleanLiteralType"
 - "NSViewController"
+- !private "=="
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "NSSegmentedControl"
+- "StringLiteralType"
+- !private "NSApp"
+- "NSView"
+- "NSTextField"
+- !private "String"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "NSApp"]
@@ -67,7 +61,7 @@ depends-member:
 - ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
-- ["CSo6Bundle", "deinit"]
+- !private ["CSo6Bundle", "deinit"]
 - !private ["CSo6Bundle", "infoDictionary"]
 - !private ["CSo6Bundle", "main"]
 - !private ["Ps7CVarArg", "Bundle"]
@@ -186,7 +180,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Vs10Dictionary", "Index"]
 - !private ["Vs10Dictionary", "SubSequence"]
-- ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "deinit"]
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "Bundle"]
@@ -287,19 +281,19 @@ depends-member:
 - ["C15WallpaperMaster18MainViewController", "NSTextField"]
 - ["C15WallpaperMaster18MainViewController", "NSView"]
 - ["C15WallpaperMaster18MainViewController", "NSViewController"]
-- ["C15WallpaperMaster18MainViewController", "String"]
+- !private ["C15WallpaperMaster18MainViewController", "String"]
 - !private ["C15WallpaperMaster18MainViewController", "addChildViewController"]
-- ["C15WallpaperMaster18MainViewController", "cleanContainerView"]
-- ["C15WallpaperMaster18MainViewController", "contactButtonPressed"]
-- ["C15WallpaperMaster18MainViewController", "contactVC"]
+- !private ["C15WallpaperMaster18MainViewController", "cleanContainerView"]
+- !private ["C15WallpaperMaster18MainViewController", "contactButtonPressed"]
+- !private ["C15WallpaperMaster18MainViewController", "contactVC"]
 - ["C15WallpaperMaster18MainViewController", "containerView"]
 - ["C15WallpaperMaster18MainViewController", "deinit"]
-- ["C15WallpaperMaster18MainViewController", "getAppVersion"]
+- !private ["C15WallpaperMaster18MainViewController", "getAppVersion"]
 - ["C15WallpaperMaster18MainViewController", "init"]
 - ["C15WallpaperMaster18MainViewController", "menuControl"]
 - ["C15WallpaperMaster18MainViewController", "menuPressed"]
-- ["C15WallpaperMaster18MainViewController", "sourceVC"]
-- ["C15WallpaperMaster18MainViewController", "sourcesButtonPressed"]
+- !private ["C15WallpaperMaster18MainViewController", "sourceVC"]
+- !private ["C15WallpaperMaster18MainViewController", "sourcesButtonPressed"]
 - ["C15WallpaperMaster18MainViewController", "versionLabel"]
 - !private ["C15WallpaperMaster18MainViewController", "view"]
 - ["C15WallpaperMaster18MainViewController", "viewDidAppear"]
@@ -398,7 +392,7 @@ depends-member:
 - ["CSo8NSObject", "NSTextField"]
 - ["CSo8NSObject", "NSView"]
 - ["CSo8NSObject", "NSViewController"]
-- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "activate"]
 - !private ["CSo8NSObject", "addChildViewController"]
 - !private ["CSo8NSObject", "addSubview"]
@@ -464,7 +458,7 @@ depends-member:
 - ["CSo11NSResponder", "NSTextField"]
 - ["CSo11NSResponder", "NSView"]
 - ["CSo11NSResponder", "NSViewController"]
-- ["CSo11NSResponder", "String"]
+- !private ["CSo11NSResponder", "String"]
 - !private ["CSo11NSResponder", "activate"]
 - !private ["CSo11NSResponder", "addChildViewController"]
 - !private ["CSo11NSResponder", "addSubview"]
@@ -556,7 +550,7 @@ depends-member:
 - ["CSo16NSViewController", "NSTextField"]
 - ["CSo16NSViewController", "NSView"]
 - ["CSo16NSViewController", "NSViewController"]
-- ["CSo16NSViewController", "String"]
+- !private ["CSo16NSViewController", "String"]
 - !private ["CSo16NSViewController", "addChildViewController"]
 - ["CSo16NSViewController", "cleanContainerView"]
 - ["CSo16NSViewController", "contactButtonPressed"]
@@ -648,7 +642,7 @@ depends-member:
 depends-nominal:
 - "Ps9AnyObject"
 - "Sb"
-- "CSo6Bundle"
+- !private "CSo6Bundle"
 - "Ps7CVarArg"
 - !private "Vs9Character"
 - !private "Ps10Collection"
@@ -657,7 +651,7 @@ depends-nominal:
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Vs10Dictionary"
+- !private "Vs10Dictionary"
 - !private "Sd"
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
@@ -747,4 +741,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "342a60463afa805499b052e3e8813686"
+interface-hash: "ccdaf20a926734573a7080a6ed2db4b1"

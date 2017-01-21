@@ -9,34 +9,34 @@ provides-member:
 - ["CSo7NSImage", "PNGRepresentation"]
 - ["CSo7NSImage", "savePNG"]
 provides-dynamic-lookup:
-- "PNGRepresentation"
 - "savePNG"
+- "PNGRepresentation"
 depends-top-level:
-- "AssignmentPrecedence"
-- !private "NSBitmapImageFileType"
-- !private "NSWorkspace"
-- "Saver"
-- "String"
-- "StringLiteralType"
-- !private "NSBitmapImageRep"
-- !private "NSSearchPathForDirectoriesInDomains"
-- "NSImage"
-- !private "BooleanLiteralType"
-- "DescribedImage"
-- !private "+"
-- "UnicodeScalarType"
-- !private "%"
-- !private "FileManager"
-- !private "<"
-- !private "ErrorHandler"
-- !private "||"
-- "NSData"
-- !private "arc4random"
-- !private "Dictionary"
-- "URL"
-- "CastingPrecedence"
-- !private "=="
 - "Int"
+- "DescribedImage"
+- !private "||"
+- !private "arc4random"
+- !private "BooleanLiteralType"
+- "NSData"
+- !private "Dictionary"
+- !private "NSWorkspace"
+- "String"
+- "UnicodeScalarType"
+- !private "NSBitmapImageRep"
+- "StringLiteralType"
+- !private "FileManager"
+- "URL"
+- "NSImage"
+- !private "+"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "ErrorHandler"
+- "CastingPrecedence"
+- !private "NSBitmapImageFileType"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "%"
+- "Saver"
+- !private "<"
 depends-member:
 - !private ["Ps9AnyObject", "DescribedImage"]
 - !private ["Ps9AnyObject", "ErrorHandler"]
@@ -677,9 +677,9 @@ depends-member:
 - ["C15WallpaperMaster5Saver", "initAppFolder"]
 - ["C15WallpaperMaster5Saver", "initCurrentImage"]
 - ["C15WallpaperMaster5Saver", "initFavFolder"]
-- ["C15WallpaperMaster5Saver", "maxAttempts"]
+- !private ["C15WallpaperMaster5Saver", "maxAttempts"]
 - ["C15WallpaperMaster5Saver", "openFavourites"]
-- ["C15WallpaperMaster5Saver", "prefix"]
+- !private ["C15WallpaperMaster5Saver", "prefix"]
 - ["C15WallpaperMaster5Saver", "reviseFavouriteImages"]
 - ["C15WallpaperMaster5Saver", "save"]
 - ["C15WallpaperMaster5Saver", "saveToFavourites"]
@@ -983,4 +983,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "324f974bc42467dd507b56c937157909"
+interface-hash: "b96afc8efab871cdfca15b6398dc58ee"

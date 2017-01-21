@@ -6,62 +6,60 @@ provides-nominal:
 provides-member:
 - ["C15WallpaperMaster20StatusMenuController", ""]
 provides-dynamic-lookup:
-- "savedOption"
-- "getPhotoOfTheDay"
 - "RGOIsChosen"
-- "statusItem"
-- "RGOOption"
-- "YandexIsChosen"
-- "saveImage"
-- "menuWillOpen"
-- "updateTimeInterval"
-- "NatGeoOption"
-- "bingIsChosen"
-- "NatGeoIsChosen"
-- "quitClicked"
-- "nextImage"
-- "statusBarMenu"
-- "bingOption"
-- "savedIsChosen"
-- "awakeFromNib"
+- "getPhotoOfTheDay"
+- "savedOption"
 - "yandexOption"
-- "timeSubmenu"
+- "savedIsChosen"
+- "nextImage"
+- "bingOption"
+- "NatGeoIsChosen"
+- "bingIsChosen"
+- "quitClicked"
+- "awakeFromNib"
+- "menuWillOpen"
+- "statusBarMenu"
+- "saveImage"
+- "YandexIsChosen"
+- "updateTimeInterval"
+- "RGOOption"
+- "NatGeoOption"
 depends-top-level:
 - "NSMenuItem"
-- "TernaryPrecedence"
-- !private "BingCollection"
-- "PreferencesHolder"
-- "DesktopUpdater"
-- !private "UnicodeScalarType"
-- !private "YandexCollection"
-- "Int"
-- !private "Saver"
-- !private "~="
-- !private ">"
-- "AssignmentPrecedence"
-- !private "=="
-- "StatusMenuController"
-- !private "+"
-- !private "-"
-- !private "&&"
-- "AnyObject"
-- !private "!="
-- !private "RGOCollection"
-- "StringLiteralType"
-- "NSVariableStatusItemLength"
-- !private "SavedCollection"
-- "NSMenu"
-- "String"
 - "NSStatusBar"
 - !private "NSApplication"
-- !private "Double"
-- "NSObject"
-- "NSMenuDelegate"
-- !private "*"
-- !private "NatGeoCollection"
+- !private "RGOCollection"
+- !private "+"
+- "AnyObject"
+- "StringLiteralType"
+- "PreferencesHolder"
 - !private "BooleanLiteralType"
-- !private "NSApp"
+- !private "Double"
+- "NSMenu"
 - "ImageSource"
+- !private "NatGeoCollection"
+- !private "UnicodeScalarType"
+- !private "BingCollection"
+- !private "NSApp"
+- !private ">"
+- !private "TernaryPrecedence"
+- !private "!="
+- "NSMenuDelegate"
+- !private "-"
+- "NSVariableStatusItemLength"
+- !private "&&"
+- !private "Saver"
+- "DesktopUpdater"
+- !private "YandexCollection"
+- "StatusMenuController"
+- "Int"
+- !private "*"
+- !private "SavedCollection"
+- !private "~="
+- "String"
+- !private "=="
+- "AssignmentPrecedence"
+- "NSObject"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "BingCollection"]
@@ -485,7 +483,7 @@ depends-member:
 - ["Vs10Dictionary", "init"]
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Vs18DictionaryIterator", "Element"]
-- ["Sd", "deinit"]
+- !private ["Sd", "deinit"]
 - !private ["Sd", "init"]
 - !private ["Vs18EnumeratedIterator", "Element"]
 - !private ["Vs18EnumeratedSequence", "Iterator"]
@@ -1146,7 +1144,7 @@ depends-member:
 - ["C15WallpaperMaster20StatusMenuController", "confinementRect"]
 - ["C15WallpaperMaster20StatusMenuController", "confinementRectForMenu"]
 - ["C15WallpaperMaster20StatusMenuController", "deinit"]
-- ["C15WallpaperMaster20StatusMenuController", "desktopUpdater"]
+- !private ["C15WallpaperMaster20StatusMenuController", "desktopUpdater"]
 - ["C15WallpaperMaster20StatusMenuController", "getPhotoOfTheDay"]
 - ["C15WallpaperMaster20StatusMenuController", "init"]
 - ["C15WallpaperMaster20StatusMenuController", "menu"]
@@ -1157,18 +1155,18 @@ depends-member:
 - ["C15WallpaperMaster20StatusMenuController", "nextImage"]
 - ["C15WallpaperMaster20StatusMenuController", "numberOfItems"]
 - ["C15WallpaperMaster20StatusMenuController", "numberOfItemsInMenu"]
-- ["C15WallpaperMaster20StatusMenuController", "options"]
-- ["C15WallpaperMaster20StatusMenuController", "preferencesHolder"]
+- !private ["C15WallpaperMaster20StatusMenuController", "options"]
+- !private ["C15WallpaperMaster20StatusMenuController", "preferencesHolder"]
 - ["C15WallpaperMaster20StatusMenuController", "quitClicked"]
 - ["C15WallpaperMaster20StatusMenuController", "saveImage"]
 - ["C15WallpaperMaster20StatusMenuController", "savedIsChosen"]
 - ["C15WallpaperMaster20StatusMenuController", "savedOption"]
 - ["C15WallpaperMaster20StatusMenuController", "statusBarMenu"]
-- ["C15WallpaperMaster20StatusMenuController", "statusItem"]
-- ["C15WallpaperMaster20StatusMenuController", "timeSubmenu"]
-- ["C15WallpaperMaster20StatusMenuController", "times"]
-- ["C15WallpaperMaster20StatusMenuController", "updateItemStates"]
-- ["C15WallpaperMaster20StatusMenuController", "updateTimeInterval"]
+- !private ["C15WallpaperMaster20StatusMenuController", "statusItem"]
+- !private ["C15WallpaperMaster20StatusMenuController", "timeSubmenu"]
+- !private ["C15WallpaperMaster20StatusMenuController", "times"]
+- !private ["C15WallpaperMaster20StatusMenuController", "updateItemStates"]
+- !private ["C15WallpaperMaster20StatusMenuController", "updateTimeInterval"]
 - ["C15WallpaperMaster20StatusMenuController", "yandexOption"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "Stride"]
@@ -1352,7 +1350,7 @@ depends-nominal:
 - "C15WallpaperMaster14DesktopUpdater"
 - "Vs10Dictionary"
 - !private "Vs18DictionaryIterator"
-- "Sd"
+- !private "Sd"
 - !private "Vs18EnumeratedIterator"
 - "Vs18EnumeratedSequence"
 - "Ps9Equatable"
@@ -1476,4 +1474,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "e0a9892933cd6ec737be0fc66c48d212"
+interface-hash: "b84a1461b2cc2d3100c5297fd290fbe3"

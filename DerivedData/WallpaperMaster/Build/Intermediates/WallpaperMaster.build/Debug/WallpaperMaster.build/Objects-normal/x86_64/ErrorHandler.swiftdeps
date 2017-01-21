@@ -7,22 +7,22 @@ provides-member:
 - ["C15WallpaperMaster12ErrorHandler", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "ErrorHandler"
 - !private "StringLiteralType"
-- !private "Date"
+- !private "print"
+- !private "+"
+- !private "BooleanLiteralType"
+- !private "Int"
+- !private "NSCalendar"
+- "String"
+- !private "UnicodeScalarType"
+- !private "FileHandle"
+- !private "CastingPrecedence"
+- !private "URL"
 - !private "NSDate"
 - !private "FileManager"
-- "Int"
-- !private "BooleanLiteralType"
-- !private "print"
-- !private "FileHandle"
-- "String"
+- !private "Date"
 - !private "NSSearchPathForDirectoriesInDomains"
-- "ErrorHandler"
-- !private "URL"
-- !private "NSCalendar"
-- !private "UnicodeScalarType"
-- "CastingPrecedence"
-- !private "+"
 depends-member:
 - !private ["Ps9AnyObject", "Encoding"]
 - !private ["Ps9AnyObject", "FileHandle"]
@@ -75,7 +75,7 @@ depends-member:
 - !private ["Ps7CVarArg", "seekToEndOfFile"]
 - !private ["Ps7CVarArg", "write"]
 - !private ["V10Foundation8Calendar", "component"]
-- ["V10Foundation8Calendar", "deinit"]
+- !private ["V10Foundation8Calendar", "deinit"]
 - !private ["Ps10Collection", "Iterator"]
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "first"]
@@ -84,7 +84,7 @@ depends-member:
 - !private ["Ps10Comparable", "data"]
 - !private ["Ps10Comparable", "init"]
 - !private ["OV10Foundation8Calendar9Component", "day"]
-- ["OV10Foundation8Calendar9Component", "deinit"]
+- !private ["OV10Foundation8Calendar9Component", "deinit"]
 - !private ["OV10Foundation8Calendar9Component", "hour"]
 - !private ["OV10Foundation8Calendar9Component", "minute"]
 - !private ["OV10Foundation8Calendar9Component", "month"]
@@ -143,7 +143,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "write"]
 - ["V10Foundation4Data", "deinit"]
 - !private ["V10Foundation4Data", "write"]
-- ["V10Foundation4Date", "deinit"]
+- !private ["V10Foundation4Date", "deinit"]
 - ["VE10FoundationSS8Encoding", "deinit"]
 - !private ["VE10FoundationSS8Encoding", "utf8"]
 - !private ["Ps9Equatable", "Encoding"]
@@ -173,18 +173,18 @@ depends-member:
 - !private ["C15WallpaperMaster12ErrorHandler", "Date"]
 - !private ["C15WallpaperMaster12ErrorHandler", "FileHandle"]
 - !private ["C15WallpaperMaster12ErrorHandler", "FileManager"]
-- ["C15WallpaperMaster12ErrorHandler", "Int"]
+- !private ["C15WallpaperMaster12ErrorHandler", "Int"]
 - !private ["C15WallpaperMaster12ErrorHandler", "NSCalendar"]
 - !private ["C15WallpaperMaster12ErrorHandler", "NSDate"]
 - !private ["C15WallpaperMaster12ErrorHandler", "NSSearchPathForDirectoriesInDomains"]
 - ["C15WallpaperMaster12ErrorHandler", "String"]
 - !private ["C15WallpaperMaster12ErrorHandler", "URL"]
 - ["C15WallpaperMaster12ErrorHandler", "deinit"]
-- ["C15WallpaperMaster12ErrorHandler", "getCurrentTime"]
+- !private ["C15WallpaperMaster12ErrorHandler", "getCurrentTime"]
 - ["C15WallpaperMaster12ErrorHandler", "init"]
 - !private ["C15WallpaperMaster12ErrorHandler", "print"]
 - ["C15WallpaperMaster12ErrorHandler", "record"]
-- ["C15WallpaperMaster12ErrorHandler", "str2"]
+- !private ["C15WallpaperMaster12ErrorHandler", "str2"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
 - !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "first"]
@@ -244,7 +244,7 @@ depends-member:
 - !private ["Ps13IndexableBase", "first"]
 - !private ["Ps13IndexableBase", "write"]
 - !private ["Vs16IndexingIterator", "Element"]
-- ["Si", "deinit"]
+- !private ["Si", "deinit"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps25LosslessStringConvertible", "Encoding"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
@@ -273,7 +273,7 @@ depends-member:
 - !private ["PSo9NSCopying", "current"]
 - !private ["PSo9NSCopying", "data"]
 - !private ["PSo9NSCopying", "init"]
-- ["CSo6NSDate", "deinit"]
+- !private ["CSo6NSDate", "deinit"]
 - !private ["CSo6NSDate", "init"]
 - !private ["PSo16NSMutableCopying", "Encoding"]
 - !private ["PSo16NSMutableCopying", "data"]
@@ -436,16 +436,16 @@ depends-nominal:
 - !private "Ps22BidirectionalIndexable"
 - "Sb"
 - !private "Ps7CVarArg"
-- "V10Foundation8Calendar"
+- !private "V10Foundation8Calendar"
 - !private "Ps10Collection"
 - !private "Ps10Comparable"
-- "OV10Foundation8Calendar9Component"
+- !private "OV10Foundation8Calendar9Component"
 - !private "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
 - "V10Foundation4Data"
-- "V10Foundation4Date"
+- !private "V10Foundation4Date"
 - "VE10FoundationSS8Encoding"
 - !private "Ps9Equatable"
 - "C15WallpaperMaster12ErrorHandler"
@@ -461,7 +461,7 @@ depends-nominal:
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
-- "Si"
+- !private "Si"
 - !private "Ps16IteratorProtocol"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
@@ -470,7 +470,7 @@ depends-nominal:
 - !private "CSo10NSCalendar"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
-- "CSo6NSDate"
+- !private "CSo6NSDate"
 - !private "PSo16NSMutableCopying"
 - !private "CSo8NSObject"
 - !private "PSo16NSObjectProtocol"
@@ -523,4 +523,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "ece074334c02886e4407e69fb276bb45"
+interface-hash: "896ab566e96befff104958e3095700bf"

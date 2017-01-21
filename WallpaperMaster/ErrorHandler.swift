@@ -41,7 +41,7 @@ class ErrorHandler {
         }
     }
     
-    static func getCurrentTime() -> String {
+    private static func getCurrentTime() -> String {
         let date     = NSDate()
         let calendar = NSCalendar.current
         let year     = calendar.component(.year,   from: date as Date)
@@ -56,7 +56,7 @@ class ErrorHandler {
         return timeString
     }
     
-    static func str2(_ num: Int) -> String {
+    private static func str2(_ num: Int) -> String {
         return String(format: "%02d", num)
     }
 }

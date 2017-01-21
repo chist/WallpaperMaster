@@ -7,12 +7,12 @@ provides-member:
 - ["C15WallpaperMaster14DescribedImage", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "StringLiteralType"
+- "String"
+- !private "abs"
 - "DescribedImage"
 - "NSImage"
 - "AssignmentPrecedence"
-- !private "StringLiteralType"
-- !private "abs"
-- "String"
 depends-member:
 - !private ["Ps9AnyObject", "abs"]
 - !private ["Ps9AnyObject", "hashValue"]

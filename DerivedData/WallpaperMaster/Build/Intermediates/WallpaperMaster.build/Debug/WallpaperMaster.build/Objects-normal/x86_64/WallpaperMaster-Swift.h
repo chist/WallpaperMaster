@@ -132,7 +132,6 @@ SWIFT_CLASS("_TtC15WallpaperMaster11AppDelegate")
 
 SWIFT_CLASS("_TtC15WallpaperMaster21ContactViewController")
 @interface ContactViewController : NSViewController
-@property (nonatomic, readonly, copy) NSString * _Nonnull donationLink;
 - (IBAction)coffeeButtonClicked:(NSButton * _Nonnull)sender;
 - (nullable instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -147,15 +146,9 @@ SWIFT_CLASS("_TtC15WallpaperMaster18MainViewController")
 @property (nonatomic, strong) IBOutlet NSSegmentedControl * _Null_unspecified menuControl;
 @property (nonatomic, strong) IBOutlet NSView * _Null_unspecified containerView;
 @property (nonatomic, strong) IBOutlet NSTextField * _Null_unspecified versionLabel;
-@property (nonatomic, readonly, strong) NSViewController * _Nonnull sourceVC;
-@property (nonatomic, readonly, strong) NSViewController * _Nonnull contactVC;
 - (void)viewDidLoad;
 - (void)viewDidAppear;
-- (NSString * _Nonnull)getAppVersion;
 - (IBAction)menuPressed:(NSSegmentedControl * _Nonnull)sender;
-- (void)cleanContainerView;
-- (void)sourcesButtonPressed;
-- (void)contactButtonPressed;
 - (nullable instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -181,14 +174,11 @@ SWIFT_CLASS("_TtC15WallpaperMaster21SourcesViewController")
 @end
 
 @class NSMenu;
-@class NSStatusItem;
 @class NSMenuItem;
 
 SWIFT_CLASS("_TtC15WallpaperMaster20StatusMenuController")
 @interface StatusMenuController : NSObject <NSMenuDelegate>
 @property (nonatomic, strong) IBOutlet NSMenu * _Null_unspecified statusBarMenu;
-@property (nonatomic, readonly, strong) NSStatusItem * _Nonnull statusItem;
-@property (nonatomic, readonly, strong) NSMenu * _Nonnull timeSubmenu;
 @property (nonatomic, weak) IBOutlet NSMenuItem * _Null_unspecified NatGeoOption;
 @property (nonatomic, weak) IBOutlet NSMenuItem * _Null_unspecified yandexOption;
 @property (nonatomic, weak) IBOutlet NSMenuItem * _Null_unspecified RGOOption;
@@ -204,7 +194,6 @@ SWIFT_CLASS("_TtC15WallpaperMaster20StatusMenuController")
 - (IBAction)RGOIsChosen:(NSMenuItem * _Nonnull)sender;
 - (IBAction)bingIsChosen:(NSMenuItem * _Nonnull)sender;
 - (IBAction)savedIsChosen:(id _Nonnull)sender;
-- (void)updateTimeInterval:(NSMenuItem * _Nonnull)sender;
 - (IBAction)quitClicked:(NSMenuItem * _Nonnull)sender;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

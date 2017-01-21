@@ -7,14 +7,13 @@ provides-member:
 - ["C15WallpaperMaster21ContactViewController", ""]
 provides-dynamic-lookup:
 - "coffeeButtonClicked"
-- "donationLink"
 depends-top-level:
-- "StringLiteralType"
 - "NSButton"
 - !private "URL"
-- !private "NSWorkspace"
 - "ContactViewController"
 - "NSViewController"
+- !private "NSWorkspace"
+- "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "NSWorkspace"]
 - !private ["Ps9AnyObject", "URL"]
@@ -39,7 +38,7 @@ depends-member:
 - !private ["C15WallpaperMaster21ContactViewController", "URL"]
 - ["C15WallpaperMaster21ContactViewController", "coffeeButtonClicked"]
 - ["C15WallpaperMaster21ContactViewController", "deinit"]
-- ["C15WallpaperMaster21ContactViewController", "donationLink"]
+- !private ["C15WallpaperMaster21ContactViewController", "donationLink"]
 - ["C15WallpaperMaster21ContactViewController", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "NSWorkspace"]
 - !private ["Ps28CustomDebugStringConvertible", "URL"]
@@ -236,4 +235,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "d0c1b06e8bf8eeb2d752baf695b5aeda"
+interface-hash: "6cb45d2bace2d5492e2aa1e16c07f4c3"

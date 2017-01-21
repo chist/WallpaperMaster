@@ -8,10 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 - "showSavedInFinder"
 depends-top-level:
-- !private "Saver"
 - "NSViewController"
-- "NSButton"
+- !private "Saver"
 - "SourcesViewController"
+- "NSButton"
 depends-member:
 - !private ["Ps9AnyObject", "Saver"]
 - !private ["Ps9AnyObject", "init"]

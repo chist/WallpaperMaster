@@ -7,12 +7,12 @@ provides-member:
 - ["O15WallpaperMaster11ImageSource", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "=="
-- !private "~="
+- "ImageSource"
 - "Int"
 - "FloatLiteralType"
 - "IntegerLiteralType"
-- "ImageSource"
+- "=="
+- !private "~="
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

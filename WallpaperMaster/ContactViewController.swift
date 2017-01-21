@@ -10,7 +10,7 @@ import Foundation
 import Cocoa
 
 class ContactViewController: NSViewController {
-    let donationLink = "https://money.yandex.ru/to/410014893378724"
+    private let donationLink = "https://money.yandex.ru/to/410014893378724"
     
     @IBAction func coffeeButtonClicked(_ sender: NSButton) {
         if let donationURL = URL(string: donationLink) {

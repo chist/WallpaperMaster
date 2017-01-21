@@ -10,12 +10,12 @@ import Foundation
 import Cocoa
 
 class DesktopUpdater {
-    var timer: Timer? = nil
-    var imageGetter: ImageGetterDelegate
-    var currentWallpaper: DescribedImage? = nil
-    var period: Double = 300
-    var isRandom: Bool = true
-    let saver = Saver()
+    internal var timer: Timer? = nil
+    internal var imageGetter: ImageGetterDelegate
+    private  var currentWallpaper: DescribedImage? = nil
+    internal var period   = 300.0
+    internal var isRandom = true
+    private  let saver    = Saver()
     
     init(source: ImageSource) {
         // set default image source
@@ -45,8 +45,9 @@ class DesktopUpdater {
                                                             name: NSNotification.Name.NSWorkspaceActiveSpaceDidChange,
                                                             object: nil)
     }
-    
-    @objc func spaceChanged() {
+
+    @objc private func spaceChanged() {
+        // update wallpaper when user moved to another desktop space
         DispatchQueue.global().async {
             do {
                 let workspace = NSWorkspace.shared()
@@ -58,7 +59,7 @@ class DesktopUpdater {
         }
     }
     
-    @objc func updateWallpaper() {
+    @objc internal func updateWallpaper() {
         DispatchQueue.global().async {
             // download new wallpaper
             let wallpaper: DescribedImage
@@ -82,12 +83,13 @@ class DesktopUpdater {
         resetTimer()
     }
     
-    func resetTimer(){
+    internal func resetTimer(){
         self.timer?.invalidate()
         timer = Timer.scheduledTimer(timeInterval: self.period, target: self, selector: #selector(updateWallpaper), userInfo: nil, repeats: true)
     }
     
-    func addToFavourites() {
+    internal func addToFavourites() {
+        // save current wallpaper to folder with favourites
         if let wallpaper = currentWallpaper {
             saver.saveToFavourites(wallpaper)
         }

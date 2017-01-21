@@ -7,16 +7,12 @@ provides-member:
 - ["P15WallpaperMaster19ImageGetterDelegate", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ImageGetterDelegate"
 - "DescribedImage"
-- "Downloader"
+- "ImageGetterDelegate"
 depends-member:
 - ["P15WallpaperMaster19ImageGetterDelegate", "DescribedImage"]
-- ["P15WallpaperMaster19ImageGetterDelegate", "Downloader"]
-- ["P15WallpaperMaster19ImageGetterDelegate", "downloader"]
 - ["P15WallpaperMaster19ImageGetterDelegate", "getImageOfTheDay"]
 - ["P15WallpaperMaster19ImageGetterDelegate", "getRandomImage"]
-- ["P15WallpaperMaster19ImageGetterDelegate", ""]
 depends-nominal:
 - "P15WallpaperMaster19ImageGetterDelegate"
 depends-dynamic-lookup:
@@ -34,4 +30,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "c746d23e0b3831a899e34da1f9716597"
+interface-hash: "a16447b816cb74a59ae1ca84040c77f8"

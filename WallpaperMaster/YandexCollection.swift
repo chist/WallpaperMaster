@@ -10,30 +10,25 @@ import Foundation
 import Cocoa
 
 class YandexCollection: ImageGetterDelegate {
-    let contentURL      = "https://fotki.yandex.ru/calendar/"
-    let albumContentURL = "https://fotki.yandex.ru/next"
-    let downloader = Downloader()
-    let maxFailureCount: Int = 120
+    private let contentURL      = "https://fotki.yandex.ru/calendar/"
+    private let albumContentURL = "https://fotki.yandex.ru/next"
+    private let downloader      = Downloader()
+    private let maxFailureCount = 120
     // minimum value of image.width / image.height
-    let proportionBound: CGFloat = 1.2
+    private let proportionBound: CGFloat = 1.2
     
-    func getLinkToImage(random: Bool) -> String? {
-        let year: Int, month: Int, day: Int
+    private func getLinkToImage(random: Bool) -> String? {
+        let date: Day
         if random {
-            year         = 2008 + Int(arc4random()) % 8
-            month        = 1 + Int(arc4random()) % 12
-            day          = 1 + Int(arc4random()) % 28
+            let firstDay = Day(1, ofMonth: 1, inYear: 2008)
+            date = DateGenerator.getRandomDay(after: firstDay)
         } else {
-            let date     = NSDate()
-            let calendar = NSCalendar.current
-            year         = calendar.component(.year,  from: date as Date)
-            month        = calendar.component(.month, from: date as Date)
-            day          = calendar.component(.day,   from: date as Date)
+            date = DateGenerator.getCurrentDay()
         }
-        let monthLink = contentURL + "?date=" + String(year) + "-" + String(format: "%02d", month)
+        let monthLink = contentURL + String(format: "?date=%d-%02d", date.year, date.month)
         
         // get HTML content of page with month best photos
-        let monthHTMLString = getHTML(link: monthLink)
+        let monthHTMLString = monthLink.getHTML()
         if monthHTMLString == nil {
             return nil
         }
@@ -45,7 +40,7 @@ class YandexCollection: ImageGetterDelegate {
             let xpath = "/html/body/div[3]/table/tr[3]/td[2]/table[2]//td[not(@class)]"
             let anchorArray = monthHTML.xpath(xpath)
             
-            var dayIndex: Int = day - 1
+            var dayIndex: Int = date.day - 1
             // decrease day if current day photo hasn't appeared yet
             while anchorArray.count <= dayIndex {
                 dayIndex = dayIndex - 1
@@ -63,7 +58,7 @@ class YandexCollection: ImageGetterDelegate {
             return nil
         }
         
-        let albumHTMLString = getHTML(link: linkToUserAlbum!)
+        let albumHTMLString = linkToUserAlbum!.getHTML()
         do {
             let albumHTML = try HTMLDocument(string: albumHTMLString!, encoding: String.Encoding.utf8)
             let xpath = "//script[3]"
@@ -75,17 +70,6 @@ class YandexCollection: ImageGetterDelegate {
         } catch let error {
             print(error.localizedDescription)
             return nil
-        }
-    }
-    
-    func getHTML(link: String) -> String? {
-        let url = URL(string: link.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!)
-        do {
-            let html = try NSString(contentsOf: url!, encoding: String.Encoding.utf8.rawValue)
-            return html as String
-        } catch {
-            print(error)
-            return nil;
         }
     }
     

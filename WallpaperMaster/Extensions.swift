@@ -39,6 +39,18 @@ extension String {
         }
         return ranges
     }
+    
+    // download HTML if object represents a link
+    func getHTML() -> String? {
+        let url = URL(string: self.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!)
+        do {
+            let html = try NSString(contentsOf: url!, encoding: String.Encoding.utf8.rawValue)
+            return html as String
+        } catch {
+            print(error)
+            return nil;
+        }
+    }
 }
 
 extension NSRange {

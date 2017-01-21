@@ -11,6 +11,7 @@
 		4F0491111E2423E800F9AF62 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4F0491101E2423E800F9AF62 /* README.md */; };
 		4F0C2F661E211CCD006B41FF /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0C2F651E211CCD006B41FF /* StatusMenuController.swift */; };
 		4F0F1ABD1E22706B00C3FECF /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F1ABC1E22706B00C3FECF /* ContactViewController.swift */; };
+		4F76BDDF1E3128510048BD64 /* DateGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F76BDDE1E3128510048BD64 /* DateGenerator.swift */; };
 		4FA498631E212D3200E30460 /* DescribedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA498621E212D3200E30460 /* DescribedImage.swift */; };
 		4FAE14241E1ECE6700110CE4 /* DesktopUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */; };
 		4FAE14261E1EDFB100110CE4 /* YandexCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */; };
@@ -63,6 +64,7 @@
 		4F0491101E2423E800F9AF62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		4F0C2F651E211CCD006B41FF /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		4F0F1ABC1E22706B00C3FECF /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		4F76BDDE1E3128510048BD64 /* DateGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateGenerator.swift; sourceTree = "<group>"; };
 		4FA498621E212D3200E30460 /* DescribedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescribedImage.swift; sourceTree = "<group>"; };
 		4FAE14231E1ECE6600110CE4 /* DesktopUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesktopUpdater.swift; sourceTree = "<group>"; };
 		4FAE14251E1EDFB100110CE4 /* YandexCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YandexCollection.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				4FC398E81E1FB3400045B05C /* Extensions.swift */,
 				4F0190C41E20448D00CA2003 /* Downloader.swift */,
 				4FA498621E212D3200E30460 /* DescribedImage.swift */,
+				4F76BDDE1E3128510048BD64 /* DateGenerator.swift */,
 				4FECB0941E1D7BA3003FB579 /* ImageGetterDelegate.swift */,
 				4FAE14221E1ECCFA00110CE4 /* Image getters */,
 				4FECB0551E1D767C003FB579 /* AppDelegate.swift */,
@@ -417,6 +420,7 @@
 				4FE4A9261E2C1A890054CD5B /* MainViewController.swift in Sources */,
 				4FECB08D1E1D7760003FB579 /* Element.swift in Sources */,
 				4FE4A91C1E2B8F2A0054CD5B /* SavedCollection.swift in Sources */,
+				4F76BDDF1E3128510048BD64 /* DateGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

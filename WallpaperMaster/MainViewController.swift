@@ -14,8 +14,8 @@ class MainViewController: NSViewController {
     @IBOutlet var containerView: NSView!
     @IBOutlet var versionLabel: NSTextField!
     
-    let sourceVC  = NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: "SourceVC") as! NSViewController
-    let contactVC = NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: "ContactVC") as! NSViewController
+    private let sourceVC  = NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: "SourceVC") as! NSViewController
+    private let contactVC = NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: "ContactVC") as! NSViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class MainViewController: NSViewController {
         NSApp.activate(ignoringOtherApps: true)
     }
     
-    func getAppVersion() -> String {
+    private func getAppVersion() -> String {
         let dictionary = Bundle.main.infoDictionary!
         let version = dictionary["CFBundleShortVersionString"] as! String
         let build = dictionary["CFBundleVersion"] as! String
@@ -50,20 +50,20 @@ class MainViewController: NSViewController {
         }
     }
     
-    func cleanContainerView() {
+    private func cleanContainerView() {
         sourceVC.removeFromParentViewController()
         sourceVC.view.removeFromSuperview()
         contactVC.removeFromParentViewController()
         contactVC.view.removeFromSuperview()
     }
     
-    func sourcesButtonPressed() {
+    private func sourcesButtonPressed() {
         self.cleanContainerView()
         self.addChildViewController(sourceVC)
         self.containerView.addSubview(sourceVC.view)
     }
     
-    func contactButtonPressed() {
+    private func contactButtonPressed() {
         self.cleanContainerView()
         self.addChildViewController(contactVC)
         self.containerView.addSubview(contactVC.view)

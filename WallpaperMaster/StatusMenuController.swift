@@ -10,8 +10,8 @@ import Cocoa
 
 class StatusMenuController: NSObject, NSMenuDelegate {
     @IBOutlet var statusBarMenu: NSMenu!
-    let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
-    let timeSubmenu = NSMenu(title: "Set update time")
+    private let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    private let timeSubmenu = NSMenu(title: "Set update time")
     
     @IBOutlet weak var NatGeoOption: NSMenuItem!
     @IBOutlet weak var yandexOption: NSMenuItem!
@@ -19,12 +19,12 @@ class StatusMenuController: NSObject, NSMenuDelegate {
     @IBOutlet weak var bingOption:   NSMenuItem!
     @IBOutlet weak var savedOption:  NSMenuItem!
     
-    var options = [ImageSource : NSMenuItem]()
-    let preferencesHolder = PreferencesHolder()
-    var desktopUpdater: DesktopUpdater? = nil
+    private var options = [ImageSource : NSMenuItem]()
+    private let preferencesHolder = PreferencesHolder()
+    private var desktopUpdater: DesktopUpdater? = nil
     
     // periods of wallpaper update in seconds
-    let times: [(Int, String)] = [(5, "minutes"), (15, "minutes"), (30, "minutes"),
+    private let times: [(Int, String)] = [(5, "minutes"), (15, "minutes"), (30, "minutes"),
                                   (1, "hour"), (3, "hours"), (6, "hours"), (1, "day")]
     
     override func awakeFromNib() {
@@ -122,7 +122,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
         desktopUpdater?.addToFavourites()
     }
     
-    func updateItemStates(current: ImageSource) {
+    private func updateItemStates(current: ImageSource) {
         // mark current source option with tick
         for (key, value) in options {
             value.state = (key == current) ? 1 : 0
@@ -163,7 +163,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
     }
     
     
-    func updateTimeInterval(_ sender: NSMenuItem) {
+    @objc private func updateTimeInterval(_ sender: NSMenuItem) {
         let tag = sender.tag
         
         // mark current time interval

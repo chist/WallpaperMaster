@@ -7,26 +7,26 @@ provides-member:
 - ["C15WallpaperMaster10XMLElement", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "NSNumber"
+- "XMLElement"
+- "String"
 - "Int"
+- "Bool"
+- "NSNumber"
 - !private "xmlChar"
 - !private "xmlGetProp"
-- !private "!="
 - !private "cXMLNode"
-- !private "^-^"
-- "String"
-- "XMLNodeType"
-- !private "LinkedCNodes"
-- "XMLElement"
-- "Bool"
 - !private "UnsafeMutablePointer"
 - !private "TernaryPrecedence"
-- "AssignmentPrecedence"
+- "XMLNodeType"
+- !private "LinkedCNodes"
 - "Date"
+- !private "!="
+- !private "~="
 - "XMLNode"
 - !private "xmlFree"
+- "AssignmentPrecedence"
 - !private "xmlGetNsProp"
-- !private "~="
+- !private "^-^"
 depends-member:
 - !private ["Ps9AnyObject", "LinkedCNodes"]
 - !private ["Ps9AnyObject", "String"]

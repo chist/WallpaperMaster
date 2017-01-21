@@ -10,13 +10,12 @@ import Foundation
 import Cocoa
 
 class RGOCollection: ImageGetterDelegate {
-    let contentURL       = "https://www.rgo.ru/ru/foto/foto-dnya"
-    let randomContentURL = "https://www.rgo.ru/ru/foto/foto-dnya?page="
-    let photosQuantity   = 185
+    private let contentURL       = "https://www.rgo.ru/ru/foto/foto-dnya"
+    private let randomContentURL = "https://www.rgo.ru/ru/foto/foto-dnya?page="
+    private let photosQuantity   = 185
+    private let downloader       = Downloader()
     
-    let downloader = Downloader()
-    
-    func getLinkToImage(random: Bool) -> String? {
+    private func getLinkToImage(random: Bool) -> String? {
         let pageLink: String
         if random {
             let num = 1 + Int(arc4random()) % self.photosQuantity
@@ -26,7 +25,7 @@ class RGOCollection: ImageGetterDelegate {
         }
         
         // get HTML content of page with photo
-        let pageHTMLString = getHTML(link: pageLink)
+        let pageHTMLString = pageLink.getHTML()
         if pageHTMLString == nil {
             return nil
         }
@@ -46,17 +45,6 @@ class RGOCollection: ImageGetterDelegate {
         } catch let error {
             print(error.localizedDescription)
             return nil
-        }
-    }
-    
-    func getHTML(link: String) -> String? {
-        let url = URL(string: link.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!)
-        do {
-            let html = try NSString(contentsOf: url!, encoding: String.Encoding.utf8.rawValue)
-            return html as String
-        } catch {
-            print(error)
-            return nil;
         }
     }
     

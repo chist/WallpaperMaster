@@ -12,22 +12,11 @@ import Foundation
 import Cocoa
 
 class NatGeoCollection: ImageGetterDelegate {
-    let contentURL         = "http://www.nationalgeographic.com/photography/photo-of-the-day/_jcr_content/"
-    let photoCollectionURL = "http://yourshot.nationalgeographic.com"
-    let downloader = Downloader()
+    private let contentURL         = "http://www.nationalgeographic.com/photography/photo-of-the-day/_jcr_content/"
+    private let photoCollectionURL = "http://yourshot.nationalgeographic.com"
+    private let downloader         = Downloader()
     
-    func getSource(link: String) -> String? {
-        let url = URL(string: link.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!)
-        do {
-            let source = try NSString(contentsOf: url!, encoding: String.Encoding.utf8.rawValue)
-            return source as String
-        } catch let error {
-            print(error.localizedDescription)
-            return nil;
-        }
-    }
-    
-    func extractLink(from JSONString: String, random: Bool) -> String? {
+    private func extractLink(from JSONString: String, random: Bool) -> String? {
         // get all links with desired resolution
         let resolution: Int = 2048
         let ranges: [NSRange] = JSONString.search(substring: "\"\(resolution)\":\"")
@@ -49,37 +38,34 @@ class NatGeoCollection: ImageGetterDelegate {
     }
 
     
-    func getLinkToImageOfTheDay(source: String) -> String? {
+    private func getLinkToImageOfTheDay(source: String) -> String? {
         if let imageID = extractLink(from: source, random: false) {
             return photoCollectionURL + imageID
         }
         return nil
     }
     
-    func getLinkToRandomImage(source: String) -> String? {
+    private func getLinkToRandomImage(source: String) -> String? {
         if let imageID = extractLink(from: source, random: true) {
             return photoCollectionURL + imageID
         }
         return nil
     }
     
-    func getCurrentMonth() -> String {
-        let date     = NSDate()
-        let calendar = NSCalendar.current
-        let year     = calendar.component(.year, from: date as Date)
-        let month    = calendar.component(.month, from: date as Date)
-        return String(year) + "-" + String(format: "%02d", month)
+    private func getCurrentMonth() -> String {
+        let date = DateGenerator.getCurrentDay()
+        return String(format: "%d-%02d", date.year, date.month)
     }
     
-    func getRandomMonth() -> String {
-        let year     = 2016
-        let month    = 8 + Int(arc4random()) % 5
-        return String(year) + "-" + String(format: "%02d", month)
+    private func getRandomMonth() -> String {
+        let day  = Day(1, ofMonth: 8, inYear: 2016)
+        let date = DateGenerator.getRandomDay(after: day)
+        return String(format: "%d-%02d", date.year, date.month)
     }
     
     func getImageOfTheDay() -> DescribedImage {
         let link = contentURL + ".gallery." + getCurrentMonth() + ".json"
-        if let JSONString = getSource(link: link) {
+        if let JSONString = link.getHTML() {
             let link = getLinkToImageOfTheDay(source: JSONString)
             if link == nil {
                 return DescribedImage()
@@ -93,7 +79,7 @@ class NatGeoCollection: ImageGetterDelegate {
     
     func getRandomImage() -> DescribedImage {
         let link = contentURL + ".gallery." + getRandomMonth() + ".json"
-        if let JSONString = getSource(link: link) {
+        if let JSONString = link.getHTML() {
             let link = getLinkToRandomImage(source: JSONString)
             if link == nil {
                 return DescribedImage()

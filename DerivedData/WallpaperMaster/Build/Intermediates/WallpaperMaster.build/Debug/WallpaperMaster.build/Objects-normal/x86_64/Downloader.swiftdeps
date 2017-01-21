@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "StringLiteralType"
-- "DescribedImage"
-- !private "print"
-- !private "URL"
 - "Saver"
-- !private "Data"
-- "String"
 - "Downloader"
+- !private "Data"
+- "DescribedImage"
+- "String"
+- !private "URL"
+- !private "print"
 - !private "NSImage"
 depends-member:
 - !private ["Ps9AnyObject", "Data"]
