@@ -10,12 +10,13 @@ import Foundation
 import Cocoa
 
 class DesktopUpdater {
-    internal var timer: Timer? = nil
+    internal var timer: Timer?   = nil
     internal var imageGetter: ImageGetterDelegate
     private  var currentWallpaper: DescribedImage? = nil
-    internal var period   = 300.0
-    internal var isRandom = true
-    private  let saver    = Saver()
+    internal var period: Double  = 300.0
+    internal var isRandom: Bool  = true
+    private  let saver           = Saver()
+    private  let maxFailureCount = 2
     
     init(source: ImageSource) {
         // set default image source
@@ -61,23 +62,38 @@ class DesktopUpdater {
     
     @objc internal func updateWallpaper() {
         DispatchQueue.global().async {
-            // download new wallpaper
-            let wallpaper: DescribedImage
-            if self.isRandom {
-                wallpaper = self.imageGetter.getRandomImage()
-            } else {
-                wallpaper = self.imageGetter.getImageOfTheDay()
+            // do several attempts in case current and previous images are the same
+            var triesCount: Int = 0
+            while triesCount < self.maxFailureCount {
+                triesCount = triesCount + 1
+                
+                // download new wallpaper
+                let wallpaper: DescribedImage
+                if self.isRandom {
+                    wallpaper = self.imageGetter.getRandomImage()
+                } else {
+                    wallpaper = self.imageGetter.getImageOfTheDay()
+                }
+                if wallpaper.image == nil {
+                    continue
+                }
+                // compare with previous wallpaper
+                if let current = self.currentWallpaper {
+                    if current.name == wallpaper.name {
+                        continue
+                    }
+                }
+                
+                self.currentWallpaper = wallpaper
+                
+                // save wallpaper image to disk
+                self.saver.save(wallpaper: wallpaper)
+                
+                // update wallpaper
+                self.spaceChanged()
+
+                break
             }
-            if wallpaper.image == nil {
-                return
-            }
-            self.currentWallpaper = wallpaper
-            
-            // save wallpaper image to disk
-            self.saver.save(wallpaper: wallpaper)
-            
-            // update wallpaper
-            self.spaceChanged()
         }
         
         resetTimer()

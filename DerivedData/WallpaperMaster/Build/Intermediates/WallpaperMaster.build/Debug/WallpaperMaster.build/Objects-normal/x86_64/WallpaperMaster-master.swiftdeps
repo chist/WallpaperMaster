@@ -1,9 +1,9 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
 options: "46cf5b9e6cfd1f372120a1397c340c3f"
-build_time: [538319485, 307214000]
+build_time: [538320972, 305858000]
 inputs:
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Queryable.swift": [535483076, 0]
-  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/DesktopUpdater.swift": [538318838, 0]
+  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/DesktopUpdater.swift": [538320961, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Document.swift": [535483076, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/DescribedImage.swift": [537798111, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/NatGeoCollection.swift": [538317931, 0]
@@ -16,7 +16,7 @@ inputs:
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/ImageGetterDelegate.swift": [538317870, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Downloader.swift": [537798894, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/ContactViewController.swift": [538319409, 0]
-  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/BingCollection.swift": [538318345, 0]
+  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/BingCollection.swift": [538320855, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/ErrorHandler.swift": [538319168, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/SourcesViewController.swift": [537829401, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Extensions.swift": [538317568, 0]

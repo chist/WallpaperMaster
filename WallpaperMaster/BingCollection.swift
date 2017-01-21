@@ -19,17 +19,19 @@ class BingCollection: ImageGetterDelegate {
     }
     
     private func getLinkToImage(random: Bool) -> String? {
-        var failureCount: Int = 0
+        var triesCount: Int = 0
         
-        while failureCount < maxFailureCount {
+        while triesCount < maxFailureCount {
             let date: Day
             if random {
                 let firstDay = Day(1, ofMonth: 1, inYear: 2015)
                 date = DateGenerator.getRandomDay(after: firstDay)
             } else {
-                date = DateGenerator.getPreceding(by: failureCount)
+                date = DateGenerator.getPreceding(by: triesCount)
             }
             let monthLink = contentURL + "?m=\(date.year)" + str2(date.month) + str2(date.day)
+            
+            triesCount = triesCount + 1
             
             // get HTML content of page with month best photos
             let monthHTMLString = monthLink.getHTML()
@@ -83,8 +85,6 @@ class BingCollection: ImageGetterDelegate {
             } catch let error {
                 print(error.localizedDescription)
             }
-            
-            failureCount = failureCount + 1
         }
         return nil
     }

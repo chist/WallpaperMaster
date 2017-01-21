@@ -6,33 +6,38 @@ provides-nominal:
 provides-member:
 - ["C15WallpaperMaster14DesktopUpdater", ""]
 provides-dynamic-lookup:
-- "updateWallpaper"
 - "spaceChanged"
+- "updateWallpaper"
 depends-top-level:
-- "Timer"
-- "ImageSource"
-- !private "NSScreen"
-- !private "IntegerLiteralType"
-- !private "RGOCollection"
-- "FloatLiteralType"
+- !private "PreferencesHolder"
+- !private "ErrorHandler"
 - !private "NSWorkspace"
+- !private "NatGeoCollection"
+- "ImageGetterDelegate"
+- "ImageSource"
 - !private "BingCollection"
 - "Dictionary"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "PreferencesHolder"
-- "ImageGetterDelegate"
-- !private "NatGeoCollection"
+- !private "NSScreen"
+- "Timer"
+- !private "Int"
+- !private "!="
+- "BooleanLiteralType"
+- !private "RGOCollection"
+- "DescribedImage"
+- "Saver"
+- "IntegerLiteralType"
+- !private "SavedCollection"
+- "Double"
+- "FloatLiteralType"
+- !private "+"
+- !private "NSNotification"
 - "DesktopUpdater"
 - !private "YandexCollection"
+- !private "<"
 - !private "DispatchQueue"
-- !private "ErrorHandler"
-- !private "NSNotification"
-- "Saver"
-- "BooleanLiteralType"
-- "DescribedImage"
-- !private "SavedCollection"
-- !private "!="
+- "Bool"
+- "AssignmentPrecedence"
+- !private "=="
 depends-member:
 - !private ["Ps9AnyObject", "BingCollection"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
@@ -59,6 +64,8 @@ depends-member:
 - !private ["Ps9AnyObject", "invalidate"]
 - !private ["Ps9AnyObject", "isRandom"]
 - !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "maxFailureCount"]
+- !private ["Ps9AnyObject", "name"]
 - !private ["Ps9AnyObject", "notificationCenter"]
 - !private ["Ps9AnyObject", "period"]
 - !private ["Ps9AnyObject", "record"]
@@ -126,12 +133,16 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "shared"]
 - ["C15WallpaperMaster14DescribedImage", "deinit"]
 - !private ["C15WallpaperMaster14DescribedImage", "image"]
+- !private ["C15WallpaperMaster14DescribedImage", "name"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "BingCollection"]
+- ["C15WallpaperMaster14DesktopUpdater", "Bool"]
 - ["C15WallpaperMaster14DesktopUpdater", "DescribedImage"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "DispatchQueue"]
+- ["C15WallpaperMaster14DesktopUpdater", "Double"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "ErrorHandler"]
 - ["C15WallpaperMaster14DesktopUpdater", "ImageGetterDelegate"]
 - ["C15WallpaperMaster14DesktopUpdater", "ImageSource"]
+- !private ["C15WallpaperMaster14DesktopUpdater", "Int"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "NSNotification"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "NSScreen"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "NSWorkspace"]
@@ -148,6 +159,7 @@ depends-member:
 - ["C15WallpaperMaster14DesktopUpdater", "imageGetter"]
 - ["C15WallpaperMaster14DesktopUpdater", "init"]
 - ["C15WallpaperMaster14DesktopUpdater", "isRandom"]
+- !private ["C15WallpaperMaster14DesktopUpdater", "maxFailureCount"]
 - ["C15WallpaperMaster14DesktopUpdater", "period"]
 - ["C15WallpaperMaster14DesktopUpdater", "resetTimer"]
 - !private ["C15WallpaperMaster14DesktopUpdater", "saver"]
@@ -384,4 +396,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "8a14d14bfbf2fcb92ec5b0ff0fdaf9fa"
+interface-hash: "48c7fe9406e473b5d5508326503cdc1a"
