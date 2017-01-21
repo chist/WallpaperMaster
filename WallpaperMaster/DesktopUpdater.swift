@@ -99,7 +99,7 @@ class DesktopUpdater {
         resetTimer()
     }
     
-    internal func resetTimer(){
+    internal func resetTimer() {
         self.timer?.invalidate()
         timer = Timer.scheduledTimer(timeInterval: self.period, target: self, selector: #selector(updateWallpaper), userInfo: nil, repeats: true)
     }

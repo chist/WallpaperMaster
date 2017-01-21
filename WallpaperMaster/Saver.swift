@@ -91,7 +91,7 @@ class Saver {
         NSWorkspace.shared().openFile(Saver.favFolder.path)
     }
     
-    static func reviseFavouriteImages() -> [String] {
+    static internal func reviseFavouriteImages() -> [String] {
         let fileManager = FileManager.default
         let enumerator  = fileManager.enumerator(atPath: Saver.favFolder.path)
         var namesArray  = [String]()

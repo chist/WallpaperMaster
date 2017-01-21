@@ -80,12 +80,13 @@ class StatusMenuController: NSObject, NSMenuDelegate {
             savedOption.isEnabled = false
         }
         
-        // update time interval
-        let defaultTime = preferencesHolder.timeOption
-        updateTimeInterval(timeSubmenu.item(at: defaultTime)!)
-        
         // initialize desktopUpdater
         desktopUpdater = DesktopUpdater(source: defaultSource)
+        
+        // update time interval
+        // must be called after desktopUpdater initialization
+        let defaultTime = preferencesHolder.timeOption
+        updateTimeInterval(timeSubmenu.item(at: defaultTime)!)
     }
     
     func menuWillOpen(_ menu: NSMenu) {

@@ -15,7 +15,7 @@ class YandexCollection: ImageGetterDelegate {
     private let downloader      = Downloader()
     private let maxFailureCount = 120
     // minimum value of image.width / image.height
-    private let proportionBound: CGFloat = 1.2
+    private let proportionBound: CGFloat = 1.5
     
     private func getLinkToImage(random: Bool) -> String? {
         let date: Day

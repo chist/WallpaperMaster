@@ -1,9 +1,9 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
 options: "46cf5b9e6cfd1f372120a1397c340c3f"
-build_time: [538320972, 305858000]
+build_time: [538323498, 310937000]
 inputs:
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Queryable.swift": [535483076, 0]
-  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/DesktopUpdater.swift": [538320961, 0]
+  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/DesktopUpdater.swift": [538321202, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Document.swift": [535483076, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/DescribedImage.swift": [537798111, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/NatGeoCollection.swift": [538317931, 0]
@@ -11,7 +11,7 @@ inputs:
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Helpers.swift": [536858842, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Saver.swift": [538319447, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/NodeSet.swift": [535483076, 0]
-  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/StatusMenuController.swift": [538318462, 0]
+  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/StatusMenuController.swift": [538323496, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Node.swift": [535483076, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/ImageGetterDelegate.swift": [538317870, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Downloader.swift": [537798894, 0]
@@ -20,7 +20,7 @@ inputs:
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/ErrorHandler.swift": [538319168, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/SourcesViewController.swift": [537829401, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Extensions.swift": [538317568, 0]
-  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/YandexCollection.swift": [538317912, 0]
+  "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/YandexCollection.swift": [538322291, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/AppDelegate.swift": [537806369, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/PreferencesHolder.swift": [538046459, 0]
   "/Users/ivanchistyakov/Desktop/WallpaperMaster/WallpaperMaster/Fuzi/Error.swift": [535483076, 0]
