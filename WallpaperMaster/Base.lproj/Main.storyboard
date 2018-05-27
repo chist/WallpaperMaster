@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -680,7 +682,7 @@
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <menu key="submenu" title="Choose source" autoenablesItems="NO" id="DkY-aw-nn3">
                                 <items>
-                                    <menuItem title="Bing" id="dJ9-0j-RHE">
+                                    <menuItem title="Bing" enabled="NO" id="dJ9-0j-RHE">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="bingIsChosen:" target="Im6-qV-bXq" id="jbI-sL-HbL"/>
@@ -698,7 +700,7 @@
                                             <action selector="RGOIsChosen:" target="Im6-qV-bXq" id="xgK-1M-vu5"/>
                                         </connections>
                                     </menuItem>
-                                    <menuItem title="Yandex" id="dcs-Vc-Ro4">
+                                    <menuItem title="Yandex" enabled="NO" id="dcs-Vc-Ro4">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="YandexIsChosen:" target="Im6-qV-bXq" id="QDX-cz-FNj"/>
@@ -751,10 +753,13 @@
                     <window key="window" title="WallpaperMaster" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="s8n-cF-3hY">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="249" width="480" height="360"/>
+                        <rect key="contentRect" x="196" y="249" width="480" height="290"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
-                        <value key="minSize" type="size" width="480" height="360"/>
-                        <value key="maxSize" type="size" width="480" height="360"/>
+                        <value key="minSize" type="size" width="480" height="290"/>
+                        <value key="maxSize" type="size" width="480" height="290"/>
+                        <connections>
+                            <outlet property="delegate" destination="Phi-qx-339" id="pga-jc-3pN"/>
+                        </connections>
                     </window>
                     <connections>
                         <segue destination="cfq-p2-U4d" kind="relationship" relationship="window.shadowedContentViewController" id="zCO-5y-4aY"/>
@@ -762,7 +767,7 @@
                 </windowController>
                 <customObject id="o6D-E3-XUr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="143" y="285"/>
+            <point key="canvasLocation" x="-250" y="274"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="RNT-Af-CKF">
