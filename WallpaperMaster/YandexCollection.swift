@@ -45,6 +45,9 @@ class YandexCollection: ImageGetterDelegate {
             while anchorArray.count <= dayIndex {
                 dayIndex = dayIndex - 1
             }
+            if anchorArray.count <= 0 && dayIndex < 1 {
+                return nil
+            }
             let piece = String(describing: anchorArray[dayIndex])
             
             // extract link to the album from description of a tiny photo

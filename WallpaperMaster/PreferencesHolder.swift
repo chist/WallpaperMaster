@@ -26,7 +26,7 @@ class PreferencesHolder {
             UserDefaults.standard.set(defaultTimeOption, forKey: "timeOption")
         }
         if UserDefaults.standard.object(forKey: "sourceOption") == nil {
-            UserDefaults.standard.set(defaultSourceOption, forKey: "sourceOption")
+            UserDefaults.standard.set(defaultSourceOption.rawValue, forKey: "sourceOption")
         }
     }
     

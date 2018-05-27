@@ -307,7 +307,6 @@
 				TargetAttributes = {
 					4FECB0511E1D767C003FB579 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = B5K2GNSUC9;
 						ProvisioningStyle = Automatic;
 					};
 					4FECB0621E1D767D003FB579 = {
@@ -562,7 +561,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = B5K2GNSUC9;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = WallpaperMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -583,7 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = B5K2GNSUC9;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = WallpaperMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
