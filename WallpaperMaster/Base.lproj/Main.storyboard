@@ -682,7 +682,7 @@
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <menu key="submenu" title="Choose source" autoenablesItems="NO" id="DkY-aw-nn3">
                                 <items>
-                                    <menuItem title="Bing" enabled="NO" id="dJ9-0j-RHE">
+                                    <menuItem title="Bing" id="dJ9-0j-RHE">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                         <connections>
                                             <action selector="bingIsChosen:" target="Im6-qV-bXq" id="jbI-sL-HbL"/>

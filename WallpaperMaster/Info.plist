@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>0.19</string>
 	<key>CFBundleVersion</key>
-	<string>41</string>
+	<string>67</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>LSUIElement</key>
@@ -28,7 +28,16 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>iorise.com</key>
+			<key>bing.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSTemporaryExceptionMinimumTLSVersion</key>
+				<string>TLSv1.1</string>
+			</dict>
+			<key>bingwallpaper.com</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<true/>
