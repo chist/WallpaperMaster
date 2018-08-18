@@ -40,14 +40,30 @@ class NatGeoCollection: ImageGetterDelegate {
     
     private func getLinkToImageOfTheDay(source: String) -> String? {
         if let imageID = extractLink(from: source, random: false) {
-            return photoCollectionURL + imageID
+            let lowerBound = String.Index(encodedOffset: 0)
+            let upperBound = String.Index(encodedOffset: 4)
+            
+            // since some point NatGeo imageID contains full URL
+            if imageID[lowerBound...upperBound] == "https" {
+                return imageID
+            } else {
+                return photoCollectionURL + imageID
+            }
         }
         return nil
     }
     
     private func getLinkToRandomImage(source: String) -> String? {
         if let imageID = extractLink(from: source, random: true) {
-            return photoCollectionURL + imageID
+            let lowerBound = String.Index(encodedOffset: 0)
+            let upperBound = String.Index(encodedOffset: 4)
+            
+            // since some point NatGeo imageID contains full URL
+            if imageID[lowerBound...upperBound] == "https" {
+                return imageID
+            } else {
+                return photoCollectionURL + imageID
+            }
         }
         return nil
     }
