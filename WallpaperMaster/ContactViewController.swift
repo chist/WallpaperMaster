@@ -14,7 +14,7 @@ class ContactViewController: NSViewController {
     
     @IBAction func coffeeButtonClicked(_ sender: NSButton) {
         if let donationURL = URL(string: donationLink) {
-            NSWorkspace.shared().open(donationURL)
+            NSWorkspace.shared.open(donationURL)
         }
     }
     

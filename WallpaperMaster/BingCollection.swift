@@ -62,11 +62,11 @@ class BingCollection: ImageGetterDelegate {
                     let range = nsRange.range(for: text)!
                     
                     let index1    = range.upperBound
-                    let cutString = text.substring(from: index1)
-                    let index     = cutString.characters.index(of: "\"")!
+                    let cutString = text[index1...]
+                    let index     = cutString.index(of: "\"")!
                     let offset    = cutString.distance(from: cutString.startIndex, to: index)
                     let index2    = text.index(index1, offsetBy: offset - 1)
-                    links.append(text[index1...index2])
+                    links.append(String(text[index1...index2]))
                 }
                 
                 // find link to image with desired resolution

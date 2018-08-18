@@ -41,9 +41,9 @@ class DesktopUpdater {
             self.updateWallpaper()
         }
         
-        NSWorkspace.shared().notificationCenter.addObserver(self,
+        NSWorkspace.shared.notificationCenter.addObserver(self,
                                                             selector: #selector(spaceChanged),
-                                                            name: NSNotification.Name.NSWorkspaceActiveSpaceDidChange,
+                                                            name: NSWorkspace.activeSpaceDidChangeNotification,
                                                             object: nil)
     }
 
@@ -51,8 +51,8 @@ class DesktopUpdater {
         // update wallpaper when user moved to another desktop space
         DispatchQueue.global().async {
             do {
-                let workspace = NSWorkspace.shared()
-                let screen = NSScreen.main()!
+                let workspace = NSWorkspace.shared
+                let screen = NSScreen.main!
                 try workspace.setDesktopImageURL(Saver.currentImageURL, for: screen, options: [:])
             } catch let error {
                 ErrorHandler.record(error.localizedDescription)

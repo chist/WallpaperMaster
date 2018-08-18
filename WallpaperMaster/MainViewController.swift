@@ -14,8 +14,8 @@ class MainViewController: NSViewController {
     @IBOutlet var containerView: NSView!
     @IBOutlet var versionLabel: NSTextField!
     
-    private let sourceVC  = NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: "SourceVC") as! NSViewController
-    private let contactVC = NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: "ContactVC") as! NSViewController
+    private let sourceVC  = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "SourceVC")) as! NSViewController
+    private let contactVC = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "ContactVC")) as! NSViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()

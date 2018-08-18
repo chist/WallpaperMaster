@@ -10,7 +10,7 @@ import Cocoa
 
 class StatusMenuController: NSObject, NSMenuDelegate {
     @IBOutlet var statusBarMenu: NSMenu!
-    private let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     private let timeSubmenu = NSMenu(title: "Set update time")
     
     @IBOutlet weak var NatGeoOption: NSMenuItem!
@@ -43,14 +43,14 @@ class StatusMenuController: NSObject, NSMenuDelegate {
             let submenuItem = NSMenuItem(title: disableTitle, action: #selector(updateTimeInterval), keyEquivalent: String())
             submenuItem.target = self
             submenuItem.tag = 0
-            submenuItem.state  = 0
+            submenuItem.state  = NSControl.StateValue(rawValue: 0)
             timeSubmenu.addItem(submenuItem)
             
             for (index, element) in times.enumerated() {
                 let fullTitle = "\(element.0) " + element.1
                 let submenuItem = NSMenuItem(title: fullTitle, action: #selector(updateTimeInterval), keyEquivalent: String())
                 submenuItem.target = self
-                submenuItem.state  = 0
+                submenuItem.state  = NSControl.StateValue(rawValue: 0)
                 
                 // enumerate items
                 submenuItem.tag = index + 1
@@ -91,7 +91,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
     
     func menuWillOpen(_ menu: NSMenu) {
         // place app window into focus
-        if NSApplication.shared().windows.count > 1 {
+        if NSApplication.shared.windows.count > 1 {
             NSApp.activate(ignoringOtherApps: true)
         }
         
@@ -126,7 +126,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
     private func updateItemStates(current: ImageSource) {
         // mark current source option with tick
         for (key, value) in options {
-            value.state = (key == current) ? 1 : 0
+            value.state = NSControl.StateValue(rawValue: (key == current) ? 1 : 0)
         }
         
         // enable / disable "Get photo of the day" option
@@ -169,7 +169,7 @@ class StatusMenuController: NSObject, NSMenuDelegate {
         
         // mark current time interval
         for item in timeSubmenu.items {
-            item.state = (item.tag == tag) ? 1 : 0
+            item.state = NSControl.StateValue(rawValue: (item.tag == tag) ? 1 : 0)
         }
         // save chosen option to settings
         preferencesHolder.setTimeOption(tag)
@@ -201,6 +201,6 @@ class StatusMenuController: NSObject, NSMenuDelegate {
     }
     
     @IBAction func quitClicked(_ sender: NSMenuItem) {
-        NSApplication.shared().terminate(self)
+        NSApplication.shared.terminate(self)
     }
 }

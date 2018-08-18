@@ -88,7 +88,7 @@ class Saver {
         Saver.appFolder = Saver.initAppFolder()
         Saver.favFolder = Saver.initFavFolder()
         
-        NSWorkspace.shared().openFile(Saver.favFolder.path)
+        NSWorkspace.shared.openFile(Saver.favFolder.path)
     }
     
     static internal func reviseFavouriteImages() -> [String] {
@@ -148,7 +148,7 @@ class Saver {
 extension NSImage {
     var PNGRepresentation: NSData? {
         if let tiff = self.tiffRepresentation, let tiffData = NSBitmapImageRep(data: tiff) {
-            return tiffData.representation(using: NSBitmapImageFileType.PNG, properties: [:]) as NSData?
+            return tiffData.representation(using: NSBitmapImageRep.FileType.png, properties: [:]) as NSData?
         } else {
             ErrorHandler.record("tiff or tiffData is nil.")
         }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -777,16 +777,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="290"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Crx-ax-3ie">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Crx-ax-3ie">
                                 <rect key="frame" x="0.0" y="-1" width="480" height="251"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="background" id="U4l-JC-CvE"/>
                             </imageView>
-                            <containerView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HY3-fH-9XC">
+                            <containerView id="HY3-fH-9XC">
                                 <rect key="frame" x="0.0" y="51" width="480" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </containerView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6CO-9d-2pb">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="6CO-9d-2pb">
                                 <rect key="frame" x="163" y="27" width="155" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Version 0.9" id="ffF-l2-ihK">
@@ -795,7 +795,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ND-K2-YbE">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="9ND-K2-YbE">
                                 <rect key="frame" x="75" y="11" width="330" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Copyright © 2017 Ivan Chistyakov. All rights reserved." id="rO4-NL-npI">
@@ -804,7 +804,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NMq-dd-c7Z">
+                            <segmentedControl verticalHuggingPriority="750" id="NMq-dd-c7Z">
                                 <rect key="frame" x="154" y="257" width="176" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="quY-uZ-394">
@@ -838,7 +838,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2oF-PG-oiq">
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="2oF-PG-oiq">
                                 <rect key="frame" x="56" y="144" width="369" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="If you are dissatisfied or if you have any suggestions, please contact me at ivanappdeveloper@yandex.ru." id="Sxk-lw-3w6">
@@ -847,7 +847,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qaA-Z2-KSW">
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="qaA-Z2-KSW">
                                 <rect key="frame" x="56" y="99" width="369" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="This app is completely free. Nevetherless, I would like to be encouraged by your small donation." id="6y1-6o-ngt">
@@ -856,7 +856,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XRP-Bl-IOs">
+                            <button verticalHuggingPriority="750" id="XRP-Bl-IOs">
                                 <rect key="frame" x="170" y="52" width="139" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="coffeeImage" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="R8F-Af-wWb">
@@ -882,7 +882,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IMg-qI-C3U">
+                            <button verticalHuggingPriority="750" id="IMg-qI-C3U">
                                 <rect key="frame" x="170" y="2" width="139" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Show in Finder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fls-UD-TEn">
@@ -893,8 +893,8 @@
                                     <action selector="showSavedInFinder:" target="qYk-tS-BMw" id="OxA-3z-8Gh"/>
                                 </connections>
                             </button>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-R0-sRS">
-                                <rect key="frame" x="38" y="33" width="406" height="17"/>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="5CH-R0-sRS">
+                                <rect key="frame" x="38" y="33" width="406" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Saved photos are stored in ~/Documents/WallpaperMaster/Saved." id="Znw-P3-C50">
                                     <font key="font" metaFont="system"/>
@@ -902,7 +902,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JlA-Sk-oQp">
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="JlA-Sk-oQp">
                                 <rect key="frame" x="56" y="162" width="369" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Photos are downloaded from those sources:" id="XQg-GA-xFS">
@@ -911,7 +911,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eu2-sq-84h">
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="Eu2-sq-84h">
                                 <rect key="frame" x="21" y="59" width="437" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Using downloaded images apart from wallpaper installation is a copyright infringement." id="THP-at-YlY">
@@ -920,7 +920,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibQ-qG-joh">
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="ibQ-qG-joh">
                                 <rect key="frame" x="147" y="101" width="186" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" id="OzQ-CY-EEL">

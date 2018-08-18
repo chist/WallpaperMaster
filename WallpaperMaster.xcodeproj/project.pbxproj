@@ -28,8 +28,6 @@
 		4FECB0561E1D767C003FB579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0551E1D767C003FB579 /* AppDelegate.swift */; };
 		4FECB05A1E1D767C003FB579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECB0591E1D767C003FB579 /* Assets.xcassets */; };
 		4FECB05D1E1D767C003FB579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FECB05B1E1D767C003FB579 /* Main.storyboard */; };
-		4FECB0681E1D767D003FB579 /* WallpaperMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0671E1D767D003FB579 /* WallpaperMasterTests.swift */; };
-		4FECB0731E1D767D003FB579 /* WallpaperMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0721E1D767D003FB579 /* WallpaperMasterUITests.swift */; };
 		4FECB08C1E1D7760003FB579 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0831E1D7760003FB579 /* Document.swift */; };
 		4FECB08D1E1D7760003FB579 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0841E1D7760003FB579 /* Element.swift */; };
 		4FECB08E1E1D7760003FB579 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0851E1D7760003FB579 /* Error.swift */; };
@@ -41,23 +39,6 @@
 		4FECB0951E1D7BA3003FB579 /* ImageGetterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECB0941E1D7BA3003FB579 /* ImageGetterDelegate.swift */; };
 		4FF51F9D1E23F7EE0028F862 /* RGOCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF51F9C1E23F7EE0028F862 /* RGOCollection.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4FECB0641E1D767D003FB579 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4FECB04A1E1D767C003FB579 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4FECB0511E1D767C003FB579;
-			remoteInfo = WallpaperMaster;
-		};
-		4FECB06F1E1D767D003FB579 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4FECB04A1E1D767C003FB579 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4FECB0511E1D767C003FB579;
-			remoteInfo = WallpaperMaster;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4F0190C41E20448D00CA2003 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
@@ -83,12 +64,6 @@
 		4FECB0591E1D767C003FB579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FECB05C1E1D767C003FB579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FECB05E1E1D767C003FB579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FECB0631E1D767D003FB579 /* WallpaperMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpaperMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FECB0671E1D767D003FB579 /* WallpaperMasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperMasterTests.swift; sourceTree = "<group>"; };
-		4FECB0691E1D767D003FB579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FECB06E1E1D767D003FB579 /* WallpaperMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpaperMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FECB0721E1D767D003FB579 /* WallpaperMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperMasterUITests.swift; sourceTree = "<group>"; };
-		4FECB0741E1D767D003FB579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FECB0831E1D7760003FB579 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		4FECB0841E1D7760003FB579 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		4FECB0851E1D7760003FB579 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
@@ -104,20 +79,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		4FECB04F1E1D767C003FB579 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FECB0601E1D767D003FB579 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FECB06B1E1D767D003FB579 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -163,8 +124,6 @@
 				4F0491101E2423E800F9AF62 /* README.md */,
 				4FECB0821E1D7760003FB579 /* Fuzi */,
 				4FECB0541E1D767C003FB579 /* WallpaperMaster */,
-				4FECB0661E1D767D003FB579 /* WallpaperMasterTests */,
-				4FECB0711E1D767D003FB579 /* WallpaperMasterUITests */,
 				4FECB0531E1D767C003FB579 /* Products */,
 				4FA498641E21317E00E30460 /* Frameworks */,
 			);
@@ -174,8 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				4FECB0521E1D767C003FB579 /* WallpaperMaster.app */,
-				4FECB0631E1D767D003FB579 /* WallpaperMasterTests.xctest */,
-				4FECB06E1E1D767D003FB579 /* WallpaperMasterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,24 +158,6 @@
 				4FECB05E1E1D767C003FB579 /* Info.plist */,
 			);
 			path = WallpaperMaster;
-			sourceTree = "<group>";
-		};
-		4FECB0661E1D767D003FB579 /* WallpaperMasterTests */ = {
-			isa = PBXGroup;
-			children = (
-				4FECB0671E1D767D003FB579 /* WallpaperMasterTests.swift */,
-				4FECB0691E1D767D003FB579 /* Info.plist */,
-			);
-			path = WallpaperMasterTests;
-			sourceTree = "<group>";
-		};
-		4FECB0711E1D767D003FB579 /* WallpaperMasterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4FECB0721E1D767D003FB579 /* WallpaperMasterUITests.swift */,
-				4FECB0741E1D767D003FB579 /* Info.plist */,
-			);
-			path = WallpaperMasterUITests;
 			sourceTree = "<group>";
 		};
 		4FECB0821E1D7760003FB579 /* Fuzi */ = {
@@ -259,42 +198,6 @@
 			productReference = 4FECB0521E1D767C003FB579 /* WallpaperMaster.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4FECB0621E1D767D003FB579 /* WallpaperMasterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4FECB07A1E1D767D003FB579 /* Build configuration list for PBXNativeTarget "WallpaperMasterTests" */;
-			buildPhases = (
-				4FECB05F1E1D767D003FB579 /* Sources */,
-				4FECB0601E1D767D003FB579 /* Frameworks */,
-				4FECB0611E1D767D003FB579 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4FECB0651E1D767D003FB579 /* PBXTargetDependency */,
-			);
-			name = WallpaperMasterTests;
-			productName = WallpaperMasterTests;
-			productReference = 4FECB0631E1D767D003FB579 /* WallpaperMasterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4FECB06D1E1D767D003FB579 /* WallpaperMasterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4FECB07D1E1D767D003FB579 /* Build configuration list for PBXNativeTarget "WallpaperMasterUITests" */;
-			buildPhases = (
-				4FECB06A1E1D767D003FB579 /* Sources */,
-				4FECB06B1E1D767D003FB579 /* Frameworks */,
-				4FECB06C1E1D767D003FB579 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4FECB0701E1D767D003FB579 /* PBXTargetDependency */,
-			);
-			name = WallpaperMasterUITests;
-			productName = WallpaperMasterUITests;
-			productReference = 4FECB06E1E1D767D003FB579 /* WallpaperMasterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -302,24 +205,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Ivan Chistyakov";
 				TargetAttributes = {
 					4FECB0511E1D767C003FB579 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
-					};
-					4FECB0621E1D767D003FB579 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = B5K2GNSUC9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 4FECB0511E1D767C003FB579;
-					};
-					4FECB06D1E1D767D003FB579 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = B5K2GNSUC9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 4FECB0511E1D767C003FB579;
 					};
 				};
 			};
@@ -337,8 +229,6 @@
 			projectRoot = "";
 			targets = (
 				4FECB0511E1D767C003FB579 /* WallpaperMaster */,
-				4FECB0621E1D767D003FB579 /* WallpaperMasterTests */,
-				4FECB06D1E1D767D003FB579 /* WallpaperMasterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -351,20 +241,6 @@
 				4FECB05A1E1D767C003FB579 /* Assets.xcassets in Resources */,
 				4FECB05D1E1D767C003FB579 /* Main.storyboard in Resources */,
 				4FECB0901E1D7760003FB579 /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FECB0611E1D767D003FB579 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FECB06C1E1D767D003FB579 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,36 +299,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4FECB05F1E1D767D003FB579 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4FECB0681E1D767D003FB579 /* WallpaperMasterTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FECB06A1E1D767D003FB579 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4FECB0731E1D767D003FB579 /* WallpaperMasterUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4FECB0651E1D767D003FB579 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4FECB0511E1D767C003FB579 /* WallpaperMaster */;
-			targetProxy = 4FECB0641E1D767D003FB579 /* PBXContainerItemProxy */;
-		};
-		4FECB0701E1D767D003FB579 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4FECB0511E1D767C003FB579 /* WallpaperMaster */;
-			targetProxy = 4FECB06F1E1D767D003FB579 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4FECB05B1E1D767C003FB579 /* Main.storyboard */ = {
@@ -475,15 +322,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -512,6 +368,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 			};
 			name = Debug;
 		};
@@ -524,15 +381,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -552,7 +418,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 			};
 			name = Release;
 		};
@@ -573,7 +441,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Chistyakov.WallpaperMaster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = WallpaperMaster/libxml2;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -594,69 +463,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Chistyakov.WallpaperMaster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = WallpaperMaster/libxml2;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		4FECB07B1E1D767D003FB579 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = B5K2GNSUC9;
-				INFOPLIST_FILE = WallpaperMasterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Chistyakov.WallpaperMasterTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallpaperMaster.app/Contents/MacOS/WallpaperMaster";
-			};
-			name = Debug;
-		};
-		4FECB07C1E1D767D003FB579 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = B5K2GNSUC9;
-				INFOPLIST_FILE = WallpaperMasterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Chistyakov.WallpaperMasterTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallpaperMaster.app/Contents/MacOS/WallpaperMaster";
-			};
-			name = Release;
-		};
-		4FECB07E1E1D767D003FB579 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = B5K2GNSUC9;
-				INFOPLIST_FILE = WallpaperMasterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Chistyakov.WallpaperMasterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = WallpaperMaster;
-			};
-			name = Debug;
-		};
-		4FECB07F1E1D767D003FB579 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = B5K2GNSUC9;
-				INFOPLIST_FILE = WallpaperMasterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Chistyakov.WallpaperMasterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = WallpaperMaster;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -677,24 +485,6 @@
 			buildConfigurations = (
 				4FECB0781E1D767D003FB579 /* Debug */,
 				4FECB0791E1D767D003FB579 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4FECB07A1E1D767D003FB579 /* Build configuration list for PBXNativeTarget "WallpaperMasterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4FECB07B1E1D767D003FB579 /* Debug */,
-				4FECB07C1E1D767D003FB579 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4FECB07D1E1D767D003FB579 /* Build configuration list for PBXNativeTarget "WallpaperMasterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4FECB07E1E1D767D003FB579 /* Debug */,
-				4FECB07F1E1D767D003FB579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

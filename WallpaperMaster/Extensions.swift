@@ -12,12 +12,12 @@ import Cocoa
 extension String {
     func searchQuotation(after substring: String) -> String? {
         if let index1 = self.range(of: substring + "\"")?.upperBound {
-            let cutString = self.substring(from: index1)
-            let index     = cutString.characters.index(of: "\"")!
+            let cutString = self[index1...]
+            let index     = cutString.index(of: "\"")!
             let offset    = cutString.distance(from: cutString.startIndex, to: index)
             let index2    = self.index(index1, offsetBy: offset - 1)
             
-            return self[index1...index2]
+            return String(self[index1...index2])
         } else {
             return nil
         }
@@ -31,7 +31,7 @@ extension String {
             
             // Use the regular expression to get an array of NSTextCheckingResult.
             // Use map to extract the range from each result.
-            let length = self.characters.count
+            let length = self.count
             let matches = regExpr.matches(in: self, options: [], range: NSMakeRange(0, length))
             ranges = matches.map{$0.range}
         } catch {
